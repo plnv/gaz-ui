@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1921.03 965.69">
+   <defs>
+      <linearGradient id="linear-gradient" x1="4093.22" y1="-515.83" x2="4118.03" y2="-515.83" gradientTransform="translate(-3145.11 667.37)" gradientUnits="userSpaceOnUse">
+         <stop offset="0" stop-color="#11121a" />
+         <stop offset="1" stop-color="#20222e" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient id="linear-gradient-2" x1="3545.51" y1="-295.02" x2="3570.32" y2="-295.02" gradientTransform="translate(-3255.61 777.87)" xlink:href="#linear-gradient" />
+      <linearGradient id="linear-gradient-3" x1="4103.27" y1="-295.02" x2="4128.08" y2="-295.02" gradientTransform="translate(-3255.61 777.87)" xlink:href="#linear-gradient" />
+      <linearGradient id="linear-gradient-4" x1="4469.63" y1="-295.02" x2="4494.44" y2="-295.02" gradientTransform="translate(-3255.61 777.87)" xlink:href="#linear-gradient" />
+      <linearGradient id="linear-gradient-5" x1="4769.88" y1="-295.02" x2="4794.69" y2="-295.02" gradientTransform="translate(-3255.61 777.87)" xlink:href="#linear-gradient" />
+   </defs>
+   <title>third-a7</title>
+   <g id="Слой_2" data-name="Слой 2">
+      <g id="Layer_1" data-name="Layer 1">
+         <rect x="948.11" y="-808.46" width="24.81" height="1920" transform="translate(1112.05 -808.98) rotate(90)" opacity="0.5" fill="url(#linear-gradient)" />
+         <rect y="141.99" width="1921.03" height="58.74" fill="#272a38" opacity="0.5" />
+         <rect y="262.03" width="1921.03" height="58.74" fill="#272a38" opacity="0.5" />
+         <text transform="translate(484.9 81.05) rotate(0.12)" font-size="30" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">Блок/секция</text>
+         <text transform="translate(50.29 63.02) rotate(0.12)" font-size="30" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">
+            Наименование
+            <tspan x="0" y="36">установки</tspan>
+         </text>
+         <text transform="translate(50.29 179.65) rotate(0.12)" font-size="26" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">19/3</text>
+         <text transform="translate(50.29 238.32) rotate(0.12)" font-size="26" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">ФИСБ</text>
+         <text transform="translate(50.29 296.32) rotate(0.12)" font-size="26" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">КПА</text>
+         <text transform="translate(329.91 179.65) rotate(0.12)" font-size="26" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">Реактор Р-1</text>
+         <text transform="translate(1356.43 179.63) rotate(0.12)" font-size="26" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">0</text>
+         <text transform="translate(1356.43 238.3) rotate(0.12)" font-size="26" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">0</text>
+         <text transform="translate(1356.43 296.97) rotate(0.12)" font-size="26" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">0</text>
+         <text transform="translate(978.59 179.65) rotate(0.12)" font-size="26" fill="#5b607d" font-family="Tahoma, Tahoma" style="isolation:isolate">не влияет</text>
+         <text transform="translate(978.59 238.31) rotate(0.12)" font-size="26" fill="#5b607d" font-family="Tahoma, Tahoma" style="isolation:isolate">не влияет</text>
+         <text transform="translate(978.59 296.98) rotate(0.12)" font-size="26" fill="#5b607d" font-family="Tahoma, Tahoma" style="isolation:isolate">не влияет</text>
+         <text transform="translate(1671.85 181.07) rotate(0.12)" font-size="26" fill="#5b607d" font-family="Tahoma, Tahoma" style="isolation:isolate">15.09.18</text>
+         <text transform="translate(1671.85 239.74) rotate(0.12)" font-size="26" fill="#5b607d" font-family="Tahoma, Tahoma" style="isolation:isolate">28.11.18</text>
+         <text transform="translate(1671.85 298.4) rotate(0.12)" font-size="26" fill="#5b607d" font-family="Tahoma, Tahoma" style="isolation:isolate">15.10.18</text>
+         <text transform="translate(329.91 238.32) rotate(0.12)" font-size="26" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">Первый поток</text>
+         <text transform="translate(329.91 296.32) rotate(0.12)" font-size="26" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">Секция 500</text>
+         <text transform="translate(898.93 62.94) rotate(0.12)" font-size="30" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">
+            Возможное влияние
+            <tspan x="0" y="36">на процесс</tspan>
+         </text>
+         <text transform="translate(1268.33 81.03) rotate(0.12)" font-size="30" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">
+            Эффект
+            <tspan x="117.69" y="0" font-size="16">(тыс.руб</tspan>
+            <tspan x="180.2" y="0" font-size="16" letter-spacing="-0.05em">.</tspan>
+            <tspan x="184.26" y="0" font-size="16">)</tspan>
+         </text>
+         <text transform="translate(1563.84 80.89) rotate(0.12)" font-size="30" fill="#fff" font-family="Tahoma, Tahoma" style="isolation:isolate">Плановая дата запуска</text>
+         <rect x="289.91" width="24.81" height="965.69" opacity="0.5" fill="url(#linear-gradient-2)" />
+         <rect x="847.67" width="24.81" height="965.69" opacity="0.5" fill="url(#linear-gradient-3)" />
+         <rect x="1214.03" width="24.81" height="965.69" opacity="0.5" fill="url(#linear-gradient-4)" />
+         <rect x="1514.28" width="24.81" height="965.69" opacity="0.5" fill="url(#linear-gradient-5)" />
+      </g>
+   </g>
+</svg>

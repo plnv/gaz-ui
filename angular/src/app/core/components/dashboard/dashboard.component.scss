@@ -1,0 +1,495 @@
+@import '../../../../theme';
+
+$padding: .5em;
+
+:host {
+  overflow: visible;
+  box-shadow: 0 0 $padding * 5 rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  font-size: $font-size;
+  background: #191C2A;
+  display: block;
+}
+
+.widget-main-toolbar {
+  box-shadow: 0 0 $padding * 5 rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+
+  .wrapper {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .logo-section {
+    padding: $padding;
+    border-right: 2px solid #2378d9;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 $padding * 3 rgba(0, 0, 0, 0.5);
+
+    .logo {
+      height: 3em;
+      width: 14em;
+      background: url(/assets/img/cuplogo.png) no-repeat center;
+      background-size: contain;
+    }
+
+    .slogan {
+      border-left: 2px solid #FFF;
+      padding-left: $padding;
+      margin-left: $padding;
+      width: 480px;
+    }
+  }
+
+  .menu-dropdown {
+    padding-left: $padding;
+    flex: 1;
+    font-size: 120%;
+    span {
+      margin-left: .5em;
+    }
+  }
+}
+
+.forecast-block {
+  padding: $padding;
+
+  &-menu {
+    list-style: none;
+
+    li {
+      display: flex;
+      background: #272a38;
+      margin-top: $padding;
+      align-items: stretch;
+
+      .link {
+        flex: 1;
+        display: flex;
+        padding: $padding;
+        align-items: center;
+        cursor: pointer;
+        transition: all 400ms ease;
+
+        .small {
+          font-size: 90%;
+          color: $color-blue;
+          padding-left: $padding;
+        }
+
+        &.active {
+          background: #234f86;
+        }
+
+        :hover {
+          opacity: 0.8;
+        }
+
+        .icon {
+          width: 1.1em;
+          height: 1em;
+        }
+      }
+
+      .indicator {
+        padding: $padding;
+        display: flex;
+        background: #232633;
+        align-items: center;
+
+        .data-arrow {
+          transform: scale(0.75);
+
+          &.bottom {
+            margin-bottom: 1px;
+          }
+        }
+
+        .big-value {
+          font-size: $font-size-big;
+          padding: 0 $padding;
+        }
+
+        .small-value {
+          font-size: $font-size-small;
+          padding: $padding/2 $padding 0;
+        }
+
+        .red {
+          color: $color-red;
+        }
+
+        .blue {
+          color: $color-blue-light;
+        }
+      }
+    }
+  }
+}
+
+.forecast-indicators-block {
+  display: flex;
+  padding: $padding 0;
+
+  .indicator {
+    flex: 1;
+    box-sizing: border-box;
+    margin-right: 10px;
+    background: #212330;
+    text-align: center;
+    padding: $padding 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .name {
+      color: #FFF;
+      font-size: $font-size-small;
+    }
+
+    .measure-unit {
+      color: #FFF;
+      font-size: $font-size-micro;
+    }
+
+    .values {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: $padding;
+
+      .big-value {
+        font-size: $font-size-big;
+        line-height: 1;
+        padding: 0 10px;
+      }
+
+      .small-value {
+        font-size: $font-size-small;
+        line-height: 1.2;
+        padding: 0 10px;
+      }
+
+      .red {
+        color: $color-red;
+      }
+
+      .blue {
+        color: $color-blue-light;
+      }
+
+      .green {
+        color: $color-green;
+      }
+    }
+  }
+}
+
+.graph-indicators-block {
+  display: flex;
+  margin-top: 30px;
+
+  .graph-indicator {
+    display: flex;
+    flex: 1;
+    margin: 0 40px;
+
+    .indicator {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      background: #1F212E;
+      overflow: hidden;
+
+      .name {
+        box-shadow: 0 0 $padding * 5 rgba(0, 0, 0, 0.5);
+        text-align: left;
+        padding: $padding 40px;
+        color: $color-blue;
+        font-size: 110%;
+        background: #1F212E;
+        position: relative;
+        z-index: 10;
+      }
+
+      .row-values {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+
+        > div {
+          flex: 1;
+          background: #1F212E;
+          padding: $padding 40px;
+          text-align: center;
+
+          &:first-child {
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 $padding * 5 rgba(0, 0, 0, 0.5);
+          }
+        }
+
+      }
+
+      .small {
+        color: #FFF;
+        font-size: 108%;
+      }
+
+      .micro {
+        font-size: $font-size-micro;
+        color: $color-blue;
+      }
+
+      .value {
+        font-size: $font-size-big;
+        padding-top: $padding;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .data-arrow {
+          margin-right: 40px;
+          position: relative;
+          top: 0px;
+        }
+      }
+    }
+
+    .graph {
+      flex: 0.8;
+      padding: 0 40px;
+
+      .graph-value {
+        font-size: $font-size-big;
+        color: $color-blue-light;
+
+        .micro {
+          font-size: 70%;
+        }
+      }
+    }
+  }
+}
+
+.events-list {
+  margin-top: 60px;
+  overflow: hidden;
+
+  .list-row {
+    background: $color-blue-dark;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 8px;
+    border-radius: 8px 0 0 0;
+    overflow: hidden;
+    box-shadow: 0 $padding * 5 $padding * 5 rgba(0, 0, 0, 0.15);
+
+    .title {
+      flex: 1;
+
+      ul {
+        list-style: none;
+        li {
+          padding: $padding 0;
+        }
+      }
+    }
+
+    > .icon {
+      display: flex;
+      width: 140px;
+      background: $color-blue-dark0;
+      box-shadow: 0 0 $padding * 5 rgba(0, 0, 0, 0.5);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      padding: 30px 20px 40px 80px;
+
+      .blue {
+        color: $color-blue-light;
+      }
+    }
+
+    .indicator {
+      display: flex;
+      align-items: center;
+      width: 570px;
+
+      .icon {
+        display: flex;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .values {
+        flex: 1;
+        padding: 20px 40px 30px 0;
+        text-align: right;
+
+        .big {
+          font-size: $font-size-big;
+        }
+
+        .small {
+          font-size: $font-size-small;
+        }
+
+        .micro {
+          font-size: $font-size-micro;
+        }
+
+        .blue {
+          color: $color-blue-light;
+        }
+
+        .green {
+          color: $color-green;
+        }
+      }
+    }
+
+    &.red {
+      background: $color-red-dark;
+
+      > .icon {
+        background: $color-red-dark1;
+      }
+
+      .indicator {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &.blue {
+      background: $color-blue-dark2;
+
+      > .icon {
+        background: $color-blue-dark1;
+      }
+
+      .indicator {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &.blue-warning {
+      background: $color-blue-dark4;
+
+      > .icon {
+        background: $color-blue-dark5;
+      }
+
+      .indicator {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .blue-dark {
+      background: $color-blue-dark0;
+    }
+  }
+
+  .insert-event-row {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+
+    textarea {
+      flex: 1;
+      margin-left: 100px;
+      background: $color-blue-dark3;
+      line-height: 1;
+      border-radius: 20px;
+      border: none;
+      overflow: hidden;
+      font-size: $font-size;
+      padding: 40px 30px 0 40px;
+      color: #FFF;
+      vertical-align: middle;
+    }
+
+    .icons {
+      flex: 0.3;
+      padding: 20px;
+      margin-left: 40px;
+
+      app-svg-icon {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.fact-plan-row {
+  display: flex;
+  padding: $padding;
+
+  .fact-plan-block {
+    flex: 1;
+    background: rgba(39, 42, 56, 0.4);
+    overflow: hidden;
+
+    & + .fact-plan-block {
+      margin-left: $padding;
+    }
+
+    &.active {
+      background: #2B2F3D;
+
+      .title {
+        background: #2B2F3D;
+      }
+    }
+
+    .title {
+      padding: $padding $padding * 2;
+      color: #FFF;
+      box-shadow: 0 0 $padding * .5 rgba(0, 0, 0, 0.4);
+    }
+
+    .values {
+      display: flex;
+
+      > div {
+        flex: 1;
+        padding: $padding $padding * 2;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+          text-align: right;
+          justify-content: flex-end;
+        }
+
+        &.big {
+          font-size: 110%;
+        }
+
+        &.blue {
+          color: $color-blue-light;
+        }
+
+        &.green {
+          color: $color-green;
+        }
+
+        .data-arrow {
+          margin-right: $padding * .5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1424 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1631.5 325.231">
+  <defs>
+    <style>
+      .cls-1, .cls-11, .cls-15, .cls-17, .cls-18, .cls-19, .cls-20, .cls-3, .cls-4, .cls-49, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fbfcfc;
+      }
+
+      .cls-3 {
+        stroke: #f2f2f2;
+      }
+
+      .cls-4 {
+        stroke: #e2e2e2;
+      }
+
+      .cls-5 {
+        stroke: #fafafa;
+      }
+
+      .cls-6 {
+        stroke: #afb2c0;
+      }
+
+      .cls-7 {
+        fill: #afb2c0;
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-11 {
+        stroke: #3165a3;
+      }
+
+      .cls-12, .cls-13, .cls-22, .cls-26 {
+        fill: #606580;
+      }
+
+      .cls-12 {
+        font-size: 14px;
+      }
+
+      .cls-12, .cls-13, .cls-14, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-40, .cls-44, .cls-45, .cls-50, .cls-51, .cls-52, .cls-53, .cls-54, .cls-55 {
+        font-family: Tahoma;
+      }
+
+      .cls-13, .cls-21, .cls-23, .cls-24, .cls-25, .cls-50 {
+        font-size: 12px;
+      }
+
+      .cls-14 {
+        fill: #bfc1cc;
+      }
+
+      .cls-14, .cls-22, .cls-35, .cls-38, .cls-39, .cls-44, .cls-45, .cls-53, .cls-55 {
+        font-size: 10px;
+      }
+
+      .cls-15 {
+        stroke: #d5d7de;
+      }
+
+      .cls-16 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-17 {
+        stroke: #ff8282;
+      }
+
+      .cls-18 {
+        stroke: #f5f5f5;
+      }
+
+      .cls-19 {
+        stroke: #606580;
+      }
+
+      .cls-20 {
+        stroke: #ebebeb;
+      }
+
+      .cls-21 {
+        fill: #b2b4c2;
+      }
+
+      .cls-23 {
+        fill: #3165a3;
+      }
+
+      .cls-24, .cls-28 {
+        fill: red;
+      }
+
+      .cls-25 {
+        fill: #ff8282;
+      }
+
+      .cls-27, .cls-33, .cls-39, .cls-46 {
+        fill: #2378d9;
+      }
+
+      .cls-29, .cls-34 {
+        fill: #1bb4f5;
+      }
+
+      .cls-30, .cls-45, .cls-47 {
+        fill: #19a0e0;
+      }
+
+      .cls-30 {
+        opacity: 0.15;
+      }
+
+      .cls-31, .cls-32, .cls-35, .cls-43 {
+        fill: #fff;
+      }
+
+      .cls-31, .cls-33 {
+        stroke: #2378d9;
+      }
+
+      .cls-32, .cls-34 {
+        stroke: #1bb4f5;
+      }
+
+      .cls-36, .cls-52, .cls-53 {
+        fill: #12739c;
+      }
+
+      .cls-36, .cls-37, .cls-40 {
+        font-size: 8px;
+      }
+
+      .cls-37, .cls-54, .cls-55 {
+        fill: #c8c8c8;
+      }
+
+      .cls-38 {
+        fill: #ff0f0f;
+      }
+
+      .cls-40, .cls-44, .cls-50, .cls-51 {
+        fill: #b1b4c2;
+      }
+
+      .cls-41, .cls-42 {
+        opacity: 0.43;
+      }
+
+      .cls-41 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-42 {
+        fill: url(#linear-gradient-8);
+      }
+
+      .cls-43, .cls-48, .cls-49 {
+        stroke: #e4e7ed;
+      }
+
+      .cls-46, .cls-47 {
+        fill-rule: evenodd;
+      }
+
+      .cls-48 {
+        fill: #f9f9fc;
+      }
+
+      .cls-51, .cls-52, .cls-54 {
+        font-size: 6px;
+      }
+
+      .cls-56 {
+        stroke: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1" stop-color="#fe9292"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f70"/>
+      <stop offset="1" stop-color="#ffb370"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffd500"/>
+      <stop offset="1" stop-color="#f9e789"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="633" height="2"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-7" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="red" stop-opacity="0.341"/>
+      <stop offset="1" stop-color="red" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="0.535" y1="1" x2="0.535" y2="0" xlink:href="#linear-gradient-7"/>
+  </defs>
+  <g id="Group_1304" data-name="Group 1304" transform="translate(-265 -692)">
+    <rect id="Rectangle_2046" data-name="Rectangle 2046" class="cls-2" width="82" height="228" transform="translate(423 732)"/>
+    <rect id="Rectangle_2047" data-name="Rectangle 2047" class="cls-2" width="82" height="228" transform="translate(586 732)"/>
+    <rect id="Rectangle_2043" data-name="Rectangle 2043" class="cls-2" width="82" height="228" transform="translate(749 732)"/>
+    <line id="Line_1697" data-name="Line 1697" class="cls-3" y2="229" transform="translate(423.5 731.5)"/>
+    <line id="Line_1698" data-name="Line 1698" class="cls-3" y2="229" transform="translate(586.5 731.5)"/>
+    <line id="Line_1696" data-name="Line 1696" class="cls-3" y2="229" transform="translate(749.5 731.5)"/>
+    <line id="Line_1699" data-name="Line 1699" class="cls-4" y2="229" transform="translate(504.5 731.5)"/>
+    <line id="Line_1700" data-name="Line 1700" class="cls-4" y2="229" transform="translate(668.5 731.5)"/>
+    <line id="Line_1694" data-name="Line 1694" class="cls-5" x1="493.193" transform="translate(338.308 927.5)"/>
+    <line id="Line_1686" data-name="Line 1686" class="cls-5" x1="493.193" transform="translate(338.308 894.5)"/>
+    <line id="Line_1687" data-name="Line 1687" class="cls-5" x1="493.193" transform="translate(338.308 861.5)"/>
+    <line id="Line_1688" data-name="Line 1688" class="cls-5" x1="493.193" transform="translate(338.308 829.5)"/>
+    <line id="Line_1689" data-name="Line 1689" class="cls-5" x1="493.193" transform="translate(338.308 796.5)"/>
+    <line id="Line_1690" data-name="Line 1690" class="cls-5" x1="493.193" transform="translate(338.308 763.5)"/>
+    <line id="Line_1691" data-name="Line 1691" class="cls-5" x1="493.193" transform="translate(338.308 731.5)"/>
+    <line id="Line_1692" data-name="Line 1692" class="cls-4" y2="229" transform="translate(831.5 731.5)"/>
+    <line id="Line_1701" data-name="Line 1701" class="cls-6" y2="254" transform="translate(341.5 706.5)"/>
+    <path id="Path_1790" data-name="Path 1790" class="cls-7" d="M-722.533,1085.84l-2.268,3.968h4.875Z" transform="translate(1064 -382)"/>
+    <rect id="Rectangle_2048" data-name="Rectangle 2048" class="cls-8" width="18" height="123" transform="translate(373 838)"/>
+    <rect id="Rectangle_2049" data-name="Rectangle 2049" class="cls-9" width="18" height="57" transform="translate(455 904)"/>
+    <rect id="Rectangle_2045" data-name="Rectangle 2045" class="cls-9" width="18" height="29" transform="translate(700 932)"/>
+    <rect id="Rectangle_2050" data-name="Rectangle 2050" class="cls-10" width="18" height="175" transform="translate(537 786)"/>
+    <rect id="Rectangle_2051" data-name="Rectangle 2051" class="cls-10" width="18" height="212" transform="translate(618 749)"/>
+    <rect id="Rectangle_2044" data-name="Rectangle 2044" class="cls-8" width="18" height="52" transform="translate(782 909)"/>
+    <path id="Path_1789" data-name="Path 1789" class="cls-11" d="M-719.925,1328.5s14.374-.448,79.112,0c31.194,0,87.744-175.7,166.839-175.7s110.058,163.83,160.955,164.619c59.651.925,80.887,0,80.887,0" transform="translate(1064 -382)"/>
+    <text id="_0.0" data-name="0.0" class="cls-12" transform="translate(333 965)"><tspan x="-19.523" y="0">0.0</tspan></text>
+    <text id="_5.0" data-name="5.0" class="cls-12" transform="translate(333 933)"><tspan x="-19.523" y="0">5.0</tspan></text>
+    <text id="_10.0" data-name="10.0" class="cls-12" transform="translate(333 900)"><tspan x="-27.166" y="0">10.0</tspan></text>
+    <text id="_15.0" data-name="15.0" class="cls-12" transform="translate(333 867)"><tspan x="-27.166" y="0">15.0</tspan></text>
+    <text id="_20.0" data-name="20.0" class="cls-12" transform="translate(333 835)"><tspan x="-27.166" y="0">20.0</tspan></text>
+    <text id="_25.0" data-name="25.0" class="cls-12" transform="translate(333 802)"><tspan x="-27.166" y="0">25.0</tspan></text>
+    <text id="_30.0" data-name="30.0" class="cls-12" transform="translate(333 769)"><tspan x="-27.166" y="0">30.0</tspan></text>
+    <text id="_35.0" data-name="35.0" class="cls-12" transform="translate(333 737)"><tspan x="-27.166" y="0">35.0</tspan></text>
+    <text id="_19_0_" data-name="19,0%" class="cls-13" transform="translate(382 704)"><tspan x="-17.502" y="0">19,0%</tspan></text>
+    <text id="_9_2_" data-name="9,2%" class="cls-13" transform="translate(464 704)"><tspan x="-14.227" y="0">9,2%</tspan></text>
+    <text id="_27_0_" data-name="27,0%" class="cls-13" transform="translate(546 704)"><tspan x="-17.502" y="0">27,0%</tspan></text>
+    <text id="_32_5_" data-name="32,5%" class="cls-13" transform="translate(627 704)"><tspan x="-17.502" y="0">32,5%</tspan></text>
+    <text id="_4_5_" data-name="4,5%" class="cls-13" transform="translate(709 704)"><tspan x="-14.227" y="0">4,5%</tspan></text>
+    <text id="_7_9_" data-name="7,9%" class="cls-13" transform="translate(791 704)"><tspan x="-14.227" y="0">7,9%</tspan></text>
+    <text id="_1005_926г" data-name="1005,926г" class="cls-13" transform="translate(382 721)"><tspan x="-27.234" y="0">1005,926г</tspan></text>
+    <text id="Доля_массы_продукта_измеренного_с_расхожденями_каждой_категори_от_общей_массы_продукта" data-name="Доля массы продукта, измеренного с расхожденями
+каждой категори, % от общей массы продукта" class="cls-14" transform="translate(275 834) rotate(-90)"><tspan x="-120.989" y="0">Доля массы продукта, измеренного с расхожденями</tspan><tspan x="-108.147" y="12">каждой категори, % от общей массы продукта</tspan></text>
+    <text id="Категории_расхождения" data-name="Категории расхождения" class="cls-14" transform="translate(588 1009)"><tspan x="-55.586" y="0">Категории расхождения</tspan></text>
+    <text id="В-" class="cls-12" transform="translate(382 980)"><tspan x="-6.668" y="0">В-</tspan></text>
+    <text id="С-" class="cls-12" transform="translate(464 980)"><tspan x="-6.747" y="0">С-</tspan></text>
+    <text id="Н-" class="cls-12" transform="translate(546 980)"><tspan x="-7.27" y="0">Н-</tspan></text>
+    <text id="Н_" data-name="Н+" class="cls-12" transform="translate(627 980)"><tspan x="-9.82" y="0">Н+</tspan></text>
+    <text id="С_" data-name="С+" class="cls-12" transform="translate(709 980)"><tspan x="-9.297" y="0">С+</tspan></text>
+    <text id="В_" data-name="В+" class="cls-12" transform="translate(791 980)"><tspan x="-9.218" y="0">В+</tspan></text>
+    <text id="_487_322г" data-name="487,322г" class="cls-13" transform="translate(464 721)"><tspan x="-23.959" y="0">487,322г</tspan></text>
+    <text id="_1428_063г" data-name="1428,063г" class="cls-13" transform="translate(546 721)"><tspan x="-27.234" y="0">1428,063г</tspan></text>
+    <text id="_1719_738г" data-name="1719,738г" class="cls-13" transform="translate(627 721)"><tspan x="-27.234" y="0">1719,738г</tspan></text>
+    <text id="_238_144г" data-name="238,144г" class="cls-13" transform="translate(709 721)"><tspan x="-23.959" y="0">238,144г</tspan></text>
+    <text id="_415_938г" data-name="415,938г" class="cls-13" transform="translate(791 721)"><tspan x="-23.959" y="0">415,938г</tspan></text>
+    <line id="Line_1695" data-name="Line 1695" class="cls-5" x1="632" transform="translate(1241.308 932.5)"/>
+    <line id="Line_1684" data-name="Line 1684" class="cls-5" x1="632" transform="translate(1241.308 875.5)"/>
+    <line id="Line_1672" data-name="Line 1672" class="cls-15" x1="643.193" transform="translate(1241.308 847.5)"/>
+    <line id="Line_1673" data-name="Line 1673" class="cls-5" x1="632" transform="translate(1241.308 818.5)"/>
+    <g id="Repeat_Grid_20" data-name="Repeat Grid 20" class="cls-16" transform="translate(1240.308 788)">
+      <g transform="translate(-175.307 -1164.5)">
+        <path id="Path_1276" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-171.307 -1164.5)">
+        <path id="Path_1276-2" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-167.307 -1164.5)">
+        <path id="Path_1276-3" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-163.307 -1164.5)">
+        <path id="Path_1276-4" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-159.307 -1164.5)">
+        <path id="Path_1276-5" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-155.307 -1164.5)">
+        <path id="Path_1276-6" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-151.307 -1164.5)">
+        <path id="Path_1276-7" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-147.307 -1164.5)">
+        <path id="Path_1276-8" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-143.307 -1164.5)">
+        <path id="Path_1276-9" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-139.307 -1164.5)">
+        <path id="Path_1276-10" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-135.307 -1164.5)">
+        <path id="Path_1276-11" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-131.307 -1164.5)">
+        <path id="Path_1276-12" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-127.307 -1164.5)">
+        <path id="Path_1276-13" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-123.307 -1164.5)">
+        <path id="Path_1276-14" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-119.307 -1164.5)">
+        <path id="Path_1276-15" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-115.307 -1164.5)">
+        <path id="Path_1276-16" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-111.307 -1164.5)">
+        <path id="Path_1276-17" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-107.307 -1164.5)">
+        <path id="Path_1276-18" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-103.307 -1164.5)">
+        <path id="Path_1276-19" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-99.307 -1164.5)">
+        <path id="Path_1276-20" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-95.307 -1164.5)">
+        <path id="Path_1276-21" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-91.307 -1164.5)">
+        <path id="Path_1276-22" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-87.307 -1164.5)">
+        <path id="Path_1276-23" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-83.307 -1164.5)">
+        <path id="Path_1276-24" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-79.307 -1164.5)">
+        <path id="Path_1276-25" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-75.307 -1164.5)">
+        <path id="Path_1276-26" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-71.307 -1164.5)">
+        <path id="Path_1276-27" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-67.307 -1164.5)">
+        <path id="Path_1276-28" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-63.307 -1164.5)">
+        <path id="Path_1276-29" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-59.307 -1164.5)">
+        <path id="Path_1276-30" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-55.307 -1164.5)">
+        <path id="Path_1276-31" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-51.307 -1164.5)">
+        <path id="Path_1276-32" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-47.307 -1164.5)">
+        <path id="Path_1276-33" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-43.307 -1164.5)">
+        <path id="Path_1276-34" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-39.307 -1164.5)">
+        <path id="Path_1276-35" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-35.307 -1164.5)">
+        <path id="Path_1276-36" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-31.307 -1164.5)">
+        <path id="Path_1276-37" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-27.307 -1164.5)">
+        <path id="Path_1276-38" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-23.307 -1164.5)">
+        <path id="Path_1276-39" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-19.307 -1164.5)">
+        <path id="Path_1276-40" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-15.307 -1164.5)">
+        <path id="Path_1276-41" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-11.307 -1164.5)">
+        <path id="Path_1276-42" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-7.307 -1164.5)">
+        <path id="Path_1276-43" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-3.307 -1164.5)">
+        <path id="Path_1276-44" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(0.693 -1164.5)">
+        <path id="Path_1276-45" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(4.693 -1164.5)">
+        <path id="Path_1276-46" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(8.693 -1164.5)">
+        <path id="Path_1276-47" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(12.693 -1164.5)">
+        <path id="Path_1276-48" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(16.693 -1164.5)">
+        <path id="Path_1276-49" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(20.693 -1164.5)">
+        <path id="Path_1276-50" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(24.693 -1164.5)">
+        <path id="Path_1276-51" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(28.693 -1164.5)">
+        <path id="Path_1276-52" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(32.693 -1164.5)">
+        <path id="Path_1276-53" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(36.693 -1164.5)">
+        <path id="Path_1276-54" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(40.693 -1164.5)">
+        <path id="Path_1276-55" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(44.693 -1164.5)">
+        <path id="Path_1276-56" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(48.693 -1164.5)">
+        <path id="Path_1276-57" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(52.693 -1164.5)">
+        <path id="Path_1276-58" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(56.693 -1164.5)">
+        <path id="Path_1276-59" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(60.693 -1164.5)">
+        <path id="Path_1276-60" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(64.693 -1164.5)">
+        <path id="Path_1276-61" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(68.693 -1164.5)">
+        <path id="Path_1276-62" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(72.693 -1164.5)">
+        <path id="Path_1276-63" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(76.693 -1164.5)">
+        <path id="Path_1276-64" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(80.693 -1164.5)">
+        <path id="Path_1276-65" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(84.693 -1164.5)">
+        <path id="Path_1276-66" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(88.693 -1164.5)">
+        <path id="Path_1276-67" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(92.693 -1164.5)">
+        <path id="Path_1276-68" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(96.693 -1164.5)">
+        <path id="Path_1276-69" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(100.693 -1164.5)">
+        <path id="Path_1276-70" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(104.693 -1164.5)">
+        <path id="Path_1276-71" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(108.693 -1164.5)">
+        <path id="Path_1276-72" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(112.693 -1164.5)">
+        <path id="Path_1276-73" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(116.693 -1164.5)">
+        <path id="Path_1276-74" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(120.693 -1164.5)">
+        <path id="Path_1276-75" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(124.693 -1164.5)">
+        <path id="Path_1276-76" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(128.693 -1164.5)">
+        <path id="Path_1276-77" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(132.693 -1164.5)">
+        <path id="Path_1276-78" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(136.693 -1164.5)">
+        <path id="Path_1276-79" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(140.693 -1164.5)">
+        <path id="Path_1276-80" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(144.693 -1164.5)">
+        <path id="Path_1276-81" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(148.693 -1164.5)">
+        <path id="Path_1276-82" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(152.693 -1164.5)">
+        <path id="Path_1276-83" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(156.693 -1164.5)">
+        <path id="Path_1276-84" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(160.693 -1164.5)">
+        <path id="Path_1276-85" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(164.693 -1164.5)">
+        <path id="Path_1276-86" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(168.693 -1164.5)">
+        <path id="Path_1276-87" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(172.693 -1164.5)">
+        <path id="Path_1276-88" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(176.693 -1164.5)">
+        <path id="Path_1276-89" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(180.693 -1164.5)">
+        <path id="Path_1276-90" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(184.693 -1164.5)">
+        <path id="Path_1276-91" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(188.693 -1164.5)">
+        <path id="Path_1276-92" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(192.693 -1164.5)">
+        <path id="Path_1276-93" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(196.693 -1164.5)">
+        <path id="Path_1276-94" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(200.693 -1164.5)">
+        <path id="Path_1276-95" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(204.693 -1164.5)">
+        <path id="Path_1276-96" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(208.693 -1164.5)">
+        <path id="Path_1276-97" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(212.693 -1164.5)">
+        <path id="Path_1276-98" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(216.693 -1164.5)">
+        <path id="Path_1276-99" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(220.693 -1164.5)">
+        <path id="Path_1276-100" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(224.693 -1164.5)">
+        <path id="Path_1276-101" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(228.693 -1164.5)">
+        <path id="Path_1276-102" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(232.693 -1164.5)">
+        <path id="Path_1276-103" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(236.693 -1164.5)">
+        <path id="Path_1276-104" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(240.693 -1164.5)">
+        <path id="Path_1276-105" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(244.693 -1164.5)">
+        <path id="Path_1276-106" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(248.693 -1164.5)">
+        <path id="Path_1276-107" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(252.693 -1164.5)">
+        <path id="Path_1276-108" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(256.693 -1164.5)">
+        <path id="Path_1276-109" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(260.693 -1164.5)">
+        <path id="Path_1276-110" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(264.693 -1164.5)">
+        <path id="Path_1276-111" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(268.693 -1164.5)">
+        <path id="Path_1276-112" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(272.693 -1164.5)">
+        <path id="Path_1276-113" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(276.693 -1164.5)">
+        <path id="Path_1276-114" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(280.693 -1164.5)">
+        <path id="Path_1276-115" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(284.693 -1164.5)">
+        <path id="Path_1276-116" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(288.693 -1164.5)">
+        <path id="Path_1276-117" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(292.693 -1164.5)">
+        <path id="Path_1276-118" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(296.693 -1164.5)">
+        <path id="Path_1276-119" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(300.693 -1164.5)">
+        <path id="Path_1276-120" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(304.693 -1164.5)">
+        <path id="Path_1276-121" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(308.693 -1164.5)">
+        <path id="Path_1276-122" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(312.693 -1164.5)">
+        <path id="Path_1276-123" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(316.693 -1164.5)">
+        <path id="Path_1276-124" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(320.693 -1164.5)">
+        <path id="Path_1276-125" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(324.693 -1164.5)">
+        <path id="Path_1276-126" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(328.693 -1164.5)">
+        <path id="Path_1276-127" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(332.693 -1164.5)">
+        <path id="Path_1276-128" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(336.693 -1164.5)">
+        <path id="Path_1276-129" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(340.693 -1164.5)">
+        <path id="Path_1276-130" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(344.693 -1164.5)">
+        <path id="Path_1276-131" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(348.693 -1164.5)">
+        <path id="Path_1276-132" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(352.693 -1164.5)">
+        <path id="Path_1276-133" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(356.693 -1164.5)">
+        <path id="Path_1276-134" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(360.693 -1164.5)">
+        <path id="Path_1276-135" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(364.693 -1164.5)">
+        <path id="Path_1276-136" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(368.693 -1164.5)">
+        <path id="Path_1276-137" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(372.693 -1164.5)">
+        <path id="Path_1276-138" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(376.693 -1164.5)">
+        <path id="Path_1276-139" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(380.693 -1164.5)">
+        <path id="Path_1276-140" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(384.693 -1164.5)">
+        <path id="Path_1276-141" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(388.693 -1164.5)">
+        <path id="Path_1276-142" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(392.693 -1164.5)">
+        <path id="Path_1276-143" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(396.693 -1164.5)">
+        <path id="Path_1276-144" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(400.693 -1164.5)">
+        <path id="Path_1276-145" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(404.693 -1164.5)">
+        <path id="Path_1276-146" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(408.693 -1164.5)">
+        <path id="Path_1276-147" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(412.693 -1164.5)">
+        <path id="Path_1276-148" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(416.693 -1164.5)">
+        <path id="Path_1276-149" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(420.693 -1164.5)">
+        <path id="Path_1276-150" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(424.693 -1164.5)">
+        <path id="Path_1276-151" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(428.693 -1164.5)">
+        <path id="Path_1276-152" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(432.693 -1164.5)">
+        <path id="Path_1276-153" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(436.693 -1164.5)">
+        <path id="Path_1276-154" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(440.693 -1164.5)">
+        <path id="Path_1276-155" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(444.693 -1164.5)">
+        <path id="Path_1276-156" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(448.693 -1164.5)">
+        <path id="Path_1276-157" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(452.693 -1164.5)">
+        <path id="Path_1276-158" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(456.693 -1164.5)">
+        <path id="Path_1276-159" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_21" data-name="Repeat Grid 21" class="cls-16" transform="translate(1240.308 903)">
+      <g transform="translate(-175.307 -1164.5)">
+        <path id="Path_1276-160" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-171.307 -1164.5)">
+        <path id="Path_1276-161" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-167.307 -1164.5)">
+        <path id="Path_1276-162" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-163.307 -1164.5)">
+        <path id="Path_1276-163" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-159.307 -1164.5)">
+        <path id="Path_1276-164" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-155.307 -1164.5)">
+        <path id="Path_1276-165" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-151.307 -1164.5)">
+        <path id="Path_1276-166" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-147.307 -1164.5)">
+        <path id="Path_1276-167" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-143.307 -1164.5)">
+        <path id="Path_1276-168" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-139.307 -1164.5)">
+        <path id="Path_1276-169" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-135.307 -1164.5)">
+        <path id="Path_1276-170" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-131.307 -1164.5)">
+        <path id="Path_1276-171" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-127.307 -1164.5)">
+        <path id="Path_1276-172" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-123.307 -1164.5)">
+        <path id="Path_1276-173" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-119.307 -1164.5)">
+        <path id="Path_1276-174" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-115.307 -1164.5)">
+        <path id="Path_1276-175" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-111.307 -1164.5)">
+        <path id="Path_1276-176" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-107.307 -1164.5)">
+        <path id="Path_1276-177" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-103.307 -1164.5)">
+        <path id="Path_1276-178" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-99.307 -1164.5)">
+        <path id="Path_1276-179" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-95.307 -1164.5)">
+        <path id="Path_1276-180" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-91.307 -1164.5)">
+        <path id="Path_1276-181" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-87.307 -1164.5)">
+        <path id="Path_1276-182" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-83.307 -1164.5)">
+        <path id="Path_1276-183" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-79.307 -1164.5)">
+        <path id="Path_1276-184" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-75.307 -1164.5)">
+        <path id="Path_1276-185" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-71.307 -1164.5)">
+        <path id="Path_1276-186" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-67.307 -1164.5)">
+        <path id="Path_1276-187" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-63.307 -1164.5)">
+        <path id="Path_1276-188" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-59.307 -1164.5)">
+        <path id="Path_1276-189" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-55.307 -1164.5)">
+        <path id="Path_1276-190" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-51.307 -1164.5)">
+        <path id="Path_1276-191" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-47.307 -1164.5)">
+        <path id="Path_1276-192" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-43.307 -1164.5)">
+        <path id="Path_1276-193" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-39.307 -1164.5)">
+        <path id="Path_1276-194" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-35.307 -1164.5)">
+        <path id="Path_1276-195" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-31.307 -1164.5)">
+        <path id="Path_1276-196" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-27.307 -1164.5)">
+        <path id="Path_1276-197" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-23.307 -1164.5)">
+        <path id="Path_1276-198" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-19.307 -1164.5)">
+        <path id="Path_1276-199" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-15.307 -1164.5)">
+        <path id="Path_1276-200" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-11.307 -1164.5)">
+        <path id="Path_1276-201" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-7.307 -1164.5)">
+        <path id="Path_1276-202" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(-3.307 -1164.5)">
+        <path id="Path_1276-203" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(0.693 -1164.5)">
+        <path id="Path_1276-204" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(4.693 -1164.5)">
+        <path id="Path_1276-205" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(8.693 -1164.5)">
+        <path id="Path_1276-206" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(12.693 -1164.5)">
+        <path id="Path_1276-207" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(16.693 -1164.5)">
+        <path id="Path_1276-208" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(20.693 -1164.5)">
+        <path id="Path_1276-209" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(24.693 -1164.5)">
+        <path id="Path_1276-210" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(28.693 -1164.5)">
+        <path id="Path_1276-211" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(32.693 -1164.5)">
+        <path id="Path_1276-212" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(36.693 -1164.5)">
+        <path id="Path_1276-213" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(40.693 -1164.5)">
+        <path id="Path_1276-214" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(44.693 -1164.5)">
+        <path id="Path_1276-215" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(48.693 -1164.5)">
+        <path id="Path_1276-216" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(52.693 -1164.5)">
+        <path id="Path_1276-217" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(56.693 -1164.5)">
+        <path id="Path_1276-218" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(60.693 -1164.5)">
+        <path id="Path_1276-219" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(64.693 -1164.5)">
+        <path id="Path_1276-220" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(68.693 -1164.5)">
+        <path id="Path_1276-221" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(72.693 -1164.5)">
+        <path id="Path_1276-222" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(76.693 -1164.5)">
+        <path id="Path_1276-223" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(80.693 -1164.5)">
+        <path id="Path_1276-224" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(84.693 -1164.5)">
+        <path id="Path_1276-225" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(88.693 -1164.5)">
+        <path id="Path_1276-226" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(92.693 -1164.5)">
+        <path id="Path_1276-227" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(96.693 -1164.5)">
+        <path id="Path_1276-228" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(100.693 -1164.5)">
+        <path id="Path_1276-229" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(104.693 -1164.5)">
+        <path id="Path_1276-230" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(108.693 -1164.5)">
+        <path id="Path_1276-231" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(112.693 -1164.5)">
+        <path id="Path_1276-232" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(116.693 -1164.5)">
+        <path id="Path_1276-233" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(120.693 -1164.5)">
+        <path id="Path_1276-234" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(124.693 -1164.5)">
+        <path id="Path_1276-235" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(128.693 -1164.5)">
+        <path id="Path_1276-236" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(132.693 -1164.5)">
+        <path id="Path_1276-237" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(136.693 -1164.5)">
+        <path id="Path_1276-238" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(140.693 -1164.5)">
+        <path id="Path_1276-239" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(144.693 -1164.5)">
+        <path id="Path_1276-240" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(148.693 -1164.5)">
+        <path id="Path_1276-241" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(152.693 -1164.5)">
+        <path id="Path_1276-242" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(156.693 -1164.5)">
+        <path id="Path_1276-243" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(160.693 -1164.5)">
+        <path id="Path_1276-244" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(164.693 -1164.5)">
+        <path id="Path_1276-245" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(168.693 -1164.5)">
+        <path id="Path_1276-246" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(172.693 -1164.5)">
+        <path id="Path_1276-247" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(176.693 -1164.5)">
+        <path id="Path_1276-248" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(180.693 -1164.5)">
+        <path id="Path_1276-249" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(184.693 -1164.5)">
+        <path id="Path_1276-250" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(188.693 -1164.5)">
+        <path id="Path_1276-251" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(192.693 -1164.5)">
+        <path id="Path_1276-252" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(196.693 -1164.5)">
+        <path id="Path_1276-253" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(200.693 -1164.5)">
+        <path id="Path_1276-254" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(204.693 -1164.5)">
+        <path id="Path_1276-255" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(208.693 -1164.5)">
+        <path id="Path_1276-256" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(212.693 -1164.5)">
+        <path id="Path_1276-257" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(216.693 -1164.5)">
+        <path id="Path_1276-258" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(220.693 -1164.5)">
+        <path id="Path_1276-259" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(224.693 -1164.5)">
+        <path id="Path_1276-260" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(228.693 -1164.5)">
+        <path id="Path_1276-261" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(232.693 -1164.5)">
+        <path id="Path_1276-262" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(236.693 -1164.5)">
+        <path id="Path_1276-263" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(240.693 -1164.5)">
+        <path id="Path_1276-264" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(244.693 -1164.5)">
+        <path id="Path_1276-265" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(248.693 -1164.5)">
+        <path id="Path_1276-266" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(252.693 -1164.5)">
+        <path id="Path_1276-267" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(256.693 -1164.5)">
+        <path id="Path_1276-268" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(260.693 -1164.5)">
+        <path id="Path_1276-269" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(264.693 -1164.5)">
+        <path id="Path_1276-270" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(268.693 -1164.5)">
+        <path id="Path_1276-271" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(272.693 -1164.5)">
+        <path id="Path_1276-272" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(276.693 -1164.5)">
+        <path id="Path_1276-273" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(280.693 -1164.5)">
+        <path id="Path_1276-274" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(284.693 -1164.5)">
+        <path id="Path_1276-275" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(288.693 -1164.5)">
+        <path id="Path_1276-276" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(292.693 -1164.5)">
+        <path id="Path_1276-277" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(296.693 -1164.5)">
+        <path id="Path_1276-278" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(300.693 -1164.5)">
+        <path id="Path_1276-279" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(304.693 -1164.5)">
+        <path id="Path_1276-280" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(308.693 -1164.5)">
+        <path id="Path_1276-281" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(312.693 -1164.5)">
+        <path id="Path_1276-282" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(316.693 -1164.5)">
+        <path id="Path_1276-283" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(320.693 -1164.5)">
+        <path id="Path_1276-284" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(324.693 -1164.5)">
+        <path id="Path_1276-285" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(328.693 -1164.5)">
+        <path id="Path_1276-286" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(332.693 -1164.5)">
+        <path id="Path_1276-287" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(336.693 -1164.5)">
+        <path id="Path_1276-288" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(340.693 -1164.5)">
+        <path id="Path_1276-289" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(344.693 -1164.5)">
+        <path id="Path_1276-290" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(348.693 -1164.5)">
+        <path id="Path_1276-291" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(352.693 -1164.5)">
+        <path id="Path_1276-292" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(356.693 -1164.5)">
+        <path id="Path_1276-293" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(360.693 -1164.5)">
+        <path id="Path_1276-294" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(364.693 -1164.5)">
+        <path id="Path_1276-295" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(368.693 -1164.5)">
+        <path id="Path_1276-296" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(372.693 -1164.5)">
+        <path id="Path_1276-297" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(376.693 -1164.5)">
+        <path id="Path_1276-298" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(380.693 -1164.5)">
+        <path id="Path_1276-299" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(384.693 -1164.5)">
+        <path id="Path_1276-300" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(388.693 -1164.5)">
+        <path id="Path_1276-301" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(392.693 -1164.5)">
+        <path id="Path_1276-302" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(396.693 -1164.5)">
+        <path id="Path_1276-303" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(400.693 -1164.5)">
+        <path id="Path_1276-304" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(404.693 -1164.5)">
+        <path id="Path_1276-305" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(408.693 -1164.5)">
+        <path id="Path_1276-306" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(412.693 -1164.5)">
+        <path id="Path_1276-307" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(416.693 -1164.5)">
+        <path id="Path_1276-308" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(420.693 -1164.5)">
+        <path id="Path_1276-309" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(424.693 -1164.5)">
+        <path id="Path_1276-310" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(428.693 -1164.5)">
+        <path id="Path_1276-311" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(432.693 -1164.5)">
+        <path id="Path_1276-312" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(436.693 -1164.5)">
+        <path id="Path_1276-313" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(440.693 -1164.5)">
+        <path id="Path_1276-314" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(444.693 -1164.5)">
+        <path id="Path_1276-315" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(448.693 -1164.5)">
+        <path id="Path_1276-316" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(452.693 -1164.5)">
+        <path id="Path_1276-317" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+      <g transform="translate(456.693 -1164.5)">
+        <path id="Path_1276-318" data-name="Path 1276" class="cls-17" d="M2,0H0" transform="translate(175.307 1165.5)"/>
+      </g>
+    </g>
+    <line id="Line_1660" data-name="Line 1660" class="cls-5" x1="632" transform="translate(1241.308 731.5)"/>
+    <line id="Line_1661" data-name="Line 1661" class="cls-18" x1="632" transform="translate(1241.308 759.5)"/>
+    <line id="Line_1674" data-name="Line 1674" class="cls-19" y2="254" transform="translate(1244.5 706.5)"/>
+    <line id="Line_1675" data-name="Line 1675" class="cls-20" y2="229" transform="translate(1286.5 731.5)"/>
+    <line id="Line_1676" data-name="Line 1676" class="cls-20" y2="229" transform="translate(1328.5 731.5)"/>
+    <line id="Line_1677" data-name="Line 1677" class="cls-20" y2="229" transform="translate(1370.5 731.5)"/>
+    <line id="Line_1678" data-name="Line 1678" class="cls-20" y2="229" transform="translate(1412.5 731.5)"/>
+    <line id="Line_1679" data-name="Line 1679" class="cls-20" y2="229" transform="translate(1454.5 731.5)"/>
+    <line id="Line_1662" data-name="Line 1662" class="cls-20" y2="229" transform="translate(1496.5 731.5)"/>
+    <line id="Line_1663" data-name="Line 1663" class="cls-20" y2="229" transform="translate(1538.5 731.5)"/>
+    <line id="Line_1664" data-name="Line 1664" class="cls-20" y2="229" transform="translate(1579.5 731.5)"/>
+    <line id="Line_1665" data-name="Line 1665" class="cls-20" y2="229" transform="translate(1621.5 731.5)"/>
+    <line id="Line_1666" data-name="Line 1666" class="cls-20" y2="229" transform="translate(1663.5 731.5)"/>
+    <line id="Line_1667" data-name="Line 1667" class="cls-20" y2="229" transform="translate(1705.5 731.5)"/>
+    <line id="Line_1668" data-name="Line 1668" class="cls-20" y2="229" transform="translate(1747.5 731.5)"/>
+    <line id="Line_1669" data-name="Line 1669" class="cls-20" y2="229" transform="translate(1789.5 731.5)"/>
+    <line id="Line_1670" data-name="Line 1670" class="cls-20" y2="229" transform="translate(1831.5 731.5)"/>
+    <line id="Line_1671" data-name="Line 1671" class="cls-20" y2="229" transform="translate(1873.5 731.5)"/>
+    <text id="_0_5" data-name="+0,5" class="cls-21" transform="translate(1233 736)"><tspan x="-25.465" y="0">+0,5</tspan></text>
+    <text id="_" data-name="%" class="cls-13" transform="translate(1233 710)"><tspan x="-11.719" y="0">%</tspan></text>
+    <text id="дни" class="cls-22" transform="translate(1896.5 963.5)"><tspan x="-16.846" y="0">дни</tspan></text>
+    <text id="_-0_5" data-name="-0,5" class="cls-21" transform="translate(1233 964)"><tspan x="-21.094" y="0">-0,5</tspan></text>
+    <text id="_2.01" data-name="2.01" class="cls-13" transform="translate(1276 978)"><tspan x="-23.285" y="0">2.01</tspan></text>
+    <text id="_5.01" data-name="5.01" class="cls-13" transform="translate(1317 978)"><tspan x="-23.285" y="0">5.01</tspan></text>
+    <text id="_8.01" data-name="8.01" class="cls-13" transform="translate(1360 978)"><tspan x="-23.285" y="0">8.01</tspan></text>
+    <text id="_11.01" data-name="11.01" class="cls-13" transform="translate(1390 978)"><tspan x="-14.918" y="0">11.01</tspan></text>
+    <text id="_15.01" data-name="15.01" class="cls-13" transform="translate(1433 978)"><tspan x="-14.918" y="0">15.01</tspan></text>
+    <text id="_21.01" data-name="21.01" class="cls-13" transform="translate(1473 978)"><tspan x="-14.918" y="0">21.01</tspan></text>
+    <text id="_27.01" data-name="27.01" class="cls-13" transform="translate(1559 978)"><tspan x="-14.918" y="0">27.01</tspan></text>
+    <text id="_30.01" data-name="30.01" class="cls-13" transform="translate(1599 978)"><tspan x="-14.918" y="0">30.01</tspan></text>
+    <text id="_2.02" data-name="2.02" class="cls-13" transform="translate(1641 978)"><tspan x="-11.643" y="0">2.02</tspan></text>
+    <text id="_5.02" data-name="5.02" class="cls-13" transform="translate(1684 978)"><tspan x="-11.643" y="0">5.02</tspan></text>
+    <text id="_12.02" data-name="12.02" class="cls-13" transform="translate(1727 978)"><tspan x="-14.918" y="0">12.02</tspan></text>
+    <text id="_21.02" data-name="21.02" class="cls-13" transform="translate(1810 978)"><tspan x="-14.918" y="0">21.02</tspan></text>
+    <text id="_25.02" data-name="25.02" class="cls-23" transform="translate(1853 978)"><tspan x="-14.918" y="0">25.02</tspan></text>
+    <text id="_24.01" data-name="24.01" class="cls-24" transform="translate(1516 978)"><tspan x="-14.918" y="0">24.01</tspan></text>
+    <text id="_16.02" data-name="16.02" class="cls-24" transform="translate(1767 978)"><tspan x="-14.918" y="0">16.02</tspan></text>
+    <text id="_0_375" data-name="+0,375" class="cls-21" transform="translate(1233 764)"><tspan x="-38.566" y="0">+0,375</tspan></text>
+    <text id="_-0_375" data-name="-0,375" class="cls-21" transform="translate(1233 937)"><tspan x="-34.195" y="0">-0,375</tspan></text>
+    <text id="_0_125" data-name="+0,125" class="cls-21" transform="translate(1233 823)"><tspan x="-38.566" y="0">+0,125</tspan></text>
+    <text id="_-0_125" data-name="-0,125" class="cls-21" transform="translate(1233 881)"><tspan x="-34.195" y="0">-0,125</tspan></text>
+    <text id="_0" data-name="0" class="cls-13" transform="translate(1233 849)"><tspan x="-6.551" y="0">0</tspan></text>
+    <text id="_0_25" data-name="+0,25" class="cls-25" transform="translate(1233 792)"><tspan x="-32.016" y="0">+0,25</tspan></text>
+    <text id="_-0_25" data-name="-0,25" class="cls-25" transform="translate(1233 909)"><tspan x="-27.645" y="0">-0,25</tspan></text>
+    <path id="Path_1787" data-name="Path 1787" class="cls-26" d="M-722.533,1085.84l-2.268,3.968h4.875Z" transform="translate(1967 -383)"/>
+    <path id="Path_1788" data-name="Path 1788" class="cls-7" d="M-722.533,1085.84l-2.268,3.968h4.875Z" transform="translate(2973.461 1570.186) rotate(90)"/>
+    <rect id="Rectangle_2009" data-name="Rectangle 2009" class="cls-27" width="10" height="6.818" transform="translate(1255 847.5)"/>
+    <rect id="Rectangle_2010" data-name="Rectangle 2010" class="cls-27" width="10" height="9.575" transform="translate(1424 847.5)"/>
+    <rect id="Rectangle_2011" data-name="Rectangle 2011" class="cls-27" width="10" height="17.367" transform="translate(1466 847.5)"/>
+    <rect id="Rectangle_2012" data-name="Rectangle 2012" class="cls-27" width="10" height="42.807" transform="translate(1507 847.5)"/>
+    <rect id="Rectangle_2013" data-name="Rectangle 2013" class="cls-27" width="10" height="21.404" transform="translate(1632 847.5)"/>
+    <rect id="Rectangle_2014" data-name="Rectangle 2014" class="cls-27" width="10" height="52.69" transform="translate(1675 847.5)"/>
+    <rect id="Rectangle_2015" data-name="Rectangle 2015" class="cls-27" width="10" height="19.739" transform="translate(1800 847.5)"/>
+    <rect id="Rectangle_2016" data-name="Rectangle 2016" class="cls-27" width="10" height="49.926" transform="translate(1842 847.5)"/>
+    <rect id="Rectangle_2017" data-name="Rectangle 2017" class="cls-27" width="10" height="19.294" transform="translate(1296 828.206)"/>
+    <rect id="Rectangle_2018" data-name="Rectangle 2018" class="cls-27" width="10" height="51.121" transform="translate(1338 796.378)"/>
+    <rect id="Rectangle_2019" data-name="Rectangle 2019" class="cls-27" width="10" height="58.682" transform="translate(1381 788.817)"/>
+    <rect id="Rectangle_2020" data-name="Rectangle 2020" class="cls-27" width="10" height="19.262" transform="translate(1547 828.238)"/>
+    <rect id="Rectangle_2021" data-name="Rectangle 2021" class="cls-27" width="10" height="50.653" transform="translate(1589 796.846)"/>
+    <rect id="Rectangle_2022" data-name="Rectangle 2022" class="cls-27" width="10" height="28.018" transform="translate(1717 819.481)"/>
+    <rect id="Rectangle_1999" data-name="Rectangle 1999" class="cls-27" width="10" height="58.84" transform="translate(1759 788.66)"/>
+    <rect id="Rectangle_2000" data-name="Rectangle 2000" class="cls-28" width="10" height="43.184" transform="translate(1759 746.388)"/>
+    <rect id="Rectangle_2023" data-name="Rectangle 2023" class="cls-28" width="10" height="7.182" transform="translate(1381 781.817)"/>
+    <rect id="Rectangle_2024" data-name="Rectangle 2024" class="cls-29" width="10" height="10.714" transform="translate(1266 847.5)"/>
+    <rect id="Rectangle_2025" data-name="Rectangle 2025" class="cls-29" width="10" height="21.865" transform="translate(1435 847.5)"/>
+    <rect id="Rectangle_2026" data-name="Rectangle 2026" class="cls-29" width="10" height="3.359" transform="translate(1477 847.5)"/>
+    <rect id="Rectangle_2027" data-name="Rectangle 2027" class="cls-29" width="10" height="56.005" transform="translate(1518 847.5)"/>
+    <rect id="Rectangle_2028" data-name="Rectangle 2028" class="cls-29" width="10" height="30.925" transform="translate(1643 847.5)"/>
+    <rect id="Rectangle_2029" data-name="Rectangle 2029" class="cls-29" width="10" height="23.531" transform="translate(1686 847.5)"/>
+    <rect id="Rectangle_2030" data-name="Rectangle 2030" class="cls-29" width="10" height="31.435" transform="translate(1811 847.5)"/>
+    <rect id="Rectangle_2031" data-name="Rectangle 2031" class="cls-29" width="10" height="57.242" transform="translate(1853 847.5)"/>
+    <rect id="Rectangle_2040" data-name="Rectangle 2040" class="cls-28" width="10" height="9.742" transform="translate(1853 904)"/>
+    <rect id="Rectangle_2041" data-name="Rectangle 2041" class="cls-28" width="10" height="6.499" transform="translate(1518 903)"/>
+    <rect id="Rectangle_2032" data-name="Rectangle 2032" class="cls-29" width="10" height="30.319" transform="translate(1307 817.181)"/>
+    <rect id="Rectangle_2033" data-name="Rectangle 2033" class="cls-29" width="10" height="22.105" transform="translate(1349 825.395)"/>
+    <rect id="Rectangle_2034" data-name="Rectangle 2034" class="cls-29" width="10" height="44.449" transform="translate(1392 803.05)"/>
+    <rect id="Rectangle_2035" data-name="Rectangle 2035" class="cls-29" width="10" height="29.084" transform="translate(1558 818.416)"/>
+    <rect id="Rectangle_2036" data-name="Rectangle 2036" class="cls-29" width="10" height="22.225" transform="translate(1600 825.275)"/>
+    <rect id="Rectangle_2037" data-name="Rectangle 2037" class="cls-29" width="10" height="48.228" transform="translate(1728 799.272)"/>
+    <rect id="Rectangle_2001" data-name="Rectangle 2001" class="cls-29" width="10" height="58.191" transform="translate(1770 789.309)"/>
+    <rect id="Rectangle_2002" data-name="Rectangle 2002" class="cls-28" width="10" height="57.276" transform="translate(1770 732.296)"/>
+    <rect id="Rectangle_2003" data-name="Rectangle 2003" class="cls-30" width="41" height="229" transform="translate(1832 731)"/>
+    <line id="Line_1702" data-name="Line 1702" class="cls-19" x1="633.193" transform="translate(1241.308 960.5)"/>
+    <g id="Rectangle_2004" data-name="Rectangle 2004" class="cls-31" transform="translate(1641 699)">
+      <rect class="cls-56" width="112" height="22" rx="4"/>
+      <rect class="cls-1" x="0.5" y="0.5" width="111" height="21" rx="3.5"/>
+    </g>
+    <g id="Rectangle_2005" data-name="Rectangle 2005" class="cls-32" transform="translate(1763 699)">
+      <rect class="cls-56" width="112" height="22" rx="4"/>
+      <rect class="cls-1" x="0.5" y="0.5" width="111" height="21" rx="3.5"/>
+    </g>
+    <g id="Rectangle_2006" data-name="Rectangle 2006" class="cls-33" transform="translate(1641 699)">
+      <path class="cls-56" d="M4,0H59a0,0,0,0,1,0,0V22a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z"/>
+      <path class="cls-1" d="M4,.5H58a.5.5,0,0,1,.5.5V21a.5.5,0,0,1-.5.5H4A3.5,3.5,0,0,1,.5,18V4A3.5,3.5,0,0,1,4,.5Z"/>
+    </g>
+    <g id="Rectangle_2007" data-name="Rectangle 2007" class="cls-34" transform="translate(1763 699)">
+      <path class="cls-56" d="M4,0H59a0,0,0,0,1,0,0V22a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z"/>
+      <path class="cls-1" d="M4,.5H58a.5.5,0,0,1,.5.5V21a.5.5,0,0,1-.5.5H4A3.5,3.5,0,0,1,.5,18V4A3.5,3.5,0,0,1,4,.5Z"/>
+    </g>
+    <text id="_-7_010" data-name="-7 010" class="cls-35" transform="translate(1670 709)"><tspan x="-14.297" y="0">-7 010</tspan></text>
+    <text id="_-7_010-2" data-name="-7 010" class="cls-35" transform="translate(1792 709.348)"><tspan x="-14.297" y="0">-7 010</tspan></text>
+    <text id="_6_500" data-name="6 500" class="cls-36" transform="translate(1784 718.348)"><tspan x="0" y="0">6 500</tspan></text>
+    <text id="_6_500-2" data-name="6 500" class="cls-37" transform="translate(1663 718.348)"><tspan x="0" y="0">6 500</tspan></text>
+    <text id="_-0_27_" data-name="-0,27%" class="cls-38" transform="translate(1848 709.348)"><tspan x="-16.401" y="0">-0,27%</tspan></text>
+    <text id="_-0_23_" data-name="-0,23%" class="cls-39" transform="translate(1728 709.348)"><tspan x="-16.401" y="0">-0,23%</tspan></text>
+    <text id="_0_25_" data-name="0,25%" class="cls-40" transform="translate(1717 718)"><tspan x="0" y="0">0,25%</tspan></text>
+    <text id="_0_25_2" data-name="0,25%" class="cls-40" transform="translate(1839 718)"><tspan x="0" y="0">0,25%</tspan></text>
+    <rect id="Rectangle_2042" data-name="Rectangle 2042" class="cls-41" width="629" height="57" transform="translate(1245 904)"/>
+    <rect id="Rectangle_2008" data-name="Rectangle 2008" class="cls-42" width="629" height="57" transform="translate(1245 732)"/>
+    <g id="Rectangle_2053" data-name="Rectangle 2053" class="cls-43" transform="translate(1537 991)">
+      <rect class="cls-56" width="124" height="26" rx="4"/>
+      <rect class="cls-1" x="0.5" y="0.5" width="123" height="25" rx="3.5"/>
+    </g>
+    <g id="Rectangle_2054" data-name="Rectangle 2054" class="cls-43" transform="translate(1730 991)">
+      <rect class="cls-56" width="143" height="26" rx="4"/>
+      <rect class="cls-1" x="0.5" y="0.5" width="142" height="25" rx="3.5"/>
+    </g>
+    <text id="Факт" class="cls-44" transform="translate(1507 1009)"><tspan x="0" y="0">Факт</tspan></text>
+    <text id="Р-32" class="cls-39" transform="translate(1545 1008)"><tspan x="0" y="0">Р-32</tspan></text>
+    <text id="СИКН_УУ-104" data-name="СИКН УУ-104" class="cls-39" transform="translate(1590 1008)"><tspan x="0" y="0">СИКН УУ-104</tspan></text>
+    <text id="СИКН_УУ-104-2" data-name="СИКН УУ-104" class="cls-45" transform="translate(1740 1008)"><tspan x="0" y="0">СИКН УУ-104</tspan></text>
+    <text id="РВС_5" data-name="РВС №5" class="cls-45" transform="translate(1825 1008)"><tspan x="0" y="0">РВС №5</tspan></text>
+    <text id="Факт-2" data-name="Факт" class="cls-44" transform="translate(1700 1009)"><tspan x="0" y="0">Факт</tspan></text>
+    <rect id="Rectangle_2055" data-name="Rectangle 2055" class="cls-27" width="8" height="8" transform="translate(1495 1001)"/>
+    <rect id="Rectangle_2056" data-name="Rectangle 2056" class="cls-29" width="8" height="8" transform="translate(1688 1001)"/>
+    <path id="Path_1791" data-name="Path 1791" class="cls-46" d="M4043.538,439.25l4.471,4.47-4.471,4.471v-3h-2.888v-2.948h2.888Z" transform="translate(-2465.967 560.75)"/>
+    <path id="Path_1792" data-name="Path 1792" class="cls-47" d="M4043.538,439.25l4.471,4.47-4.471,4.471v-3h-2.888v-2.948h2.888Z" transform="translate(-2232.967 560.75)"/>
+    <g id="Rectangle_2038" data-name="Rectangle 2038" class="cls-48" transform="translate(856 729)">
+      <rect class="cls-56" width="320.989" height="288.231" rx="4"/>
+      <rect class="cls-1" x="0.5" y="0.5" width="319.989" height="287.231" rx="3.5"/>
+    </g>
+    <g id="Rectangle_2039" data-name="Rectangle 2039" class="cls-43" transform="translate(856 729)">
+      <path class="cls-56" d="M4,0H89a0,0,0,0,1,0,0V288a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z"/>
+      <path class="cls-1" d="M4,.5H88a.5.5,0,0,1,.5.5V287a.5.5,0,0,1-.5.5H4A3.5,3.5,0,0,1,.5,284V4A3.5,3.5,0,0,1,4,.5Z"/>
+    </g>
+    <line id="Line_1693" data-name="Line 1693" class="cls-49" x2="320.989" transform="translate(856.512 920.349)"/>
+    <line id="Line_1685" data-name="Line 1685" class="cls-49" x2="320.989" transform="translate(856.512 887.863)"/>
+    <line id="Line_1703" data-name="Line 1703" class="cls-49" x2="320.989" transform="translate(856.512 984.514)"/>
+    <line id="Line_1680" data-name="Line 1680" class="cls-49" x2="320.989" transform="translate(856.512 856.17)"/>
+    <line id="Line_1704" data-name="Line 1704" class="cls-49" x2="320.989" transform="translate(856.512 952.821)"/>
+    <line id="Line_1681" data-name="Line 1681" class="cls-49" x2="320.989" transform="translate(856.512 824.477)"/>
+    <line id="Line_1682" data-name="Line 1682" class="cls-49" x2="320.989" transform="translate(856.512 792.783)"/>
+    <line id="Line_1683" data-name="Line 1683" class="cls-49" x2="320.989" transform="translate(856.512 760.297)"/>
+    <text id="_100" data-name="100" class="cls-12" transform="translate(912 751)"><tspan x="-22.928" y="0">100</tspan></text>
+    <text id="Среднее_значение_небаланса" data-name="Среднее значение небаланса" class="cls-13" transform="translate(954 749)"><tspan x="0" y="0">Среднее значение небаланса</tspan></text>
+    <text id="Статистические_показатели:" data-name="Статистические показатели:" class="cls-12" transform="translate(862 706)"><tspan x="0" y="0">Статистические показатели:</tspan></text>
+    <text id="Среднее_относительное_отклонение" data-name="Среднее относительное отклонение" class="cls-13" transform="translate(954 781)"><tspan x="0" y="0">Среднее относительное отклонение</tspan></text>
+    <text id="Среднеквадратичное_отклонение" data-name="Среднеквадратичное отклонение" class="cls-13" transform="translate(954 813)"><tspan x="0" y="0">Среднеквадратичное отклонение</tspan></text>
+    <text id="Максимальное_значение_небаланса" data-name="Максимальное значение небаланса" class="cls-13" transform="translate(954 845)"><tspan x="0" y="0">Максимальное значение небаланса</tspan></text>
+    <text id="Минимальное_значение_небаланса" data-name="Минимальное значение небаланса" class="cls-13" transform="translate(954 877)"><tspan x="0" y="0">Минимальное значение небаланса</tspan></text>
+    <text id="Общий_баланс_М2-М1-Мпот" data-name="Общий баланс М2-М1-Мпот" class="cls-13" transform="translate(954 973)"><tspan x="0" y="0">Общий баланс М2-М1-Мпот</tspan></text>
+    <text id="Мода" class="cls-13" transform="translate(954 909)"><tspan x="0" y="0">Мода</tspan></text>
+    <text id="Достаточность_измер._инф-ции" data-name="Достаточность измер. инф-ции" class="cls-13" transform="translate(954 1005)"><tspan x="0" y="0">Достаточность измер. инф-ции</tspan></text>
+    <text id="Медиана" class="cls-13" transform="translate(954 941)"><tspan x="0" y="0">Медиана</tspan></text>
+    <text id="_-0_3" data-name="-0,3" class="cls-12" transform="translate(912 783)"><tspan x="-24.609" y="0">-0,3</tspan></text>
+    <text id="_20" data-name="20" class="cls-12" transform="translate(912 815)"><tspan x="-15.285" y="0">20</tspan></text>
+    <text id="_500" data-name="+500" class="cls-12" transform="translate(912 846)"><tspan x="-33.113" y="0">+500</tspan></text>
+    <text id="_-10" data-name="-10" class="cls-12" transform="translate(912 878)"><tspan x="-20.371" y="0">-10</tspan></text>
+    <text id="_0_236" data-name="+0,236" class="cls-12" transform="translate(912 973)"><tspan x="-44.994" y="0">+0,236</tspan></text>
+    <text id="_-80" data-name="-80" class="cls-12" transform="translate(912 910)"><tspan x="-20.371" y="0">-80</tspan></text>
+    <text id="_99" data-name="+99" class="cls-12" transform="translate(912 1005)"><tspan x="-25.471" y="0">+99</tspan></text>
+    <text id="_-91" data-name="-91" class="cls-12" transform="translate(912 942)"><tspan x="-20.371" y="0">-91</tspan></text>
+    <text id="кг" class="cls-50" transform="translate(916 751)"><tspan x="0" y="0">кг</tspan></text>
+    <text id="_2" data-name="%" class="cls-50" transform="translate(916 783)"><tspan x="0" y="0">%</tspan></text>
+    <text id="кг-2" data-name="кг" class="cls-50" transform="translate(916 815)"><tspan x="0" y="0">кг</tspan></text>
+    <text id="кг-3" data-name="кг" class="cls-50" transform="translate(916 846)"><tspan x="0" y="0">кг</tspan></text>
+    <text id="кг-4" data-name="кг" class="cls-50" transform="translate(916 878)"><tspan x="0" y="0">кг</tspan></text>
+    <text id="т" class="cls-50" transform="translate(916 973)"><tspan x="0" y="0">т</tspan></text>
+    <text id="кг-5" data-name="кг" class="cls-50" transform="translate(916 910)"><tspan x="0" y="0">кг</tspan></text>
+    <text id="Нет" class="cls-50" transform="translate(916 1005)"><tspan x="0" y="0">Нет</tspan></text>
+    <text id="кг-6" data-name="кг" class="cls-50" transform="translate(916 942)"><tspan x="0" y="0">кг</tspan></text>
+    <g id="Group_419" data-name="Group 419" transform="translate(7 490)">
+      <text id="_3" data-name="+" class="cls-12" transform="translate(886 323)"><tspan x="-10.186" y="0">+</tspan></text>
+      <line id="Line_1216" data-name="Line 1216" class="cls-19" x2="9" transform="translate(876.5 323.5)"/>
+    </g>
+    <g id="Group_415" data-name="Group 415" transform="translate(836 402)">
+      <text id="_4" data-name="+" class="cls-51" transform="translate(880 315)"><tspan x="-4.365" y="0">+</tspan></text>
+      <text id="_-" data-name="-" class="cls-44" transform="translate(878 319)"><tspan x="-1.816" y="0">-</tspan></text>
+    </g>
+    <g id="Group_416" data-name="Group 416" transform="translate(958 402)">
+      <text id="_5" data-name="+" class="cls-51" transform="translate(880 315)"><tspan x="-4.365" y="0">+</tspan></text>
+      <text id="_--2" data-name="-" class="cls-44" transform="translate(878 319)"><tspan x="-1.816" y="0">-</tspan></text>
+    </g>
+    <g id="Group_417" data-name="Group 417" transform="translate(903 402)">
+      <text id="_6" data-name="+" class="cls-52" transform="translate(880 315)"><tspan x="-4.365" y="0">+</tspan></text>
+      <text id="_--3" data-name="-" class="cls-53" transform="translate(878 319)"><tspan x="-1.816" y="0">-</tspan></text>
+    </g>
+    <g id="Group_418" data-name="Group 418" transform="translate(782 402)">
+      <text id="_7" data-name="+" class="cls-54" transform="translate(880 315)"><tspan x="-4.365" y="0">+</tspan></text>
+      <text id="_--4" data-name="-" class="cls-55" transform="translate(878 319)"><tspan x="-1.816" y="0">-</tspan></text>
+    </g>
+    <line id="Line_1705" data-name="Line 1705" class="cls-6" x1="493.193" transform="translate(338.308 960.5)"/>
+    <text id="Предельно-допустимое_относит._отклонение" data-name="Предельно-допустимое относит. отклонение" class="cls-44" transform="translate(1262 1009)"><tspan x="0" y="0">Предельно-допустимое относит. отклонение</tspan></text>
+  </g>
+</svg>

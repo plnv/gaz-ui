@@ -1,0 +1,107 @@
+$widgetMenuBackground: #000;
+$widgetBackground: #191C2A;
+$menuItemBackground: #373a47;
+$menuItemBackground: #2D2D32;
+$menuItemBackground: #1e1f24;
+$menuItemColor: #b9c0c6;
+$menuItemActiveBackground: #616166;
+$menuItemActiveColor: #e6e6e6;
+$fontColor: #FFF;
+$toolBarBackground: #191C2A;
+$toolBarFontColor: #ffffff; //#8C96A0;
+$wallToolBarBackground: #282a38;
+$wallWidgetBackground: #21222D;
+
+/* events colors */
+
+$eventDarkRed: #800000;
+$eventRed: #E00000;
+$eventOrange: #FF5900;
+$eventGrey: #333;
+$fontSizeSmall: 12px;
+$fontSizeMiddle: 16px;
+$fontSizeBig: 18px;
+
+/* general colors */
+
+$blue: #2279D8;
+$deepblue: #03A6A6;
+$purple: #763FC1;
+$blue2: #224D82;
+$deepblue2: #11646A;
+$purple2: #4B3077;
+$grey-linear: linear-gradient(to bottom, #1a1d2a, #42444E);
+$blue-linear: linear-gradient(to bottom, #1a1d2a, #1F324A);
+$deepblue-linear: linear-gradient(to bottom, #1a1d2a, #1A3943);
+$purple-linear: linear-gradient(to bottom, #1a1d2a, #4B3077);
+$whiteblue-linear:  linear-gradient(to bottom, #1a1d2a, #F89564);
+
+$blue-linear-left: linear-gradient(to left, $blue 20%, $blue2 80%);
+$deepblue-linear-left: linear-gradient(to left, $deepblue 20%, $deepblue2 80%);
+$purple-linear-left: linear-gradient(to left, $purple 20%, $purple2 80%);
+$orange-linear-left: linear-gradient(to left, #FF9634 20%, #9C4600 80%);
+
+$color-blue: #606580;
+$color-blue-light: #2378d8;
+$color-blue-dark: #232633;
+$color-blue-dark0: #272a38;
+$color-blue-dark1: #29516b;
+$color-blue-dark2: #283e52;
+$color-blue-dark3: #1d202a;
+$color-blue-dark4: #1a3148;
+$color-blue-dark5: #11547f;
+$color-green: #00973a;
+$color-red: #e20613;
+$color-red-dark: #5a222a;
+$color-red-dark1: #6f2228;
+$color-orange: #c98e13;
+$color-aqua: #00ffff;
+
+$font-size: 100%;
+$font-size-big: 118%;
+$font-size-small: 81%;
+$font-size-micro: 70%;
+
+.wall-widgets {
+    font-size: 54px;
+}
+
+.wall-widgets-2x2 {
+    font-size: 34px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+$btn-linked-color: #FFD700;
+
+@function linked-color($color: $btn-linked-color) {
+    @return transparentize($color, 0.5), transparentize($color, 0.3);
+}
+
+@mixin linked-text($color: $btn-linked-color) {
+    $colors: linked-color($color);
+    $default: nth($colors, 1);
+    $active: nth($colors, 2);
+    color: $default;
+
+    &:hover {
+        color: $active;
+    }
+}
+
+@mixin btn-linked($color: $btn-linked-color) {
+    $colors: linked-color($color);
+    $default: nth($colors, 1);
+    $active: nth($colors, 2);
+
+    background-color: $default;
+    border-color: $default;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+    &:hover {
+        background-color: $active;
+        border-color: $active;
+    }
+}

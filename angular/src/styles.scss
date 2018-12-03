@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "theme";
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: Tahoma, sans-serif, monospace;
+  font-size: 15px;
+  color: $fontColor;
+  background: $widgetMenuBackground;
+
+  //scrollbar-base-color: #333;
+  scrollbar-base-color: #404257;
+  scrollbar-3dlight-color: $widgetBackground;
+  scrollbar-highlight-color: transparent;
+  scrollbar-track-color: $widgetBackground;
+  scrollbar-arrow-color: $widgetBackground;
+  scrollbar-shadow-color: transparent;
+  scrollbar-dark-shadow-color: transparent;
+}

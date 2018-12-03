@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 16.5">
+  <title>add-circle-icon</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="реакция">
+      <g>
+        <circle cx="8.25" cy="8.25" r="7.65" style="fill: none;stroke: #afb2c0;stroke-miterlimit: 10;stroke-width: 1.2000000000000002px"/>
+        <g>
+          <line x1="8.25" y1="5.19" x2="8.25" y2="11.31" style="fill: none;stroke: #afb2c0;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 1.2000000000000002px"/>
+          <line x1="5.19" y1="8.25" x2="11.31" y2="8.25" style="fill: none;stroke: #afb2c0;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 1.2000000000000002px"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

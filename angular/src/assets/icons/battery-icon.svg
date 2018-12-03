@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.93 15.82">
+  <title>battary-icon</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_10" data-name="Слой 10">
+      <g>
+        <rect x="3.07" width="2.79" height="1.69" style="fill: #606580;opacity: 0.5"/>
+        <rect x="0.25" y="1.83" width="8.43" height="13.74" style="fill: none;stroke: #606580;stroke-miterlimit: 10;stroke-width: 0.5px;opacity: 0.5"/>
+        <path d="M.72,4.48,8.21,9v6.18H.72ZM3.29,13.7h0a.08.08,0,0,1,0-.09l.89-1.94H3.29a.08.08,0,0,1-.07,0,0,0,0,0,1,0-.07L4.4,9.36a.08.08,0,0,1,.07,0H5.73a.08.08,0,0,1,.07,0,.11.11,0,0,1,0,.08l-.93,1.34h.94a.08.08,0,0,1,.07,0v0h0a.08.08,0,0,1,0,0L3.34,13.67a.05.05,0,0,1,0,0Z" style="fill: #606580;fill-rule: evenodd;opacity: 0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

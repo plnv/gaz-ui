@@ -1,0 +1,324 @@
+<div class="widget-main-toolbar">
+  <div class="wrapper">
+    <div class="logo-section">
+      <div class="logo"></div>
+      <!--<div class="slogan">-->
+      <!--Центр управления производством-->
+      <!--</div>-->
+    </div>
+    <div class="menu-dropdown">
+      <div class="current-page">
+        <app-svg-icon [url]="'/assets/icons/home-icon.svg'"></app-svg-icon>
+        <span>Экран главного инженера смены</span>
+      </div>
+      <i class="icon-menu"></i>
+    </div>
+  </div>
+</div>
+
+<div class="forecast-block">
+  <p class="desc-line">Прогноз отклонений на 3 суток без учета компенсирующих мероприятий</p>
+  <ul class="forecast-block-menu">
+    <li>
+      <a class="link active" (click)="setCertificationPageType()">
+        <div class="icon">
+          <app-svg-icon url="/assets/icons/certification-icon.svg" color="#FFF"></app-svg-icon>
+        </div>
+        <span>Паспортизация</span>
+      </a>
+      <div class="indicator">
+        <span class="big-value">zzz тыс. т</span>
+        <span class="small-value">
+xxx
+</span>
+        <!--<i class="data-arrow" [ngClass]="mainScreeW1?.v1?.PassprotizationDeviationTrend > 0 ? 'green top' : 'blue bottom'"></i>-->
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="fact-plan-row">
+  <div class="fact-plan-block active">
+    <div class="title">Бензины</div>
+    <div class="values">
+      <div class="big">
+        <!--<i class="data-arrow green bottom"></i>-->
+        39,7 тыс.т
+      </div>
+      <div class="blue">
+        -2,4 тыс.т
+      </div>
+    </div>
+  </div>
+  <div class="fact-plan-block">
+    <div class="title">Керосины</div>
+    <div class="values">
+      <div class="big">
+        <!--<i class="data-arrow blue bottom"></i>-->
+        18,3 тыс.т
+      </div>
+      <div class="green">
+        +2,1 тыс.т
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fact-plan-row">
+  <div class="fact-plan-block">
+    <div class="title">Дизели</div>
+    <div class="values">
+      <div class="big">
+        <!--<i class="data-arrow blue bottom"></i>-->
+        46,4 тыс.т
+      </div>
+      <div class="blue">
+        -0,4 тыс.т
+      </div>
+    </div>
+  </div>
+  <div class="fact-plan-block">
+    <div class="title">Темные</div>
+    <div class="values">
+      <div class="big">
+        <!--<i class="data-arrow blue bottom"></i>-->
+        32,1 тыс.т
+      </div>
+      <div class="green">
+        -0,1 тыс.т
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fact-plan-row">
+  <div class="fact-plan-block">
+    <div class="title">Прочие</div>
+    <div class="values">
+      <div class="big">
+        <!--<i class="data-arrow blue bottom"></i>-->
+        8,0 тыс.т
+      </div>
+      <div class="blue">
+        -2,0 тыс.т
+      </div>
+    </div>
+  </div>
+  <div class="fact-plan-block" style="opacity: 0;"></div>
+</div>
+<div class="forecast-block">
+  <ul class="forecast-block-menu">
+    <!--<li>-->
+    <!--<a class="link">-->
+    <!--<div class="icon">-->
+    <!--<app-svg-icon url="/assets/icons/shipping-icon.svg"></app-svg-icon>-->
+    <!--</div>-->
+    <!--<span>Отгрузка</span>-->
+    <!--</a>-->
+    <!--<div class="indicator">-->
+    <!--<i class="data-arrow top green"></i>-->
+    <!--<span class="big-value">134,4 т</span>-->
+    <!--<span class="small-value blue">+38,5 т</span>-->
+    <!--</div>-->
+    <!--</li>-->
+    <li>
+      <a class="link" (click)="setEnergyPageType()">
+        <div class="icon">
+          <app-svg-icon url="/assets/icons/lighting-icon.svg"></app-svg-icon>
+        </div>
+        <span>Энергопотребление</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="forecast-indicators-block">
+    <div class="indicator">
+      <div class="name">
+        <app-svg-icon url="/assets/icons/thermostat-icon.svg"></app-svg-icon>
+        <span>Тепловая энергия</span>
+      </div>
+      <div class="values">
+        <span class="big-value">zzz</span>
+        <span class="small-value">xxx</span>
+      </div>
+      <div class="measure-unit">
+        тыс. Гкал
+      </div>
+    </div>
+    <div class="indicator">
+      <div class="name">
+        <app-svg-icon url="/assets/icons/battery-icon.svg"></app-svg-icon>
+        <span>Электроэнергия</span>
+      </div>
+      <div class="values">
+        <span class="big-value">xxx</span>
+        <span class="small-value">zzz</span>
+      </div>
+      <div class="measure-unit">
+        млн. кВт*ч
+      </div>
+    </div>
+    <div class="indicator">
+      <div class="name">
+        <app-svg-icon url="/assets/icons/fair-icon.svg" color="#606580"></app-svg-icon>
+        <span>Топливо</span>
+      </div>
+      <div class="values">
+        <span class="big-value">xxx</span>
+        <span class="small-value"></span>
+      </div>
+      <div class="measure-unit">
+        тыс т.у.т.
+      </div>
+    </div>
+  </div>
+
+  <div class="events-list">
+    <div class="list-row blue-warning">
+      <div class="icon">
+        <app-svg-icon url="/assets/icons/warning-icon.svg" color="#00FFFF"></app-svg-icon>
+      </div>
+      <div class="title">
+        Прогноз паспортизации<br/> Бензин Рег.-92 кл.5 (s<10)
+      </div>
+      <div class="indicator">
+        <!--<div class="icon">-->
+        <!--<i class="data-arrow bottom blue"></i>-->
+        <!--</div>-->
+        <div class="values">
+          <div class="big">-2,0 <span class="micro">тыс.т</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="list-row blue">
+      <div class="icon">
+        <app-svg-icon url="/assets/icons/flag-icon.svg"></app-svg-icon>
+      </div>
+      <div class="title">
+        Причины отклонений
+      </div>
+      <div class="indicator">
+        <!--<div class="icon">-->
+        <!--<i class="data-arrow bottom blue"></i>-->
+        <!--</div>-->
+        <div class="values">
+          <div class="big">-2,0 <span class="micro">тыс.т</span></div>
+          <!--<div class="small">203 488 <span class="micro">тыс. руб</span></div>-->
+        </div>
+      </div>
+    </div>
+    <!--<div class="list-row">-->
+    <!--<div class="icon">-->
+    <!--<span class="text">1.</span>-->
+    <!--</div>-->
+    <!--<div class="title">-->
+    <!--Прогнозное снижение прихода вагоноцистерн -60 шт. на 04.08.2018 г.-->
+    <!--</div>-->
+    <!--<div class="indicator">-->
+    <!--<div class="icon">-->
+    <!--</div>-->
+    <!--<div class="values">-->
+    <!--<div class="big">+ 1 951 <span class="micro">тыс. руб</span></div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="list-row">
+      <div class="icon">
+        <span class="text">1.</span>
+      </div>
+      <div class="title">
+        <div>
+          Прогнозное снижение паспортизации <span class="blue">Бензин Рег.-92 кл.5 (s<10)</span>
+          в связи со снижением содержания бензиновых фракций в нефтяном сырье с <span class="blue">1.1.1</span>
+        </div>
+      </div>
+      <div class="indicator">
+        <!--<div class="icon">-->
+        <!--</div>-->
+        <div class="values">
+          <div class="big">-2,0 <span class="micro">тыс.т</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="list-row blue">
+      <div class="icon">
+        <app-svg-icon url="/assets/icons/flag-icon.svg"></app-svg-icon>
+      </div>
+      <div class="title">
+        Действия по компенсации отклонений:
+      </div>
+      <div class="indicator">
+        <!--<div class="icon">-->
+        <!--<i class="data-arrow top green"></i>-->
+        <!--</div>-->
+        <div class="values">
+          <div class="big green">+2,0 <span class="micro">тыс.т</span></div>
+          <!--<div class="small">203 488 <span class="micro">тыс. руб</span></div>-->
+        </div>
+      </div>
+    </div>
+    <div class="list-row">
+      <div class="icon">
+        <span class="text">1.</span>
+      </div>
+      <div class="title">
+        <div>
+          Увеличить КК тяжелый бензин
+          на АТ-9 на 5 градусов (с 174 до 179 градусов)
+        </div>
+      </div>
+      <div class="indicator">
+        <!--<div class="icon">-->
+        <!--</div>-->
+        <div class="values">
+          <div class="big green">+1,3 <span class="micro">тыс.т</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="list-row">
+      <div class="icon">
+        <span class="text">2.</span>
+      </div>
+      <div class="title">
+        <div>
+          Снизить температуру реактора секции 200 КТ 1/1 до 521 0C
+        </div>
+      </div>
+      <div class="indicator">
+        <!--<div class="icon">-->
+        <!--</div>-->
+        <div class="values">
+          <div class="big green">+0,7 <span class="micro">тыс.т</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="insert-event-row">
+      <textarea placeholder="Добавить корректирующее мероприятие"></textarea>
+      <div class="icons">
+        <app-svg-icon url="/assets/icons/add-circle-icon.svg"></app-svg-icon>
+        <app-svg-icon url="/assets/icons/spanner-icon.svg"></app-svg-icon>
+        <app-svg-icon url="/assets/icons/logout-icon.svg"></app-svg-icon>
+      </div>
+    </div>
+    <div class="list-row blue-dark">
+      <div class="icon">
+        <app-svg-icon url="/assets/icons/graph-icon.svg"></app-svg-icon>
+      </div>
+      <div class="title">
+        Прогнозные последствия
+      </div>
+    </div>
+    <div class="list-row">
+      <div class="icon">
+        <span class="text">1.</span>
+      </div>
+      <div class="title">
+        <div>
+          <!--Компенсация отклонения по <span class="blue">Бензин Рег.-92 кл.5</span> на <span class="blue">2,1</span> тыс. т-->
+          <!--<span class="blue">11.08.2018 г.</span>, что приводит к снижению отклонения-->
+          <!--<span class="blue">Бензин Рег.-92 кл.5 (s<10)</span> с - <span class="blue">3,1</span> до - <span class="blue">1,1</span> тыс.т-->
+          Увеличение выработки <span class="blue">Бензин Рег.-92 кл.5</span> на 2,0 тыс. т.
+          в период с DD.MM.YYYY по DD.MM.YYYY.
+          Снижение отклонения от планового задания до <span class="blue">0</span>.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
