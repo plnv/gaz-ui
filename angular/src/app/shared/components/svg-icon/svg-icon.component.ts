@@ -17,18 +17,17 @@ export class SvgIconComponent implements OnInit {
   }
 
   ngOnInit() {
-    // if (this.url) {
-    //   this.http.get(this.url).subscribe((data) => {
-    //     console.log(data);
-    //     // this.html = res;
-    //     // if (this.color) {
-    //     //   let reg = new RegExp('fill:[^;]*;', 'gi');
-    //     //   this.html = this.html.replace(reg, 'fill: ' + this.color + ';');
-    //     //   reg = new RegExp('fill="[^"]*"', 'gi');
-    //     //   this.html = this.html.replace(reg, 'fill="' + this.color + '"');
-    //     // }
-    //     // this.element.nativeElement.innerHTML = this.html;
-    //   });
-    // }
+    if (this.url) {
+      this.http.get(this.url, { responseType: 'text' }).subscribe((data) => {
+        this.html = data;
+        if (this.color) {
+          let reg = new RegExp('fill:[^;]*;', 'gi');
+          this.html = this.html.replace(reg, 'fill: ' + this.color + ';');
+          reg = new RegExp('fill="[^"]*"', 'gi');
+          this.html = this.html.replace(reg, 'fill="' + this.color + '"');
+        }
+        this.element.nativeElement.innerHTML = this.html;
+      });
+    }
   }
 }

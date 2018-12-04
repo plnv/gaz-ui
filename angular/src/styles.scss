@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
 @import "theme";
 
 * {
@@ -12,9 +11,14 @@ body, html {
   height: 100%;
 }
 
+$md-screen: "only screen and (max-width : 1024px)";
+
 body {
   font-family: Tahoma, sans-serif, monospace;
-  font-size: 15px;
+  font-size: 13px;
+  @media #{$md-screen} {
+    font-size: 11px;
+  }
   color: $fontColor;
   background: $widgetMenuBackground;
 

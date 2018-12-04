@@ -1,18 +1,20 @@
 @import '../../../../theme';
 
-$padding: .5em;
+$size: .5em;
 
 :host {
   overflow: visible;
-  box-shadow: 0 0 $padding * 5 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 $size * 5 rgba(0, 0, 0, 0.5);
   z-index: 20;
   font-size: $font-size;
   background: #191C2A;
   display: block;
+  max-width: 38em;
+  min-height: 100%;
 }
 
 .widget-main-toolbar {
-  box-shadow: 0 0 $padding * 5 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 $size * 5 rgba(0, 0, 0, 0.5);
   flex-shrink: 0;
 
   .wrapper {
@@ -22,11 +24,11 @@ $padding: .5em;
   }
 
   .logo-section {
-    padding: $padding;
+    padding: $size;
     border-right: 2px solid #2378d9;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 $padding * 3 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 $size * 3 rgba(0, 0, 0, 0.5);
 
     .logo {
       height: 3em;
@@ -37,14 +39,14 @@ $padding: .5em;
 
     .slogan {
       border-left: 2px solid #FFF;
-      padding-left: $padding;
-      margin-left: $padding;
+      padding-left: $size;
+      margin-left: $size;
       width: 480px;
     }
   }
 
   .menu-dropdown {
-    padding-left: $padding;
+    padding-left: $size;
     flex: 1;
     font-size: 120%;
     span {
@@ -54,7 +56,7 @@ $padding: .5em;
 }
 
 .forecast-block {
-  padding: $padding;
+  padding: $size;
 
   &-menu {
     list-style: none;
@@ -62,21 +64,20 @@ $padding: .5em;
     li {
       display: flex;
       background: #272a38;
-      margin-top: $padding;
+      margin-top: $size;
       align-items: stretch;
 
       .link {
         flex: 1;
         display: flex;
-        padding: $padding;
+        padding: $size;
         align-items: center;
         cursor: pointer;
-        transition: all 400ms ease;
 
         .small {
           font-size: 90%;
           color: $color-blue;
-          padding-left: $padding;
+          padding-left: $size;
         }
 
         &.active {
@@ -94,10 +95,12 @@ $padding: .5em;
       }
 
       .indicator {
-        padding: $padding;
+        padding: $size;
         display: flex;
         background: #232633;
         align-items: center;
+
+
 
         .data-arrow {
           transform: scale(0.75);
@@ -109,12 +112,12 @@ $padding: .5em;
 
         .big-value {
           font-size: $font-size-big;
-          padding: 0 $padding;
+          padding: 0 $size;
         }
 
         .small-value {
           font-size: $font-size-small;
-          padding: $padding/2 $padding 0;
+          padding: $size/2 $size 0;
         }
 
         .red {
@@ -131,15 +134,19 @@ $padding: .5em;
 
 .forecast-indicators-block {
   display: flex;
-  padding: $padding 0;
+  padding: $size 0;
 
   .indicator {
     flex: 1;
     box-sizing: border-box;
-    margin-right: 10px;
     background: #212330;
     text-align: center;
-    padding: $padding 0;
+    padding: $size 0;
+
+    & + .indicator {
+      margin-left: $size / 2;
+    }
+
 
     &:last-child {
       margin-right: 0;
@@ -159,18 +166,18 @@ $padding: .5em;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      padding: $padding;
+      padding: $size;
 
       .big-value {
         font-size: $font-size-big;
         line-height: 1;
-        padding: 0 10px;
+        padding: 0 $size / 2;
       }
 
       .small-value {
         font-size: $font-size-small;
         line-height: 1.2;
-        padding: 0 10px;
+        padding: 0 $size / 2;
       }
 
       .red {
@@ -207,9 +214,9 @@ $padding: .5em;
       overflow: hidden;
 
       .name {
-        box-shadow: 0 0 $padding * 5 rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 $size * 5 rgba(0, 0, 0, 0.5);
         text-align: left;
-        padding: $padding 40px;
+        padding: $size 40px;
         color: $color-blue;
         font-size: 110%;
         background: #1F212E;
@@ -226,13 +233,13 @@ $padding: .5em;
         > div {
           flex: 1;
           background: #1F212E;
-          padding: $padding 40px;
+          padding: $size 40px;
           text-align: center;
 
           &:first-child {
             position: relative;
             z-index: 1;
-            box-shadow: 0 0 $padding * 5 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 $size * 5 rgba(0, 0, 0, 0.5);
           }
         }
 
@@ -250,7 +257,7 @@ $padding: .5em;
 
       .value {
         font-size: $font-size-big;
-        padding-top: $padding;
+        padding-top: $size;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -282,6 +289,7 @@ $padding: .5em;
 .events-list {
   margin-top: 60px;
   overflow: hidden;
+  display: none;
 
   .list-row {
     background: $color-blue-dark;
@@ -290,7 +298,7 @@ $padding: .5em;
     margin-bottom: 8px;
     border-radius: 8px 0 0 0;
     overflow: hidden;
-    box-shadow: 0 $padding * 5 $padding * 5 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 $size * 5 $size * 5 rgba(0, 0, 0, 0.15);
 
     .title {
       flex: 1;
@@ -298,7 +306,7 @@ $padding: .5em;
       ul {
         list-style: none;
         li {
-          padding: $padding 0;
+          padding: $size 0;
         }
       }
     }
@@ -307,7 +315,7 @@ $padding: .5em;
       display: flex;
       width: 140px;
       background: $color-blue-dark0;
-      box-shadow: 0 0 $padding * 5 rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 $size * 5 rgba(0, 0, 0, 0.5);
       align-items: center;
       justify-content: center;
     }
@@ -435,7 +443,7 @@ $padding: .5em;
 
 .fact-plan-row {
   display: flex;
-  padding: $padding;
+  padding: $size;
 
   .fact-plan-block {
     flex: 1;
@@ -443,7 +451,7 @@ $padding: .5em;
     overflow: hidden;
 
     & + .fact-plan-block {
-      margin-left: $padding;
+      margin-left: $size;
     }
 
     &.active {
@@ -455,9 +463,9 @@ $padding: .5em;
     }
 
     .title {
-      padding: $padding $padding * 2;
+      padding: $size $size * 2;
       color: #FFF;
-      box-shadow: 0 0 $padding * .5 rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 $size * .5 rgba(0, 0, 0, 0.4);
     }
 
     .values {
@@ -465,7 +473,7 @@ $padding: .5em;
 
       > div {
         flex: 1;
-        padding: $padding $padding * 2;
+        padding: $size $size * 2;
         display: flex;
         align-items: center;
 
@@ -487,7 +495,7 @@ $padding: .5em;
         }
 
         .data-arrow {
-          margin-right: $padding * .5;
+          margin-right: $size * .5;
         }
       }
     }

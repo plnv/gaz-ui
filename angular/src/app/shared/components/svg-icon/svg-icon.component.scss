@@ -1,9 +1,9 @@
 :host {
   display: inline-block;
-  width: 1.1em;
-  height: 1em;
-
-  img {
+  width: .9em;
+  height: .9em;
+  ::ng-deep svg {
     height: 100%;
   }
 }
+
