@@ -1,20 +1,18 @@
 @import '../../../../theme';
 
-$size: .5em;
-
 :host {
   overflow: visible;
-  box-shadow: 0 0 $size * 5 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 $scale-size * 5 rgba(0, 0, 0, 0.5);
   z-index: 20;
   font-size: $font-size;
   background: #191C2A;
   display: block;
-  max-width: 38em;
+  min-width: 38em;
   min-height: 100%;
 }
 
 .widget-main-toolbar {
-  box-shadow: 0 0 $size * 5 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 $scale-size * 5 rgba(0, 0, 0, 0.5);
   flex-shrink: 0;
 
   .wrapper {
@@ -24,11 +22,11 @@ $size: .5em;
   }
 
   .logo-section {
-    padding: $size;
+    padding: $scale-size;
     border-right: 2px solid #2378d9;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 $size * 3 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 $scale-size * 3 rgba(0, 0, 0, 0.5);
 
     .logo {
       height: 3em;
@@ -39,14 +37,14 @@ $size: .5em;
 
     .slogan {
       border-left: 2px solid #FFF;
-      padding-left: $size;
-      margin-left: $size;
+      padding-left: $scale-size;
+      margin-left: $scale-size;
       width: 480px;
     }
   }
 
   .menu-dropdown {
-    padding-left: $size;
+    padding-left: $scale-size;
     flex: 1;
     font-size: 120%;
     span {
@@ -56,7 +54,7 @@ $size: .5em;
 }
 
 .forecast-block {
-  padding: $size;
+  padding: $scale-size;
 
   &-menu {
     list-style: none;
@@ -64,20 +62,22 @@ $size: .5em;
     li {
       display: flex;
       background: #272a38;
-      margin-top: $size;
+      margin-top: $scale-size;
       align-items: stretch;
 
       .link {
         flex: 1;
         display: flex;
-        padding: $size;
+        padding: $scale-size;
         align-items: center;
         cursor: pointer;
+        text-decoration: none;
+        color: #fff;
 
         .small {
           font-size: 90%;
           color: $color-blue;
-          padding-left: $size;
+          padding-left: $scale-size;
         }
 
         &.active {
@@ -95,12 +95,10 @@ $size: .5em;
       }
 
       .indicator {
-        padding: $size;
+        padding: $scale-size;
         display: flex;
         background: #232633;
         align-items: center;
-
-
 
         .data-arrow {
           transform: scale(0.75);
@@ -112,12 +110,12 @@ $size: .5em;
 
         .big-value {
           font-size: $font-size-big;
-          padding: 0 $size;
+          padding: 0 $scale-size;
         }
 
         .small-value {
           font-size: $font-size-small;
-          padding: $size/2 $size 0;
+          padding: $scale-size/2 $scale-size 0;
         }
 
         .red {
@@ -134,19 +132,18 @@ $size: .5em;
 
 .forecast-indicators-block {
   display: flex;
-  padding: $size 0;
+  padding: $scale-size 0;
 
   .indicator {
     flex: 1;
     box-sizing: border-box;
     background: #212330;
     text-align: center;
-    padding: $size 0;
+    padding: $scale-size 0;
 
     & + .indicator {
-      margin-left: $size / 2;
+      margin-left: $scale-size / 2;
     }
-
 
     &:last-child {
       margin-right: 0;
@@ -155,6 +152,10 @@ $size: .5em;
     .name {
       color: #FFF;
       font-size: $font-size-small;
+      app-svg-icon {
+        height: 1.3em;
+        width: 1.3em;
+      }
     }
 
     .measure-unit {
@@ -166,18 +167,18 @@ $size: .5em;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      padding: $size;
+      padding: $scale-size;
 
       .big-value {
         font-size: $font-size-big;
         line-height: 1;
-        padding: 0 $size / 2;
+        padding: 0 $scale-size / 2;
       }
 
       .small-value {
         font-size: $font-size-small;
         line-height: 1.2;
-        padding: 0 $size / 2;
+        padding: 0 $scale-size / 2;
       }
 
       .red {
@@ -214,9 +215,9 @@ $size: .5em;
       overflow: hidden;
 
       .name {
-        box-shadow: 0 0 $size * 5 rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 $scale-size * 5 rgba(0, 0, 0, 0.5);
         text-align: left;
-        padding: $size 40px;
+        padding: $scale-size 40px;
         color: $color-blue;
         font-size: 110%;
         background: #1F212E;
@@ -233,13 +234,13 @@ $size: .5em;
         > div {
           flex: 1;
           background: #1F212E;
-          padding: $size 40px;
+          padding: $scale-size 40px;
           text-align: center;
 
           &:first-child {
             position: relative;
             z-index: 1;
-            box-shadow: 0 0 $size * 5 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 $scale-size * 5 rgba(0, 0, 0, 0.5);
           }
         }
 
@@ -257,7 +258,7 @@ $size: .5em;
 
       .value {
         font-size: $font-size-big;
-        padding-top: $size;
+        padding-top: $scale-size;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -298,7 +299,7 @@ $size: .5em;
     margin-bottom: 8px;
     border-radius: 8px 0 0 0;
     overflow: hidden;
-    box-shadow: 0 $size * 5 $size * 5 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 $scale-size * 5 $scale-size * 5 rgba(0, 0, 0, 0.15);
 
     .title {
       flex: 1;
@@ -306,7 +307,7 @@ $size: .5em;
       ul {
         list-style: none;
         li {
-          padding: $size 0;
+          padding: $scale-size 0;
         }
       }
     }
@@ -315,7 +316,7 @@ $size: .5em;
       display: flex;
       width: 140px;
       background: $color-blue-dark0;
-      box-shadow: 0 0 $size * 5 rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 $scale-size * 5 rgba(0, 0, 0, 0.5);
       align-items: center;
       justify-content: center;
     }
@@ -443,7 +444,7 @@ $size: .5em;
 
 .fact-plan-row {
   display: flex;
-  padding: $size;
+  padding: $scale-size;
 
   .fact-plan-block {
     flex: 1;
@@ -451,7 +452,7 @@ $size: .5em;
     overflow: hidden;
 
     & + .fact-plan-block {
-      margin-left: $size;
+      margin-left: $scale-size;
     }
 
     &.active {
@@ -463,9 +464,9 @@ $size: .5em;
     }
 
     .title {
-      padding: $size $size * 2;
+      padding: $scale-size $scale-size * 2;
       color: #FFF;
-      box-shadow: 0 0 $size * .5 rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 $scale-size * .5 rgba(0, 0, 0, 0.4);
     }
 
     .values {
@@ -473,7 +474,7 @@ $size: .5em;
 
       > div {
         flex: 1;
-        padding: $size $size * 2;
+        padding: $scale-size $scale-size * 2;
         display: flex;
         align-items: center;
 
@@ -495,7 +496,7 @@ $size: .5em;
         }
 
         .data-arrow {
-          margin-right: $size * .5;
+          margin-right: $scale-size * .5;
         }
       }
     }

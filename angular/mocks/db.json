@@ -1,0 +1,66 @@
+{
+  "dashboard": {
+    "certification": {
+      "values": {
+        "big": "144,75",
+        "small": "-2,4",
+        "type": 1
+      },
+      "data": [
+        {
+          "id": 1,
+          "label": "Бензины",
+          "values": {
+            "big": "39,7",
+            "small": "-2,4",
+            "type": 1
+          }
+        },
+        {
+          "id": 2,
+          "label": "Керосины",
+          "values": {
+            "big": "39,7",
+            "small": "-2,4",
+            "type": 2
+          }
+        },
+        {
+          "id": 3,
+          "label": "Прочие",
+          "values": {
+            "big": "39,7",
+            "small": "-2,4",
+            "type": 2
+          }
+        }
+      ]
+    },
+    "energy": {
+      "thermostat": {
+        "id": 1,
+        "values": {
+          "big": "39,7",
+          "small": "-2,4",
+          "type": 2
+        }
+      },
+      "battery": {
+        "id": 2,
+        "values": {
+          "big": "39,7",
+          "small": "-2,4",
+          "type": 2
+        }
+      },
+      "fair": {
+        "id": 3,
+        "values": {
+          "big": "39,7",
+          "small": "-2,4",
+          "type": 1
+        }
+      }
+    }
+  }
+}

@@ -20,89 +20,89 @@
   <p class="desc-line">Прогноз отклонений на 3 суток без учета компенсирующих мероприятий</p>
   <ul class="forecast-block-menu">
     <li>
-      <a class="link active" (click)="setCertificationPageType()">
+      <a class="link" routerLink="/certification" routerLinkActive="active">
         <div class="icon">
           <app-svg-icon url="/assets/icons/certification-icon.svg" color="#FFF"></app-svg-icon>
         </div>
         <span>Паспортизация</span>
       </a>
       <div class="indicator">
-        <span class="big-value">zzz тыс. т</span>
-        <span class="small-value">
-xxx
-</span>
+        <span class="big-value">{{data?.certification?.values.big}} тыс. т</span>
+        <span class="small-value"
+              [ngClass]="{'red':data?.certification?.values.type === 1, 'blue': data?.certification?.values.type === 2}">{{data?.certification?.values.small}}</span>
         <!--<i class="data-arrow" [ngClass]="mainScreeW1?.v1?.PassprotizationDeviationTrend > 0 ? 'green top' : 'blue bottom'"></i>-->
       </div>
     </li>
   </ul>
 </div>
 <div class="fact-plan-row">
-  <div class="fact-plan-block active">
-    <div class="title">Бензины</div>
+  <div class="fact-plan-block" *ngFor="let i of data?.certification?.data" routerLink="/certification/{{i.id}}">
+    <div class="title">{{i.label}}</div>
     <div class="values">
       <div class="big">
         <!--<i class="data-arrow green bottom"></i>-->
-        39,7 тыс.т
+        {{i.values.big}} тыс.т
       </div>
-      <div class="blue">
-        -2,4 тыс.т
-      </div>
-    </div>
-  </div>
-  <div class="fact-plan-block">
-    <div class="title">Керосины</div>
-    <div class="values">
-      <div class="big">
-        <!--<i class="data-arrow blue bottom"></i>-->
-        18,3 тыс.т
-      </div>
-      <div class="green">
-        +2,1 тыс.т
+      <div class="small-value" [ngClass]="{'green':i.values.type === 1, 'blue': i.values.type === 2}">
+        {{i.values.small}} тыс.т
       </div>
     </div>
   </div>
+  <!--<div class="fact-plan-block">-->
+  <!--<div class="title">Керосины</div>-->
+  <!--<div class="values">-->
+  <!--<div class="big">-->
+  <!--&lt;!&ndash;<i class="data-arrow blue bottom"></i>&ndash;&gt;-->
+  <!--18,3 тыс.т-->
+  <!--</div>-->
+  <!--<div class="green">-->
+  <!--+2,1 тыс.т-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div>-->
 </div>
-<div class="fact-plan-row">
-  <div class="fact-plan-block">
-    <div class="title">Дизели</div>
-    <div class="values">
-      <div class="big">
-        <!--<i class="data-arrow blue bottom"></i>-->
-        46,4 тыс.т
-      </div>
-      <div class="blue">
-        -0,4 тыс.т
-      </div>
-    </div>
-  </div>
-  <div class="fact-plan-block">
-    <div class="title">Темные</div>
-    <div class="values">
-      <div class="big">
-        <!--<i class="data-arrow blue bottom"></i>-->
-        32,1 тыс.т
-      </div>
-      <div class="green">
-        -0,1 тыс.т
-      </div>
-    </div>
-  </div>
-</div>
-<div class="fact-plan-row">
-  <div class="fact-plan-block">
-    <div class="title">Прочие</div>
-    <div class="values">
-      <div class="big">
-        <!--<i class="data-arrow blue bottom"></i>-->
-        8,0 тыс.т
-      </div>
-      <div class="blue">
-        -2,0 тыс.т
-      </div>
-    </div>
-  </div>
-  <div class="fact-plan-block" style="opacity: 0;"></div>
-</div>
+<!--<div class="fact-plan-row">-->
+<!--<div class="fact-plan-block">-->
+<!--<div class="title">Дизели</div>-->
+<!--<div class="values">-->
+<!--<div class="big">-->
+<!--&lt;!&ndash;<i class="data-arrow blue bottom"></i>&ndash;&gt;-->
+<!--46,4 тыс.т-->
+<!--</div>-->
+<!--<div class="blue">-->
+<!-- -0,4 тыс.т-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="fact-plan-block">-->
+<!--<div class="title">Темные</div>-->
+<!--<div class="values">-->
+<!--<div class="big">-->
+<!--&lt;!&ndash;<i class="data-arrow blue bottom"></i>&ndash;&gt;-->
+<!--32,1 тыс.т-->
+<!--</div>-->
+<!--<div class="green">-->
+<!-- -0,1 тыс.т-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="fact-plan-row">-->
+<!--<div class="fact-plan-block">-->
+<!--<div class="title">Прочие</div>-->
+<!--<div class="values">-->
+<!--<div class="big">-->
+<!--&lt;!&ndash;<i class="data-arrow blue bottom"></i>&ndash;&gt;-->
+<!--8,0 тыс.т-->
+<!--</div>-->
+<!--<div class="blue">-->
+<!-- -2,0 тыс.т-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="fact-plan-block" style="opacity: 0;"></div>-->
+<!--</div>-->
 <div class="forecast-block">
   <ul class="forecast-block-menu">
     <!--<li>-->
@@ -119,7 +119,7 @@ xxx
     <!--</div>-->
     <!--</li>-->
     <li>
-      <a class="link" (click)="setEnergyPageType()">
+      <a class="link" routerLink="/energy" routerLinkActive="active">
         <div class="icon">
           <app-svg-icon url="/assets/icons/lighting-icon.svg"></app-svg-icon>
         </div>
@@ -135,8 +135,9 @@ xxx
         <span>Тепловая энергия</span>
       </div>
       <div class="values">
-        <span class="big-value">zzz</span>
-        <span class="small-value">xxx</span>
+        <span class="big-value">{{data?.energy?.thermostat.values.big}}</span>
+        <span class="small-value"
+              [ngClass]="{'green':data?.energy?.thermostat.values.type === 1, 'blue': data?.energy?.thermostat.values.type === 2}">{{data?.energy?.thermostat.values.small}}</span>
       </div>
       <div class="measure-unit">
         тыс. Гкал
@@ -148,8 +149,9 @@ xxx
         <span>Электроэнергия</span>
       </div>
       <div class="values">
-        <span class="big-value">xxx</span>
-        <span class="small-value">zzz</span>
+        <span class="big-value">{{data?.energy?.battery.values.big}}</span>
+        <span class="small-value"
+              [ngClass]="{'green':data?.energy?.battery.values.type === 1, 'blue': data?.energy?.battery.values.type === 2}">{{data?.energy?.battery.values.small}}</span>
       </div>
       <div class="measure-unit">
         млн. кВт*ч
@@ -161,8 +163,9 @@ xxx
         <span>Топливо</span>
       </div>
       <div class="values">
-        <span class="big-value">xxx</span>
-        <span class="small-value"></span>
+        <span class="big-value">{{data?.energy?.fair.values.big}}</span>
+        <span class="small-value"
+              [ngClass]="{'green':data?.energy?.fair.values.type === 1, 'blue': data?.energy?.fair.values.type === 2}">{{data?.energy?.fair.values.small}}</span>
       </div>
       <div class="measure-unit">
         тыс т.у.т.

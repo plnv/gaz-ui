@@ -1,0 +1,72 @@
+<!--<app-widget-toolbar [title]="title" [subTitle]="subTitle" [options]="toolbarOptions">-->
+  <div class="toolbar-legend">
+    <div class="item">
+      <i class="white dash"></i>
+      <span>План</span>
+    </div>
+    <div class="item">
+      <i class="blue"></i>
+      <span>Факт</span>
+    </div>
+    <div class="item">
+      <i class="blue dash"></i>
+      <span>Прогноз без учета комп-щих мероприятий</span>
+    </div>
+    <div class="item">
+      <i class="deepblue"></i>
+      <span>Прогноз с учетом комп-щих мероприятий</span>
+    </div>
+  </div>
+<!--</app-widget-toolbar>-->
+
+<div class="content">
+  <div class="left-col">
+    <div class="legend">
+      план / прогноз / отклонение
+    </div>
+    <ul>
+      <li ngClass="{active: ix == activeListItemIndex}" (click)="setActiveListItem(ix)">
+        <div class="icon" zzz="item.icon">
+          <app-svg-icon url="item.icon" color="#868686"></app-svg-icon>
+        </div>
+        <div class="desc">
+          <div class="name"> item.name </div>
+          <div class="small-text"> item.measure </div>
+          <div class="values">
+            <div class="left"> item.value1 | numberFormat:2  / <span class="light"> item.value2 | numberFormat:2</span></div>
+            <div class="right" ngClass="item.deviationColor">
+               item.deviation | numberFormat:2
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="graphs">
+    <div class="graph">
+      <div class="legend">
+        <!--<div class="item plan" style="color: #FFF">-->
+        <!--План <span>{{ chart.plan | numberFormat:1 }}</span>-->
+        <!--</div>-->
+        <!--<div class="item fact" style="color: #009FE2" *ngIf="i == 0">-->
+        <!--Факт <span>{{ chart.fact | numberFormat:1 }}</span>-->
+        <!--</div>-->
+        <!--<div class="item forecast" style="color: #009fe2">-->
+        <!--Прогноз <span>{{ chart.prediction | numberFormat:1 }}</span>-->
+        <!--</div>-->
+        <!--<div class="item" *ngFor="let line of chart.lines" [ngStyle]="{display: line.showLegend ? 'block' : 'none', color: line.color}" [ngClass]="[line.name]">-->
+        <!--{{ line.title }} <span>{{ line.lastValue | numberFormat:1 }}</span>-->
+        <!--</div>-->
+        <div class="item arrow">
+          Эффект от компенсирующих мероприятий
+          <i class="data-arrow" ngClass="chart.trend > 0 ? 'top green' : 'bottom red'" zzz="chart.deviation !== 0"></i>
+          <!--<span>{{ chart.deviation | numberFormat:1 }}</span>-->
+          <span>+2,0</span>
+        </div>
+      </div>
+      <div class="graph-content">
+        <!--<app-omsk-main-day-chart [startDate]="chart.startDate" [endDate]="chart.endDate" [current]="currentDate" [lines]="chart.lines"></app-omsk-main-day-chart>-->
+      </div>
+    </div>
+  </div>
+</div>
