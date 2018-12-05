@@ -30,7 +30,8 @@ export class GraphComponent implements OnInit {
   }
 
   getGraph(id: number) {
-    this.service.getGraph(id).subscribe(data => this.dataGraph = data, error => this.dataGraph = null);
+    this.dataGraph = null;
+    this.service.getGraph(id).subscribe(data => this.dataGraph = data);
   }
 
 }

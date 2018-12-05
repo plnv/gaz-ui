@@ -1,14 +1,14 @@
 @import '../../../../theme';
 
 :host {
-  overflow: visible;
-  box-shadow: 0 0 $scale-size * 5 rgba(0, 0, 0, 0.5);
-  z-index: 20;
+  //overflow: visible;
+  //box-shadow: 0 0 $scale-size rgba(0, 0, 0, 0.5);
+  //z-index: 20;
   font-size: $font-size;
   background: #191C2A;
   display: block;
-  min-width: 38em;
-  min-height: 100%;
+  min-width: 37em;
+  height: 100%;
 }
 
 .widget-main-toolbar {
@@ -23,7 +23,7 @@
 
   .logo-section {
     padding: $scale-size;
-    border-right: 2px solid #2378d9;
+    border-right: 1px solid #2378d9;
     display: flex;
     align-items: center;
     box-shadow: 0 0 $scale-size * 3 rgba(0, 0, 0, 0.5);
@@ -142,7 +142,7 @@
     padding: $scale-size 0;
 
     & + .indicator {
-      margin-left: $scale-size / 2;
+      margin-left: $scale-size;
     }
 
     &:last-child {

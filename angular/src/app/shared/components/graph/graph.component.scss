@@ -5,13 +5,16 @@
   background: #191C2A;
   display: block;
   width: 100%;
+  position: relative;
 }
 
 .toolbar-legend {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: $scale-size;
+  //position: absolute;
+  right: $scale-size * 2;
+  top: $scale-size * 1.5;
 
   .item {
     display: flex;
@@ -57,9 +60,10 @@
 .content {
   display: flex;
   flex: 1;
+  min-height: $scale-size * 20;
 
   .left-col {
-    padding: $scale-size;
+    padding: $scale-size * 2;
     //box-shadow: 0 0 200px rgba(0, 0, 0, 0.5);
     z-index: 10;
     position: relative;
@@ -165,6 +169,7 @@
     flex-direction: row-reverse;
     display: flex;
     padding-right: $scale-size;
+    padding-top: $scale-size * 5;
 
     .graph {
       flex: 1;

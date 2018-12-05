@@ -34,7 +34,7 @@ $grey-linear: linear-gradient(to bottom, #1a1d2a, #42444E);
 $blue-linear: linear-gradient(to bottom, #1a1d2a, #1F324A);
 $deepblue-linear: linear-gradient(to bottom, #1a1d2a, #1A3943);
 $purple-linear: linear-gradient(to bottom, #1a1d2a, #4B3077);
-$whiteblue-linear:  linear-gradient(to bottom, #1a1d2a, #F89564);
+$whiteblue-linear: linear-gradient(to bottom, #1a1d2a, #F89564);
 
 $blue-linear-left: linear-gradient(to left, $blue 20%, $blue2 80%);
 $deepblue-linear-left: linear-gradient(to left, $deepblue 20%, $deepblue2 80%);
@@ -65,45 +65,47 @@ $font-size-micro: 70%;
 $scale-size: .5em;
 
 .wall-widgets {
-    font-size: 54px;
+  font-size: 54px;
 }
 
 .wall-widgets-2x2 {
-    font-size: 34px;
+  font-size: 34px;
 }
 
 .clearfix {
-    clear: both;
+  clear: both;
 }
 
 $btn-linked-color: #FFD700;
 
 @function linked-color($color: $btn-linked-color) {
-    @return transparentize($color, 0.5), transparentize($color, 0.3);
+  @return transparentize($color, 0.5), transparentize($color, 0.3);
 }
 
 @mixin linked-text($color: $btn-linked-color) {
-    $colors: linked-color($color);
-    $default: nth($colors, 1);
-    $active: nth($colors, 2);
-    color: $default;
+  $colors: linked-color($color);
+  $default: nth($colors, 1);
+  $active: nth($colors, 2);
+  color: $default;
 
-    &:hover {
-        color: $active;
-    }
+  &:hover {
+    color: $active;
+  }
 }
 
 @mixin btn-linked($color: $btn-linked-color) {
-    $colors: linked-color($color);
-    $default: nth($colors, 1);
-    $active: nth($colors, 2);
+  $colors: linked-color($color);
+  $default: nth($colors, 1);
+  $active: nth($colors, 2);
 
-    background-color: $default;
-    border-color: $default;
-    cursor: pointer;
-    transition: all ease-in-out 300ms;
-    &:hover {
-        background-color: $active;
-        border-color: $active;
-    }
+  background-color: $default;
+  border-color: $default;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  &:hover {
+    background-color: $active;
+    border-color: $active;
+  }
 }
+
+

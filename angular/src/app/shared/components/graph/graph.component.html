@@ -1,23 +1,27 @@
-<h2>{{title}}{{titleSub}}</h2>
+<!--<h2>{{title}}<span class="small-font">{{titleSub}}</span></h2>-->
 <!--<app-widget-toolbar [title]="title" [subTitle]="subTitle" [options]="toolbarOptions">-->
-<div class="toolbar-legend">
-  <div class="item">
-    <i class="white dash"></i>
-    <span>План</span>
+<app-header [title]="title" [titleSub]="titleSub">
+
+
+  <div class="toolbar-legend">
+    <div class="item">
+      <i class="white dash"></i>
+      <span>План</span>
+    </div>
+    <div class="item">
+      <i class="blue"></i>
+      <span>Факт</span>
+    </div>
+    <!--<div class="item">-->
+    <!--<i class="blue dash"></i>-->
+    <!--<span>Прогноз без учета комп-щих мероприятий</span>-->
+    <!--</div>-->
+    <!--<div class="item">-->
+    <!--<i class="deepblue"></i>-->
+    <!--<span>Прогноз с учетом комп-щих мероприятий</span>-->
+    <!--</div>-->
   </div>
-  <div class="item">
-    <i class="blue"></i>
-    <span>Факт</span>
-  </div>
-  <div class="item">
-    <i class="blue dash"></i>
-    <span>Прогноз без учета комп-щих мероприятий</span>
-  </div>
-  <div class="item">
-    <i class="deepblue"></i>
-    <span>Прогноз с учетом комп-щих мероприятий</span>
-  </div>
-</div>
+</app-header>
 <!--</app-widget-toolbar>-->
 
 <div class="content">
@@ -27,7 +31,7 @@
     </div>
     <ul>
       <li routerLinkActive="active" routerLink="/{{apiUrl}}/{{item.graphId}}"
-          *ngFor="let item of data" (click)="setActiveListItem(ix)">
+          *ngFor="let item of data">
         <div class="icon" *ngIf="item.icon">
           <app-svg-icon url="/assets/icons/{{item.icon}}.svg" color="#868686"></app-svg-icon>
         </div>
@@ -47,26 +51,26 @@
   </div>
   <div class="graphs">
     <div class="graph">
-      <div class="legend">
-        <!--<div class="item plan" style="color: #FFF">-->
-        <!--План <span>{{ chart.plan | numberFormat:1 }}</span>-->
-        <!--</div>-->
-        <!--<div class="item fact" style="color: #009FE2" *ngIf="i == 0">-->
-        <!--Факт <span>{{ chart.fact | numberFormat:1 }}</span>-->
-        <!--</div>-->
-        <!--<div class="item forecast" style="color: #009fe2">-->
-        <!--Прогноз <span>{{ chart.prediction | numberFormat:1 }}</span>-->
-        <!--</div>-->
-        <!--<div class="item" *ngFor="let line of chart.lines" [ngStyle]="{display: line.showLegend ? 'block' : 'none', color: line.color}" [ngClass]="[line.name]">-->
-        <!--{{ line.title }} <span>{{ line.lastValue | numberFormat:1 }}</span>-->
-        <!--</div>-->
-        <div class="item arrow">
-          Эффект от компенсирующих мероприятий
-          <i class="data-arrow" ngClass="chart.trend > 0 ? 'top green' : 'bottom red'" zzz="chart.deviation !== 0"></i>
-          <!--<span>{{ chart.deviation | numberFormat:1 }}</span>-->
-          <span>+2,0</span>
-        </div>
-      </div>
+      <!--<div class="legend">-->
+      <!--<div class="item plan" style="color: #FFF">-->
+      <!--План <span>{{ chart.plan | numberFormat:1 }}</span>-->
+      <!--</div>-->
+      <!--<div class="item fact" style="color: #009FE2" *ngIf="i == 0">-->
+      <!--Факт <span>{{ chart.fact | numberFormat:1 }}</span>-->
+      <!--</div>-->
+      <!--<div class="item forecast" style="color: #009fe2">-->
+      <!--Прогноз <span>{{ chart.prediction | numberFormat:1 }}</span>-->
+      <!--</div>-->
+      <!--<div class="item" *ngFor="let line of chart.lines" [ngStyle]="{display: line.showLegend ? 'block' : 'none', color: line.color}" [ngClass]="[line.name]">-->
+      <!--{{ line.title }} <span>{{ line.lastValue | numberFormat:1 }}</span>-->
+      <!--</div>-->
+      <!--<div class="item arrow">-->
+      <!--Эффект от компенсирующих мероприятий-->
+      <!--<i class="data-arrow" ngClass="chart.trend > 0 ? 'top green' : 'bottom red'" zzz="chart.deviation !== 0"></i>-->
+      <!--<span>{{ chart.deviation | numberFormat:1 }}</span>-->
+      <!--<span>+2,0</span>-->
+      <!--</div>-->
+      <!--</div>-->
       <div class="graph-content">
         <app-highchart *ngIf="dataGraph?.value" [data]="dataGraph"></app-highchart>
         <!--<app-omsk-main-day-chart [startDate]="chart.startDate" [endDate]="chart.endDate" [current]="currentDate" [lines]="chart.lines"></app-omsk-main-day-chart>-->

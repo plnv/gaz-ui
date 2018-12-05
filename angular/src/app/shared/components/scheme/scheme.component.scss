@@ -1,0 +1,128 @@
+@import '../../../../theme';
+
+:host {
+  font-size: $font-size;
+  background: #191C2A;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.toolbar-legend {
+  display: flex;
+  align-items: center;
+
+  .item {
+    display: flex;
+    margin-left: $scale-size * 4;
+    align-items: center;
+    font-size: 100%;
+    color: #FFF;
+
+    i {
+      display: block;
+      flex: 0 0 $scale-size;
+      //width: $scale-size;
+      height: $scale-size;
+      margin-right: $scale-size;
+      position: relative;
+      //top: 5px;
+      border-radius: 5px;
+
+      &.grey {
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      &.blue {
+        border: 2px solid $color-blue-light;
+        background: rgba(35, 120, 216, 0.5)
+      }
+      &.blue2 {
+        border: 2px solid $color-blue-light;
+      }
+
+      &.violet {
+        border: 2px solid #662D91;
+        background: rgba(102, 45, 145, 0.5);
+      }
+    }
+  }
+}
+
+.wrapper {
+  //position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: $scale-size $scale-size * 3;
+  .svg-scheme {
+    width: 100%;
+    height: 100%;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    //right: 0;
+    //bottom: 0;
+    //width: 100%;
+    //height: 100%;
+    //display: none;
+    //transition: opacity 500ms linear;
+
+    app-svg-icon {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+//.timeline-block {
+//  display: flex;
+//  flex-shrink: 0;
+//  box-shadow: 0 0 200px rgba(0, 0, 0, 0.5);
+//  height: 200px;
+//  padding: 20px 80px;
+//
+//  .choose-period {
+//    display: flex;
+//    align-items: center;
+//    border: 4px solid #272a38;
+//    border-radius: 20px;
+//    background: #1e202a;
+//    padding: 0 30px;
+//    width: 710px;
+//
+//    .icon {
+//      background: #272A38;
+//      padding: 30px;
+//      border-radius: 20px;
+//      height: 65px;
+//    }
+//
+//    .content {
+//      margin-left: 20px;
+//      font-size: $font-size-small;
+//
+//      .period {
+//        color: $color-blue;
+//      }
+//    }
+//  }
+//
+//  .chart {
+//    flex: 1;
+//    height: 100%;
+//    padding: 0 210px 0 60px;
+//
+//    app-omsk-scheme-timeline {
+//      display: block;
+//      height: 100%;
+//    }
+//  }
+//}

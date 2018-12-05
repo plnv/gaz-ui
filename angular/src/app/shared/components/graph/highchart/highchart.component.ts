@@ -46,6 +46,10 @@ export class HighchartComponent {
       },
       series
     };
+
+    setTimeout(function () {
+      window.dispatchEvent(new Event('resize'));
+    }, 0)
   }
 
 }

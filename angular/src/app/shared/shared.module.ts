@@ -9,6 +9,7 @@ import { GraphComponent } from './components/graph/graph.component';
 import { HighchartComponent } from './components/graph/highchart/highchart.component';
 import { SchemeComponent } from './components/scheme/scheme.component';
 import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 const MODULES = [
@@ -25,7 +26,8 @@ const COMPONENTS = [
   DashboardComponent,
   GraphComponent,
   HighchartComponent,
-  SchemeComponent
+  SchemeComponent,
+  HeaderComponent
 ];
 
 

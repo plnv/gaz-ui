@@ -1,0 +1,20 @@
+@import "../../../../theme";
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 $scale-size * 3 rgba(0, 0, 0, 0.3);
+  background: $wallToolBarBackground;
+  z-index: 100;
+  h2 {
+    display: block;
+    font-size: 115%;
+    font-weight: normal;
+  }
+  padding: $scale-size $scale-size * 2;
+  .small-font {
+    font-size: 80%;
+    color: #5E667F;
+    margin-left: $scale-size;
+  }
+}
