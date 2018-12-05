@@ -8,7 +8,7 @@ import { Component, ElementRef, Input, OnInit } from '@angular/core';
 })
 export class SvgIconComponent implements OnInit {
 
-  @Input() url = '';
+  @Input() url: string;
   @Input() color: string;
 
   html = '';

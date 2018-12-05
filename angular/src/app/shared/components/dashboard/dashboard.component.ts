@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { DashboardService } from '../../services/dashboard.service';
 
 @Component({
@@ -12,13 +12,18 @@ export class DashboardComponent implements OnInit {
 
   data: any;
 
-  constructor(private service: DashboardService, private route: ActivatedRoute) {
+  constructor(private service: DashboardService, private route: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit() {
-    this.route.params.subscribe(data => {
-      console.log(data);
-    })
+    // this.router.events.subscribe(data => {
+    //   console.log(data);
+    // })
+    this.router.events.subscribe((val) => {
+      if (val instanceof NavigationEnd) {
+        console.log(this.route.snapshot.paramMap);
+      }
+    });
     this.service.get().subscribe(data => this.data = data);
   }
 

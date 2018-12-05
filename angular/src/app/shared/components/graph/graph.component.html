@@ -1,22 +1,23 @@
+<h2>{{title}}{{titleSub}}</h2>
 <!--<app-widget-toolbar [title]="title" [subTitle]="subTitle" [options]="toolbarOptions">-->
-  <div class="toolbar-legend">
-    <div class="item">
-      <i class="white dash"></i>
-      <span>План</span>
-    </div>
-    <div class="item">
-      <i class="blue"></i>
-      <span>Факт</span>
-    </div>
-    <div class="item">
-      <i class="blue dash"></i>
-      <span>Прогноз без учета комп-щих мероприятий</span>
-    </div>
-    <div class="item">
-      <i class="deepblue"></i>
-      <span>Прогноз с учетом комп-щих мероприятий</span>
-    </div>
+<div class="toolbar-legend">
+  <div class="item">
+    <i class="white dash"></i>
+    <span>План</span>
   </div>
+  <div class="item">
+    <i class="blue"></i>
+    <span>Факт</span>
+  </div>
+  <div class="item">
+    <i class="blue dash"></i>
+    <span>Прогноз без учета комп-щих мероприятий</span>
+  </div>
+  <div class="item">
+    <i class="deepblue"></i>
+    <span>Прогноз с учетом комп-щих мероприятий</span>
+  </div>
+</div>
 <!--</app-widget-toolbar>-->
 
 <div class="content">
@@ -25,17 +26,19 @@
       план / прогноз / отклонение
     </div>
     <ul>
-      <li ngClass="{active: ix == activeListItemIndex}" (click)="setActiveListItem(ix)">
-        <div class="icon" zzz="item.icon">
-          <app-svg-icon url="item.icon" color="#868686"></app-svg-icon>
+      <li routerLinkActive="active" routerLink="/{{apiUrl}}/{{item.graphId}}"
+          *ngFor="let item of data" (click)="setActiveListItem(ix)">
+        <div class="icon" *ngIf="item.icon">
+          <app-svg-icon url="/assets/icons/{{item.icon}}.svg" color="#868686"></app-svg-icon>
         </div>
         <div class="desc">
-          <div class="name"> item.name </div>
-          <div class="small-text"> item.measure </div>
+          <div class="name">{{ item.name }}</div>
+          <div class="small-text" *ngIf="item.measure">{{item.measure}}</div>
           <div class="values">
-            <div class="left"> item.value1 | numberFormat:2  / <span class="light"> item.value2 | numberFormat:2</span></div>
-            <div class="right" ngClass="item.deviationColor">
-               item.deviation | numberFormat:2
+            <div class="left">{{item.value1}} / <span class="light">{{item.value2}}</span></div>
+            <div class="right"
+                 [ngClass]="{'red': item.deviationType === 1, 'blue' : item.deviationType === 2, 'yellow': item.deviationType === 3}">
+              {{item.deviation}}
             </div>
           </div>
         </div>
@@ -65,6 +68,7 @@
         </div>
       </div>
       <div class="graph-content">
+        <app-highchart *ngIf="dataGraph?.value" [data]="dataGraph"></app-highchart>
         <!--<app-omsk-main-day-chart [startDate]="chart.startDate" [endDate]="chart.endDate" [current]="currentDate" [lines]="chart.lines"></app-omsk-main-day-chart>-->
       </div>
     </div>

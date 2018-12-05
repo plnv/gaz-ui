@@ -4,6 +4,7 @@
   font-size: $font-size;
   background: #191C2A;
   display: block;
+  width: 100%;
 }
 
 .toolbar-legend {
@@ -62,6 +63,7 @@
     //box-shadow: 0 0 200px rgba(0, 0, 0, 0.5);
     z-index: 10;
     position: relative;
+    width: $scale-size * 35;
 
     .legend {
       font-size: $font-size-small;
@@ -77,8 +79,8 @@
       background: #303545;
       border-left: $scale-size solid #0874a4;
       border-radius: $scale-size * 2;
-      padding: $scale-size / 2 $scale-size;
-      margin-bottom: 10px;
+      padding: $scale-size;
+      margin-bottom: $scale-size;
       font-size: $font-size-small;
       cursor: pointer;
       opacity: 0.6;
@@ -88,9 +90,10 @@
 
       .icon {
         app-svg-icon {
+          display: block;
           position: relative;
-          left: -18px;
-          height: 70px;
+          height: $scale-size * 6;
+          width: $scale-size * 6;
         }
       }
 
@@ -104,12 +107,12 @@
 
       .name {
         color: #868686;
-        padding: 10px 0 5px;
+        padding: $scale-size 0 $scale-size / 2;
       }
 
       .small-text {
         font-size: 85%;
-        padding-bottom: 15px;
+        padding-bottom: $scale-size;
         color: $color-blue;
       }
 
@@ -127,8 +130,8 @@
 
         .right {
           margin-left: auto;
-          padding: 10px;
-          border-radius: 8px;
+          padding: $scale-size;
+          border-radius: $scale-size;
           background: #383e51;
 
           &.red {
@@ -147,7 +150,7 @@
 
       &.active {
         background: #303545;
-        border-left: 16px solid #0874a4;
+        border-left: $scale-size solid #0874a4;
         opacity: 1;
 
         .name {
@@ -161,7 +164,7 @@
     flex: 1;
     flex-direction: row-reverse;
     display: flex;
-    padding-right: 100px;
+    padding-right: $scale-size;
 
     .graph {
       flex: 1;

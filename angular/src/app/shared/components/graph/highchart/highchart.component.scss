@@ -1,0 +1,70 @@
+@import "../../../../../theme";
+
+::ng-deep {
+  .highcharts-root {
+    font-family: inherit;
+    font-size: inherit;
+    color: $color-blue-dark;
+  }
+  .highcharts-axis-labels text {
+    color: $color-blue !important;
+    fill: $color-blue !important;
+  }
+  .highcharts-background {
+    fill: transparent;
+  }
+  .highcharts-grid-line, .highcharts-tick {
+    stroke: $color-blue-dark;
+  }
+  .highcharts-xaxis {
+    .highcharts-axis-line {
+      stroke: $color-blue-dark;
+    }
+  }
+  .highcharts-tick {
+  }
+  .highcharts-credits {
+    display: none;
+  }
+  .highcharts-crosshair {
+  }
+  //.highcharts-legend-item text {
+  //  font-size: 16px !important;
+  //  font-weight: 400 !important;
+  //}
+  //.highcharts-point {
+  //  stroke-width: 0;
+  //}
+  .highcharts-tooltip {
+    & > span {
+      color: #ffffff !important;
+      background: #303545;
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      padding: 12px 16px;
+      border-radius: 4px;
+    }
+    div {
+      padding-top: 5px;
+    }
+    i {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      margin-right: 5px;
+      vertical-align: baseline;
+    }
+  }
+  //.highcharts-plot-line {
+  //  stroke: #f44336;
+  //}
+  //.highcharts-plot-line-back {
+  //  fill: rgba(#f44336, .1);
+  //}
+}
+
+highcharts-chart {
+  display: block;
+  width: 100%;
+  height: $scale-size * 30;
+}

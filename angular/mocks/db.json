@@ -1,4 +1,145 @@
 {
+  "graph": [
+    {
+      "id": 1,
+      "value": {
+        "categories": [
+          "01.11.18",
+          "08:00",
+          "16:00",
+          "02.11.18",
+          "08:00",
+          "16:00",
+          "03.11.18",
+          "08:00",
+          "16:00"
+        ],
+        "series": [
+          {
+            "data": [
+              0,
+              0,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "value": {
+        "categories": [
+          "16:00",
+          "02.11.18",
+          "08:00",
+          "16:00",
+          "03.11.18",
+          "08:00",
+          "16:00"
+        ],
+        "series": [
+          {
+            "data": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "data": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              100
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "certification": [
+    {
+      "id": 1,
+      "graphId": 1,
+      "name": "Бензин Регуляр-92 (АИ-92-К5)",
+      "measure": "",
+      "value1": "22,40",
+      "value2": "24,40",
+      "deviation": "-2,00",
+      "deviationType": 1
+    },
+    {
+      "id": 2,
+      "graphId": 2,
+      "name": "Бензин Регуляр-95 (АИ-95)",
+      "measure": "",
+      "value1": "22,40",
+      "value2": "24,40",
+      "deviation": "-2,00",
+      "deviationType": 2
+    }
+  ],
+  "energy": [
+    {
+      "id": 1,
+      "graphId": 1,
+      "name": "Тепловая энергия",
+      "icon": "thermostat-icon",
+      "measure": "тыс. Гкал",
+      "value1": "22,40",
+      "value2": "24,40",
+      "deviation": "-2,00",
+      "deviationType": 1
+    },
+    {
+      "id": 2,
+      "graphId": 2,
+      "name": "Топливо",
+      "icon": "battery-icon",
+      "measure": "тыс. т.у.т.",
+      "value1": "22,40",
+      "value2": "24,40",
+      "deviation": "-2,00",
+      "deviationType": 2
+    },
+    {
+      "id": 3,
+      "graphId": 3,
+      "name": "Электрическая энергия",
+      "icon": "fair-icon",
+      "measure": "млн. кВт*ч",
+      "value1": "22,40",
+      "value2": "24,40",
+      "deviation": "-2,00",
+      "deviationType": 2
+    }
+  ],
   "dashboard": {
     "certification": {
       "values": {

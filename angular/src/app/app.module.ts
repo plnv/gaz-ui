@@ -1,33 +1,34 @@
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { Router, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './core/components/dashboard/dashboard.component';
-import { NotFoundComponent } from './core/components/not-found/not-found.component';
-import { CoreModule } from './core/core.module';
+import { CertificationComponent } from './certification/certification.component';
+import { EnergyComponent } from './energy/energy.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { SharedModule } from './shared/shared.module';
 
 const routes: Routes = [
-  {
-    path: '', redirectTo: 'certification', pathMatch: 'full'
-  },
-  {
-    path: '**', component: NotFoundComponent
-  },
+  { path: '', redirectTo: 'certification/', pathMatch: 'full' },
+
+  { path: 'certification', redirectTo: 'certification/', pathMatch: 'full' },
+  { path: 'certification/:id', component: CertificationComponent },
+
+  { path: 'energy', redirectTo: 'energy/', pathMatch: 'full' },
+  { path: 'energy/:id', component: EnergyComponent },
+
+  { path: '**', component: NotFoundComponent },
 ];
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    CertificationComponent,
+    EnergyComponent,
+    AppComponent,
+    NotFoundComponent
   ],
   imports: [
-    BrowserModule,
-    CommonModule,
-    HttpClientModule,
-    CoreModule,
+    SharedModule,
     RouterModule.forRoot(routes),
   ],
   providers: [],
