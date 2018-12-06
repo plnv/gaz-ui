@@ -1,5 +1,5 @@
 {
-  "graph": [
+  "chart": [
     {
       "id": 1,
       "value": {
@@ -86,7 +86,7 @@
   "certification": [
     {
       "id": 1,
-      "graphId": 1,
+      "chartId": 1,
       "name": "Бензин Регуляр-92 (АИ-92-К5)",
       "measure": "",
       "value1": "22,40",
@@ -96,7 +96,7 @@
     },
     {
       "id": 2,
-      "graphId": 2,
+      "chartId": 2,
       "name": "Бензин Регуляр-95 (АИ-95)",
       "measure": "",
       "value1": "22,40",
@@ -108,7 +108,7 @@
   "energy": [
     {
       "id": 1,
-      "graphId": 1,
+      "chartId": 1,
       "name": "Тепловая энергия",
       "icon": "thermostat-icon",
       "measure": "тыс. Гкал",
@@ -119,7 +119,7 @@
     },
     {
       "id": 2,
-      "graphId": 2,
+      "chartId": 2,
       "name": "Топливо",
       "icon": "battery-icon",
       "measure": "тыс. т.у.т.",
@@ -130,7 +130,7 @@
     },
     {
       "id": 3,
-      "graphId": 3,
+      "chartId": 3,
       "name": "Электрическая энергия",
       "icon": "fair-icon",
       "measure": "млн. кВт*ч",

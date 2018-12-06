@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import { Chart, ChartData } from '../../../models/models';
 import { ChartOptions } from './highchart.options';
 
 @Component({
@@ -12,13 +13,13 @@ export class HighchartComponent {
   highcharts = Highcharts;
   chartOptions: any = ChartOptions;
 
-  @Input() set data(data: any) {
+  @Input() set data(data: Chart) {
     if (data && data.value) {
       this.convert(data.value);
     }
   }
 
-  convert(data: any) {
+  convert(data: ChartData) {
     const categories = data.categories;
     const series = [
       {
@@ -49,7 +50,7 @@ export class HighchartComponent {
 
     setTimeout(function () {
       window.dispatchEvent(new Event('resize'));
-    }, 0)
+    }, 0);
   }
 
 }

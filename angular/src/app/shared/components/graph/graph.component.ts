@@ -1,6 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute, Params, Router } from '@angular/router';
+import { interval, Subject, Subscription } from 'rxjs';
+import { startWith, switchMap, takeUntil } from 'rxjs/operators';
+import { Chart, GraphBlock, POLLING } from '../../models/models';
 import { GraphService } from '../../services/graph.service';
+
 
 @Component({
   selector: 'app-graph',
@@ -8,30 +12,56 @@ import { GraphService } from '../../services/graph.service';
   styleUrls: ['./graph.component.scss'],
   providers: [GraphService]
 })
-export class GraphComponent implements OnInit {
+export class GraphComponent implements OnInit, OnDestroy {
 
-  data: any[];
-  dataGraph: any;
+  data: GraphBlock[];
+  chart: Chart;
+  interval$: Subscription;
+
+  private sub: Subject<void> = new Subject();
 
   @Input() apiUrl: string;
   @Input() title: string;
   @Input() titleSub: string;
 
-  constructor(private service: GraphService, private route: ActivatedRoute) {
-    this.route.params.subscribe(params => {
-      if (params.id) {
-        this.getGraph(params.id);
-      }
-    });
+  constructor(private service: GraphService, private route: ActivatedRoute, private router: Router) {
+    this.route.params
+      .pipe(takeUntil(this.sub))
+      .subscribe((params: Params) => {
+        if (params.id) {
+          this.getGraph(params.id);
+        }
+      });
   }
 
   ngOnInit() {
-    this.service.get(this.apiUrl).subscribe(data => this.data = data);
+    this.service.get(this.apiUrl)
+      .pipe(takeUntil(this.sub))
+      .subscribe((data: GraphBlock[]) => {
+        if (data) {
+          this.data = data;
+          this.router.navigate([this.apiUrl, data[0].chartId]);
+        }
+      });
   }
 
   getGraph(id: number) {
-    this.dataGraph = null;
-    this.service.getGraph(id).subscribe(data => this.dataGraph = data);
+    if (this.interval$) {
+      this.interval$.unsubscribe();
+    }
+
+    this.interval$ = interval(POLLING)
+      .pipe(
+        takeUntil(this.sub),
+        startWith(0),
+        switchMap(() => this.service.getChart(id))
+      )
+      .subscribe(data => this.chart = data, error => this.chart = null);
+  }
+
+  ngOnDestroy() {
+    this.sub.next();
+    this.sub.complete();
   }
 
 }

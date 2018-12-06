@@ -30,7 +30,7 @@
       план / прогноз / отклонение
     </div>
     <ul>
-      <li routerLinkActive="active" routerLink="/{{apiUrl}}/{{item.graphId}}"
+      <li routerLinkActive="active" routerLink="/{{apiUrl}}/{{item.chartId}}"
           *ngFor="let item of data">
         <div class="icon" *ngIf="item.icon">
           <app-svg-icon url="/assets/icons/{{item.icon}}.svg" color="#868686"></app-svg-icon>
@@ -72,7 +72,7 @@
       <!--</div>-->
       <!--</div>-->
       <div class="graph-content">
-        <app-highchart *ngIf="dataGraph?.value" [data]="dataGraph"></app-highchart>
+        <app-highchart *ngIf="chart?.value" [data]="chart"></app-highchart>
         <!--<app-omsk-main-day-chart [startDate]="chart.startDate" [endDate]="chart.endDate" [current]="currentDate" [lines]="chart.lines"></app-omsk-main-day-chart>-->
       </div>
     </div>
