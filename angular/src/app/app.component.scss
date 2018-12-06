@@ -1,6 +1,7 @@
 .main {
-  display: flex;
   height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 .content {
   width: 100%;

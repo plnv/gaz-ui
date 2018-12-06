@@ -19,16 +19,15 @@
     align-items: center;
     font-size: 100%;
     color: #FFF;
+    white-space: nowrap;
 
     i {
       display: block;
       flex: 0 0 $scale-size;
-      //width: $scale-size;
       height: $scale-size;
       margin-right: $scale-size;
       position: relative;
-      //top: 5px;
-      border-radius: 5px;
+      border-radius: 50%;
 
       &.grey {
         border: 2px solid rgba(255, 255, 255, 0.1);
@@ -51,29 +50,24 @@
 }
 
 .wrapper {
-  //position: relative;
   display: flex;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: $scale-size $scale-size * 3;
+  padding: $scale-size * 3;
+  justify-content: stretch;
+
   .svg-scheme {
     width: 100%;
     height: 100%;
-    //position: absolute;
-    //top: 0;
-    //left: 0;
-    //right: 0;
-    //bottom: 0;
-    //width: 100%;
-    //height: 100%;
-    //display: none;
-    //transition: opacity 500ms linear;
+    display: flex;
+    justify-content: stretch;
 
     app-svg-icon {
       width: 100%;
       height: 100%;
-      display: block;
+      display: flex;
+      justify-content: stretch;
     }
 
     &.active {
