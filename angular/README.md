@@ -4,11 +4,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Install
 
+Get [Node.js](https://nodejs.org/en/download/)
+
 Run `npm i`
 
 ## Development server
 
-Run `npm run server` for a dev server. DB in mocks/db.json
+Run `npm run server` for a dev server. DB in mocks/db.json `http://localhost:3000/`
 
 Run `npm run start`. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
