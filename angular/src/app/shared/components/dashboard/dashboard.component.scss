@@ -6,7 +6,8 @@
   //z-index: 20;
   font-size: $font-size;
   background: #191C2A;
-  display: block;
+  display: flex;
+  flex-direction: column;
   min-width: 37em;
   height: 100%;
 }
@@ -290,7 +291,7 @@
 .events-list {
   margin-top: 60px;
   overflow: hidden;
-  display: none;
+  //display: none;
 
   .list-row {
     background: $color-blue-dark;
@@ -476,7 +477,8 @@
         flex: 1;
         padding: $scale-size $scale-size * 2;
         display: flex;
-        align-items: center;
+        height: 8em;
+        //align-items: center;
 
         &:last-child {
           text-align: right;

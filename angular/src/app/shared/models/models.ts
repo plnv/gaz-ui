@@ -49,3 +49,14 @@ export interface Dashboard {
     }
   };
 }
+
+
+export interface News {
+  name: string;
+  imageUrl: string;
+  description: string;
+  data: {
+    name: string;
+    value: string;
+  }[]
+}

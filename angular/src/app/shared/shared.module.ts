@@ -10,6 +10,7 @@ import { HighchartComponent } from './components/graph/highchart/highchart.compo
 import { SchemeComponent } from './components/scheme/scheme.component';
 import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
 import { HeaderComponent } from './components/header/header.component';
+import { NewsComponent } from './components/news/news.component';
 
 
 const MODULES = [
@@ -27,13 +28,15 @@ const COMPONENTS = [
   GraphComponent,
   HighchartComponent,
   SchemeComponent,
-  HeaderComponent
+  HeaderComponent,
+  NewsComponent
 ];
 
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
+
   ],
   imports: [
     ...MODULES

@@ -1,0 +1,84 @@
+@import "../../../../theme";
+
+:host {
+  display: block;
+  height: 100%;
+  overflow: auto;
+  padding: $scale-size;
+
+}
+
+.news-block {
+
+  & + .news-block {
+    margin-top: $scale-size * 2;
+  }
+
+  .news-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: $scale-size;
+    background: #272a38;
+    box-sizing: border-box;
+    margin-bottom: $scale-size;
+
+    border-left: $scale-size / 2 solid #0874a4;
+    opacity: .6;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+
+    .img {
+      flex: 0 0 $scale-size * 10;
+      margin-right: $scale-size * 2;
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .name {
+      margin-right: $scale-size;
+    }
+
+    .descriptions {
+      font-size: $font-size-small;
+      color: $color-blue;
+    }
+  }
+
+  .news-table {
+
+    .block {
+      display: flex;
+      font-size: $font-size-small;
+      color: $color-blue;
+
+      & + .block {
+        margin-top: $scale-size;
+      }
+
+      & > div {
+        background: #212330;
+        padding: $scale-size;
+      }
+
+      .name {
+        flex: 1;
+        margin-right: $scale-size;
+      }
+
+      .value {
+        flex: 3;
+      }
+    }
+  }
+}

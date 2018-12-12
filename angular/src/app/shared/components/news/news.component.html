@@ -1,0 +1,21 @@
+<div class="news-block" *ngFor="let i of (news$ | async)">
+  <div class="news-item" [class.active]="i.id === selected" (click)="onSelect(i.id)">
+    <div class="img">
+      <img [src]="i.imageUrl">
+    </div>
+    <div class="block">
+      <div class="name">
+        {{i.name}}
+      </div>
+      <div class="descriptions">
+        {{i.description}}
+      </div>
+    </div>
+  </div>
+  <div class="news-table" *ngIf="i.id === selected">
+    <div class="block" *ngFor="let j of i.data">
+      <div class="name">{{j.name}}</div>
+      <div class="value">{{j.value}}</div>
+    </div>
+  </div>
+</div>
