@@ -1,6 +1,3 @@
-export const POLLING = 5 * 60 * 1000;
-
-
 export interface GraphBlock {
   id: number;
   deviation: string;

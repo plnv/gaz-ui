@@ -2,7 +2,8 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { interval, Subject, Subscription } from 'rxjs';
 import { startWith, switchMap, takeUntil } from 'rxjs/operators';
-import { Chart, GraphBlock, POLLING } from '../../models/models';
+import { environment } from '../../../../environments/environment';
+import { Chart, GraphBlock } from '../../models/models';
 import { GraphService } from '../../services/graph.service';
 
 
@@ -50,7 +51,7 @@ export class GraphComponent implements OnInit, OnDestroy {
       this.interval$.unsubscribe();
     }
 
-    this.interval$ = interval(POLLING)
+    this.interval$ = interval(environment.polling)
       .pipe(
         takeUntil(this.sub),
         startWith(0),
