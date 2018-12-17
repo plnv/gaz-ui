@@ -49,11 +49,17 @@ export interface Dashboard {
 
 
 export interface News {
+  id: number;
+  code: string;
+  timestamp: number;
+  facility: string;
   name: string;
-  imageUrl: string;
-  description: string;
-  data: {
-    name: string;
-    value: string;
-  }[]
+  value: string;
+  level: 'critical' | 'important';
+}
+
+
+export interface NewsSubject {
+  id: number;
+  facility: string;
 }

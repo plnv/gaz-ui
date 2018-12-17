@@ -5,7 +5,6 @@
   height: 100%;
   overflow: auto;
   padding: $scale-size;
-
 }
 
 .news-block {
@@ -18,8 +17,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding: $scale-size;
+    padding: $scale-size $scale-size * 2;
     background: #272a38;
     box-sizing: border-box;
     margin-bottom: $scale-size;
@@ -36,49 +36,10 @@
       opacity: 1;
     }
 
-    .img {
-      flex: 0 0 $scale-size * 10;
-      margin-right: $scale-size * 2;
-      img {
-        max-height: 100%;
-        max-width: 100%;
-      }
-    }
-
-    .name {
-      margin-right: $scale-size;
-    }
-
-    .descriptions {
+    .code {
       font-size: $font-size-small;
       color: $color-blue;
     }
   }
 
-  .news-table {
-
-    .block {
-      display: flex;
-      font-size: $font-size-small;
-      color: $color-blue;
-
-      & + .block {
-        margin-top: $scale-size;
-      }
-
-      & > div {
-        background: #212330;
-        padding: $scale-size;
-      }
-
-      .name {
-        flex: 1;
-        margin-right: $scale-size;
-      }
-
-      .value {
-        flex: 3;
-      }
-    }
-  }
 }

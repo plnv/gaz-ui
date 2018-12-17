@@ -1,21 +1,37 @@
 <div class="news-block" *ngFor="let i of data">
-  <div class="news-item" [class.active]="i.id === selected" (click)="onSelect(i.id)">
-    <div class="img">
-      <img [src]="i.imageUrl">
-    </div>
-    <div class="block">
+
+
+  <div class="news-item" [class.active]="i.id === selected" (click)="onSelect(i.id, i.facility)">
+    <div class="info">
       <div class="name">
         {{i.name}}
       </div>
-      <div class="descriptions">
-        {{i.description}}
+      <div class="code">
+        {{i.code}}
       </div>
     </div>
-  </div>
-  <div class="news-table" *ngIf="i.id === selected">
-    <div class="block" *ngFor="let j of i.data">
-      <div class="name">{{j.name}}</div>
-      <div class="value">{{j.value}}</div>
+    <div class="status">
+      <app-svg-icon [color]="getStatus(i.level)" url="/assets/icons/warning-icon.svg"></app-svg-icon>
     </div>
   </div>
+
+  <!--<div class="news-item" [class.active]="i.id === selected" (click)="onSelect(i.id)">-->
+  <!--<div class="img">-->
+  <!--<img [src]="i.imageUrl">-->
+  <!--</div>-->
+  <!--<div class="block">-->
+  <!--<div class="name">-->
+  <!--{{i.name}}-->
+  <!--</div>-->
+  <!--<div class="descriptions">-->
+  <!--{{i.description}}-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--</div>-->
+  <!--<div class="news-table" *ngIf="i.id === selected">-->
+  <!--<div class="block" *ngFor="let j of i.data">-->
+  <!--<div class="name">{{j.name}}</div>-->
+  <!--<div class="value">{{j.value}}</div>-->
+  <!--</div>-->
+  <!--</div>-->
 </div>

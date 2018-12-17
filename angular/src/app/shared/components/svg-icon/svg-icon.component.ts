@@ -8,17 +8,9 @@ import { Component, ElementRef, Input, OnInit } from '@angular/core';
 })
 export class SvgIconComponent implements OnInit {
 
-  @Input() url: string;
-  @Input() color: string;
-
-  html = '';
-
-  constructor(private http: HttpClient, private element: ElementRef) {
-  }
-
-  ngOnInit() {
-    if (this.url) {
-      this.http.get(this.url, { responseType: 'text' }).subscribe((data) => {
+  @Input() set url(value: string) {
+    if (value) {
+      this.http.get(value, { responseType: 'text' }).subscribe((data) => {
         this.html = data;
         if (this.color) {
           let reg = new RegExp('fill:[^;]*;', 'gi');
@@ -29,5 +21,15 @@ export class SvgIconComponent implements OnInit {
         this.element.nativeElement.innerHTML = this.html;
       });
     }
+  }
+
+  @Input() color: string;
+
+  html = '';
+
+  constructor(private http: HttpClient, private element: ElementRef) {
+  }
+
+  ngOnInit() {
   }
 }

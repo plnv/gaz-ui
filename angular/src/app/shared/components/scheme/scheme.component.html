@@ -21,8 +21,8 @@
 </app-header>
 <!--<div class="scheme">-->
 <div class="wrapper">
-  <div class="svg-scheme" ngClass="{active: isCertification()}">
-    <app-svg-icon url="/assets/img/main-scheme.svg"></app-svg-icon>
+  <div class="svg-scheme">
+    <app-svg-icon [url]="url$ | async"></app-svg-icon>
   </div>
 </div>
 <!--<div class="svg-scheme" ngClass="{active: isEnergy()}">-->

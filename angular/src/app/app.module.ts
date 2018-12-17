@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CertificationComponent } from './certification/certification.component';
 import { EnergyComponent } from './energy/energy.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NewsService } from './shared/services/news.service';
 import { SharedModule } from './shared/shared.module';
 
 const routes: Routes = [
@@ -31,7 +32,7 @@ const routes: Routes = [
     SharedModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [],
+  providers: [NewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
