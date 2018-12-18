@@ -1,7 +1,7 @@
 <div class="news-block" *ngFor="let i of data">
 
 
-  <div class="news-item" [class.active]="i.id === selected" (click)="onSelect(i.id, i.facility)">
+  <div class="news-item" [class.active]="i.id === selected" (mousedown)="onSelect(i.id, i.facility)">
     <div class="info">
       <div class="name">
         {{i.name}}
