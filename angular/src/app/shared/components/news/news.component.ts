@@ -15,6 +15,9 @@ export class NewsComponent implements OnInit {
   data: News[];
   selected: number;
   interval$: Subscription;
+  critical: number;
+  important: number;
+
   private sub: Subject<void> = new Subject();
 
   constructor(private service: NewsService) {
@@ -27,6 +30,10 @@ export class NewsComponent implements OnInit {
         startWith(0),
         switchMap(() => this.service.get()),
         tap( data => {
+
+          this.critical = data.filter( i => i.level === 'critical').length;
+          this.important = data.filter( i => i.level === 'important').length;
+
           if (this.selected === undefined) {
             const {id, facility} = data[0];
             this.onSelect(id, facility);
@@ -44,6 +51,7 @@ export class NewsComponent implements OnInit {
   onSelect(id: number, facility: string) {
     this.service.set({ id, facility });
   }
+
 
   getStatus(value: string): string {
     if (value === 'critical') {

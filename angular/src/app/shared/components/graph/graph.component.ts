@@ -41,7 +41,9 @@ export class GraphComponent implements OnInit, OnDestroy {
       .subscribe((data: GraphBlock[]) => {
         if (data) {
           this.data = data;
-          this.router.navigate([this.apiUrl, data[0].chartId]);
+          if (!this.route.snapshot.params.id) {
+            this.router.navigate([this.apiUrl, data[0].chartId]);
+          }
         }
       });
   }
@@ -51,6 +53,7 @@ export class GraphComponent implements OnInit, OnDestroy {
       this.interval$.unsubscribe();
     }
 
+    this.chart = null;
     this.interval$ = interval(environment.polling)
       .pipe(
         takeUntil(this.sub),
@@ -61,7 +64,7 @@ export class GraphComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.sub.next();
+    this.sub.next(null);
     this.sub.complete();
   }
 

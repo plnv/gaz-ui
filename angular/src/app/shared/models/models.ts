@@ -14,6 +14,7 @@ export interface GraphBlock {
 export interface ChartData {
   categories: string[];
   series: { data: number }[];
+  now: number;
 }
 
 
@@ -56,6 +57,7 @@ export interface News {
   name: string;
   value: string;
   level: 'critical' | 'important';
+  measure: string;
 }
 
 

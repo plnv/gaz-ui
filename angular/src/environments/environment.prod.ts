@@ -1,5 +1,5 @@
 export const environment = {
   apiUrl: '/',
-  polling: 5 * 60 * 1000,
+  polling: 5000,
   production: true
 };

@@ -6,7 +6,8 @@
       "timestamp": 1,
       "facility": "/assets/img/energy-scheme.svg",
       "name": "Это основное имя событие 1",
-      "value": "",
+      "value": "- 5300",
+      "measure": "т.",
       "level": "critical"
     },
     {
@@ -15,7 +16,8 @@
       "timestamp": 1,
       "facility": "/assets/img/quality-scheme.svg",
       "name": "Это основное имя событие 2",
-      "value": "",
+      "value": "+ 4000",
+      "measure": "т.",
       "level": "important"
     },
     {
@@ -24,8 +26,19 @@
       "timestamp": 1,
       "facility": "/assets/img/certification-scheme.svg",
       "name": "Это основное имя событие Это основное имя событие Это основное имя событие certification",
-      "value": "",
+      "value": "+ 2",
+      "measure": "т.",
       "level": "important"
+    },
+    {
+      "id": 4,
+      "code": "серый короткий текст серый короткий текст серый короткий текст серый короткий текст серый короткий текст серый короткий текст 2",
+      "timestamp": 1,
+      "facility": "/assets/img/certification-scheme.svg",
+      "name": "Это основное имя событие Это основное имя событие Это основное имя событие certification Это основное имя событие Это основное имя событие Это основное имя событие certification Это основное имя событие Это основное имя событие Это основное имя событие certification",
+      "value": "",
+      "measure": "",
+      "level": null
     }
   ],
   "chart": [
@@ -43,6 +56,7 @@
           "08:00",
           "16:00"
         ],
+        "now": 3,
         "series": [
           {
             "data": [
@@ -69,6 +83,19 @@
               9,
               10
             ]
+          },
+          {
+            "data": [
+              1,
+              1,
+              4,
+              5,
+              6,
+              6,
+              8,
+              10,
+              11
+            ]
           }
         ]
       }
@@ -78,13 +105,14 @@
       "value": {
         "categories": [
           "16:00",
-          "02.11.18",
+          "04.11.18",
           "08:00",
           "16:00",
-          "03.11.18",
+          "05.11.18",
           "08:00",
           "16:00"
         ],
+        "now": 3.25,
         "series": [
           {
             "data": [
@@ -106,6 +134,14 @@
               7,
               9,
               100
+            ]
+          },
+          {
+            "data": [
+              3,
+              3,
+              3,
+              400
             ]
           }
         ]

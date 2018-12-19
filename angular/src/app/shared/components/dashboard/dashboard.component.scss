@@ -8,7 +8,7 @@
   background: #191C2A;
   display: flex;
   flex-direction: column;
-  width: 37em;
+  flex: 0 0 38em;
   height: 100%;
 }
 
@@ -445,7 +445,8 @@
 
 .fact-plan-row {
   display: flex;
-  padding: $scale-size;
+  //padding: $scale-size;
+  margin-top: $scale-size;
 
   .fact-plan-block {
     flex: 1;
@@ -477,7 +478,7 @@
         flex: 1;
         padding: $scale-size $scale-size * 2;
         display: flex;
-        height: 8em;
+        //height: 8em;
         //align-items: center;
 
         &:last-child {

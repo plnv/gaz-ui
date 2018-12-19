@@ -1,45 +1,104 @@
 @import "../../../../theme";
 
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  overflow: auto;
   padding: $scale-size;
 }
 
-.news-block {
+.news-total {
+  display: flex;
+  flex: 0 0 auto;
 
-  & + .news-block {
-    margin-top: $scale-size * 2;
-  }
-
-  .news-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: $scale-size $scale-size * 2;
+  .block {
+    text-align: center;
     background: #272a38;
-    box-sizing: border-box;
-    margin-bottom: $scale-size;
+    padding: $scale-size 0;
+    flex: 1;
+    word-break: break-all;
 
-    border-left: $scale-size / 2 solid #0874a4;
-    opacity: .6;
-    cursor: pointer;
+    .value {
+      font-size: 110%;
 
-    &:hover {
-      opacity: .8;
+      span {
+        font-size: 80%;
+      }
     }
 
-    &.active {
-      opacity: 1;
-    }
-
-    .code {
+    .label {
       font-size: $font-size-small;
       color: $color-blue;
+      margin-bottom: $scale-size;
+      vertical-align: baseline;
+    }
+
+    .yellow {
+      color: yellow;
+    }
+
+    .green {
+      color: $color-green;
+    }
+
+    .red {
+      color: $color-red;
+    }
+
+    & + .block {
+      margin-left: $scale-size;
     }
   }
+  padding-bottom: $scale-size;
+}
 
+.news-block-container {
+  height: 100%;
+  overflow: auto;
+
+  .news-block {
+
+    & + .news-block {
+      margin-top: $scale-size;
+    }
+
+    .news-item {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: $scale-size $scale-size * 2;
+      background: #272a38;
+      box-sizing: border-box;
+      margin-bottom: $scale-size;
+
+      border-left: $scale-size / 2 solid #0874a4;
+      opacity: .5;
+      cursor: pointer;
+
+      .value {
+        margin-left: auto;
+        white-space: nowrap;
+        font-size: 110%;
+      }
+
+      .status {
+        margin-left: $scale-size;
+        margin-top: $scale-size / 3;
+      }
+
+      &:hover {
+        opacity: .8;
+      }
+
+      &.active {
+        opacity: 1;
+      }
+
+      .code {
+        font-size: $font-size-small;
+        color: $color-blue;
+      }
+    }
+
+  }
 }

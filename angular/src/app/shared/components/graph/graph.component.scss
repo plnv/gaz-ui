@@ -25,11 +25,11 @@
 
     i {
       display: block;
-      width: $scale-size * 4;
       margin-right: $scale-size;
       margin-top: 1px;
       height: 1px;
       position: relative;
+      min-width: $scale-size * 4;
 
       &.blue {
         background: $color-blue-light;
