@@ -2,7 +2,7 @@
   "name": "angular",
   "version": "0.0.0",
   "scripts": {
-    "server": "json-server --routes mocks/routes.json --watch mocks/db.json",
+    "server": "json-server --routes mocks/routes.json --host 0.0.0.0 --watch mocks/db.json",
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0 --hmr",
     "build": "ng build --prod",
@@ -21,11 +21,13 @@
     "@angular/platform-browser": "^7.1.1",
     "@angular/platform-browser-dynamic": "^7.1.1",
     "@angular/router": "^7.1.1",
+    "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
     "highcharts": "^6.2.0",
     "highcharts-angular": "^2.3.1",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
+    "web-animations-js": "^2.3.1",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
