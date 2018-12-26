@@ -18,14 +18,16 @@ export class GraphComponent implements OnInit, OnDestroy {
   data: GraphBlock[];
   chart: Chart;
   interval$: Subscription;
-
-  private sub: Subject<void> = new Subject();
-
   @Input() apiUrl: string;
   @Input() title: string;
   @Input() titleSub: string;
+  private sub: Subject<void> = new Subject();
 
   constructor(private service: GraphService, private route: ActivatedRoute, private router: Router) {
+
+  }
+
+  ngOnInit() {
     this.route.params
       .pipe(takeUntil(this.sub))
       .subscribe((params: Params) => {
@@ -33,9 +35,7 @@ export class GraphComponent implements OnInit, OnDestroy {
           this.getGraph(params.id);
         }
       });
-  }
 
-  ngOnInit() {
     this.service.get(this.apiUrl)
       .pipe(takeUntil(this.sub))
       .subscribe((data: GraphBlock[]) => {
@@ -58,7 +58,7 @@ export class GraphComponent implements OnInit, OnDestroy {
       .pipe(
         takeUntil(this.sub),
         startWith(0),
-        switchMap(() => this.service.getChart(id))
+        switchMap(() => this.service.getChart(`${this.apiUrl}/${id}`))
       )
       .subscribe(data => this.chart = data, error => this.chart = null);
   }

@@ -62,6 +62,10 @@ export class NewsComponent implements OnInit {
     }
   }
 
+  parse(value:string):string {
+    return Number(value).toFixed(2);
+  }
+
   ngOnDestroy() {
     this.sub.next(null);
     this.sub.complete();

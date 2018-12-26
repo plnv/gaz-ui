@@ -34,6 +34,9 @@ export function ChartOptions() {
       // labels: {
       //   format: '{value:%e.%m.%y %H:%M}'
       // },
+      labels: {
+        rotation: [0]
+      },
       startOnTick: true,
       title: null,
       plotLines: null,

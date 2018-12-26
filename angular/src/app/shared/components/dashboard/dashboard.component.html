@@ -27,9 +27,9 @@
         <span>Паспортизация</span>
       </a>
       <div class="indicator">
-        <span class="big-value">{{data?.certification?.values.big}} тыс. т</span>
+        <span class="big-value">{{(data?.certification?.values.big/1000).toFixed(2)}} тыс. т</span>
         <span class="small-value"
-              [ngClass]="{'red':data?.certification?.values.type === 1, 'blue': data?.certification?.values.type === 2}">{{data?.certification?.values.small}}</span>
+              [ngClass]="{'red':data?.certification?.values.type === 1, 'blue': data?.certification?.values.type === 2}">{{(data?.certification?.values.small/1000).toFixed(2)}}</span>
         <!--<i class="data-arrow" [ngClass]="mainScreeW1?.v1?.PassprotizationDeviationTrend > 0 ? 'green top' : 'blue bottom'"></i>-->
       </div>
     </li>
@@ -41,10 +41,10 @@
       <div class="values">
         <div class="big">
           <!--<i class="data-arrow green bottom"></i>-->
-          {{i.values.big}} тыс.т
+          {{(i.values.big / 1000).toFixed(2)}} тыс.т
         </div>
         <div class="small-value" [ngClass]="{'green':i.values.type === 1, 'blue': i.values.type === 2}">
-          {{i.values.small}} тыс.т
+          {{(i.values.small / 1000).toFixed(2)}} тыс.т
         </div>
       </div>
     </div>
@@ -136,9 +136,9 @@
         <span>Тепловая энергия</span>
       </div>
       <div class="values">
-        <span class="big-value">{{data?.energy?.thermostat.values.big}}</span>
+        <span class="big-value">{{(data?.energy?.thermostat.values.big/1000).toFixed(2)}}</span>
         <span class="small-value"
-              [ngClass]="{'green':data?.energy?.thermostat.values.type === 1, 'blue': data?.energy?.thermostat.values.type === 2}">{{data?.energy?.thermostat.values.small}}</span>
+              [ngClass]="{'green':data?.energy?.thermostat.values.type === 1, 'blue': data?.energy?.thermostat.values.type === 2}">{{(data?.energy?.thermostat.values.small/1000).toFixed(2)}}</span>
       </div>
       <div class="measure-unit">
         тыс. Гкал
@@ -150,9 +150,9 @@
         <span>Электроэнергия</span>
       </div>
       <div class="values">
-        <span class="big-value">{{data?.energy?.battery.values.big}}</span>
+        <span class="big-value">{{(data?.energy?.battery.values.big/1000).toFixed(2)}}</span>
         <span class="small-value"
-              [ngClass]="{'green':data?.energy?.battery.values.type === 1, 'blue': data?.energy?.battery.values.type === 2}">{{data?.energy?.battery.values.small}}</span>
+              [ngClass]="{'green':data?.energy?.battery.values.type === 1, 'blue': data?.energy?.battery.values.type === 2}">{{(data?.energy?.battery.values.small/1000).toFixed(2)}}</span>
       </div>
       <div class="measure-unit">
         млн. кВт*ч
@@ -164,9 +164,9 @@
         <span>Топливо</span>
       </div>
       <div class="values">
-        <span class="big-value">{{data?.energy?.fair.values.big}}</span>
+        <span class="big-value">{{(data?.energy?.fair.values.big/1000).toFixed(2)}}</span>
         <span class="small-value"
-              [ngClass]="{'green':data?.energy?.fair.values.type === 1, 'blue': data?.energy?.fair.values.type === 2}">{{data?.energy?.fair.values.small}}</span>
+              [ngClass]="{'green':data?.energy?.fair.values.type === 1, 'blue': data?.energy?.fair.values.type === 2}">{{(data?.energy?.fair.values.small/1000).toFixed(2)}}</span>
       </div>
       <div class="measure-unit">
         тыс т.у.т.

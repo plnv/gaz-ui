@@ -39,10 +39,10 @@
           <div class="name">{{ item.name }}</div>
           <div class="small-text" *ngIf="item.measure">{{item.measure}}</div>
           <div class="values">
-            <div class="left">{{item.value1}} / <span class="light">{{item.value2}}</span></div>
+            <div class="left">{{(item.value1/1000).toFixed(2)}} / <span class="light">{{(item.value2/1000).toFixed(2)}}</span></div>
             <div class="right"
                  [ngClass]="{'red': item.deviationType === 1, 'blue' : item.deviationType === 2, 'yellow': item.deviationType === 3}">
-              {{item.deviation}}
+              {{(item.deviation/1000).toFixed(2)}}
             </div>
           </div>
         </div>
