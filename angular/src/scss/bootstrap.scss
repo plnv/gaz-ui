@@ -1,0 +1,8 @@
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+
+p, ol, ul, dl {
+  margin-bottom: inherit;
+}

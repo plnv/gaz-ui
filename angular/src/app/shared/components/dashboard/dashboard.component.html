@@ -11,10 +11,25 @@
         <app-svg-icon [url]="'/assets/icons/home-icon.svg'"></app-svg-icon>
         <span>Экран главного инженера смены</span>
       </div>
-      <i class="icon-menu"></i>
+      <div class="current-time" (click)="d.toggle()">
+        <i class="icon-clock2"></i>
+        <span>{{now | date:'dd.MM.yyyy HH:mm'}}</span>
+      </div>
+      <input class="datepicker"
+             ngbDatepicker
+             [formControl]="date"
+             [footerTemplate]="footerTemplate"
+             #d="ngbDatepicker">
     </div>
+
   </div>
 </div>
+
+<ng-template #footerTemplate>
+  <div class="time-container">
+    <ngb-timepicker [minuteStep]="5" [formControl]="time"></ngb-timepicker>
+  </div>
+</ng-template>
 
 <div class="forecast-block">
   <p class="desc-line">Прогноз отклонений на 3 суток без учета компенсирующих мероприятий</p>
@@ -22,14 +37,14 @@
     <li>
       <a class="link" routerLink="/certification" routerLinkActive="active">
         <div class="icon">
-          <app-svg-icon url="/assets/icons/certification-icon.svg" color="#FFF"></app-svg-icon>
+          <app-svg-icon url="/assets/icons/certification-icon.svg"></app-svg-icon>
         </div>
         <span>Паспортизация</span>
       </a>
       <div class="indicator">
-        <span class="big-value">{{(data?.certification?.values.big/1000).toFixed(2)}} тыс. т</span>
+        <span class="big-value">{{data?.certification?.values.big | toNumber}} тыс. т</span>
         <span class="small-value"
-              [ngClass]="{'red':data?.certification?.values.type === 1, 'blue': data?.certification?.values.type === 2}">{{(data?.certification?.values.small/1000).toFixed(2)}}</span>
+              [ngClass]="{'red':data?.certification?.values.type === 1, 'blue': data?.certification?.values.type === 2}">{{data?.certification?.values.small | toNumber}}</span>
         <!--<i class="data-arrow" [ngClass]="mainScreeW1?.v1?.PassprotizationDeviationTrend > 0 ? 'green top' : 'blue bottom'"></i>-->
       </div>
     </li>
@@ -41,10 +56,10 @@
       <div class="values">
         <div class="big">
           <!--<i class="data-arrow green bottom"></i>-->
-          {{(i.values.big / 1000).toFixed(2)}} тыс.т
+          {{i.values.big | toNumber}} тыс.т
         </div>
         <div class="small-value" [ngClass]="{'green':i.values.type === 1, 'blue': i.values.type === 2}">
-          {{(i.values.small / 1000).toFixed(2)}} тыс.т
+          {{i.values.small | toNumber}} тыс.т
         </div>
       </div>
     </div>
@@ -136,9 +151,9 @@
         <span>Тепловая энергия</span>
       </div>
       <div class="values">
-        <span class="big-value">{{(data?.energy?.thermostat.values.big/1000).toFixed(2)}}</span>
+        <span class="big-value">{{data?.energy?.thermostat.values.big | toNumber}}</span>
         <span class="small-value"
-              [ngClass]="{'green':data?.energy?.thermostat.values.type === 1, 'blue': data?.energy?.thermostat.values.type === 2}">{{(data?.energy?.thermostat.values.small/1000).toFixed(2)}}</span>
+              [ngClass]="{'green':data?.energy?.thermostat.values.type === 1, 'blue': data?.energy?.thermostat.values.type === 2}">{{data?.energy?.thermostat.values.small | toNumber}}</span>
       </div>
       <div class="measure-unit">
         тыс. Гкал
@@ -150,9 +165,9 @@
         <span>Электроэнергия</span>
       </div>
       <div class="values">
-        <span class="big-value">{{(data?.energy?.battery.values.big/1000).toFixed(2)}}</span>
+        <span class="big-value">{{data?.energy?.battery.values.big  | toNumber}}</span>
         <span class="small-value"
-              [ngClass]="{'green':data?.energy?.battery.values.type === 1, 'blue': data?.energy?.battery.values.type === 2}">{{(data?.energy?.battery.values.small/1000).toFixed(2)}}</span>
+              [ngClass]="{'green':data?.energy?.battery.values.type === 1, 'blue': data?.energy?.battery.values.type === 2}">{{data?.energy?.battery.values.small | toNumber}}</span>
       </div>
       <div class="measure-unit">
         млн. кВт*ч
@@ -164,9 +179,9 @@
         <span>Топливо</span>
       </div>
       <div class="values">
-        <span class="big-value">{{(data?.energy?.fair.values.big/1000).toFixed(2)}}</span>
+        <span class="big-value">{{data?.energy?.fair.values.big | toNumber}}</span>
         <span class="small-value"
-              [ngClass]="{'green':data?.energy?.fair.values.type === 1, 'blue': data?.energy?.fair.values.type === 2}">{{(data?.energy?.fair.values.small/1000).toFixed(2)}}</span>
+              [ngClass]="{'green':data?.energy?.fair.values.type === 1, 'blue': data?.energy?.fair.values.type === 2}">{{data?.energy?.fair.values.small | toNumber}}</span>
       </div>
       <div class="measure-unit">
         тыс т.у.т.

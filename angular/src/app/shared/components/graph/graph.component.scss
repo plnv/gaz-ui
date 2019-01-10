@@ -1,4 +1,4 @@
-@import '../../../../theme';
+@import '../../../../scss/theme';
 
 :host {
   font-size: $font-size;
@@ -81,7 +81,7 @@
 
     li {
       background: #303545;
-      border-left: $scale-size solid #0874a4;
+      border-left: $scale-size solid $color-blue0;
       border-radius: $scale-size * 2;
       padding: $scale-size;
       margin-bottom: $scale-size;
@@ -154,7 +154,7 @@
 
       &.active {
         background: #303545;
-        border-left: $scale-size solid #0874a4;
+        border-left: $scale-size solid $color-blue0;
         opacity: 1;
 
         .name {

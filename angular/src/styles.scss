@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import "theme";
-@import "font";
+@import "scss/bootstrap";
+@import "scss/theme";
+@import "scss/font";
 * {
   padding: 0;
   margin: 0;

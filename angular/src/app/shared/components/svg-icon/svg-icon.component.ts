@@ -1,12 +1,15 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-svg-icon',
   templateUrl: './svg-icon.component.html',
-  styleUrls: ['./svg-icon.component.scss']
+  styleUrls: ['./svg-icon.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SvgIconComponent implements OnInit {
+export class SvgIconComponent {
+
+  @Input() color: string;
 
   @Input() set url(value: string) {
     if (value) {
@@ -23,13 +26,9 @@ export class SvgIconComponent implements OnInit {
     }
   }
 
-  @Input() color: string;
-
   html = '';
 
   constructor(private http: HttpClient, private element: ElementRef) {
   }
 
-  ngOnInit() {
-  }
 }

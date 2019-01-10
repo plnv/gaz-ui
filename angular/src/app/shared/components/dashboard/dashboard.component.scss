@@ -1,4 +1,4 @@
-@import '../../../../theme';
+@import '../../../../scss/theme';
 
 :host {
   //overflow: visible;
@@ -10,6 +10,45 @@
   flex-direction: column;
   flex: 0 0 38em;
   height: 100%;
+}
+
+::ng-deep {
+  ngb-datepicker {
+    font-size: 100%;
+    position: absolute;
+    box-shadow: 0 0 $scale-size * 20 rgba(0, 0, 0, .8);
+    background: $wallToolBarBackground;
+    z-index: 200;
+    border: none !important;
+    .ngb-dp-navigation-chevron {
+      color: $color-blue-light;
+    }
+    .bg-primary {
+      background: $color-blue-light;
+    }
+    .ngb-dp-arrow-btn {
+      cursor: pointer;
+      &:focus {
+        outline-width: 0;
+      }
+    }
+    .ngb-dp-weekday {
+      font-style: normal;
+      color: $color-blue;
+    }
+  }
+
+  .bg-light {
+    background-color: transparent !important;
+  }
+  .btn-light {
+    color: #ffffff;
+  }
+  .time-container {
+    border-top: $scale-size solid $widgetBackground;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .widget-main-toolbar {
@@ -47,10 +86,24 @@
   .menu-dropdown {
     padding-left: $scale-size;
     flex: 1;
-    font-size: 120%;
+    //font-size: 120%;
     span {
       margin-left: .5em;
     }
+    .datepicker {
+      visibility: hidden;
+      position: absolute;
+      height: 0;
+    }
+  }
+
+  .current-time {
+    cursor: pointer;
+    color: $color-blue-light;
+    font-size: 85%;
+    //i {
+    //  color: $color-blue;
+    //}
   }
 }
 

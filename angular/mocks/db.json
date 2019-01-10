@@ -1,4 +1,7 @@
 {
+  "now": {
+    "time": 1547148685616
+  },
   "news": [
     {
       "id": 1,
@@ -6,7 +9,7 @@
       "timestamp": 1,
       "facility": "/assets/img/energy-scheme.svg",
       "name": "Это основное имя событие 1",
-      "value": "- 5300",
+      "value": "5300",
       "measure": "т.",
       "level": "critical"
     },
@@ -16,7 +19,7 @@
       "timestamp": 1,
       "facility": "/assets/img/quality-scheme.svg",
       "name": "Это основное имя событие 2",
-      "value": "+ 4000",
+      "value": -4000,
       "measure": "т.",
       "level": "important"
     },

@@ -33,11 +33,12 @@
         </div>
       </div>
       <div class="value">
-        {{parse(i.value)}}
+        {{i.value | toNumber:1}}
         <small>{{i.measure}}</small>
       </div>
       <div class="status">
-        <app-svg-icon [color]="getStatus(i.level)" url="/assets/icons/warning-icon.svg"></app-svg-icon>
+        <span class="icon-danger" [style.color]="getStatus(i.level)"></span>
+        <!--<app-svg-icon [color]="getStatus(i.level)" url="/assets/icons/warning-icon.svg"></app-svg-icon>-->
       </div>
     </div>
 

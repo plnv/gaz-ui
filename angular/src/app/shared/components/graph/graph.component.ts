@@ -1,9 +1,10 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute, Params, Router } from '@angular/router';
-import { interval, Subject, Subscription } from 'rxjs';
+import { ActivatedRoute, Router } from '@angular/router';
+import { combineLatest, interval, Subject, Subscription } from 'rxjs';
 import { startWith, switchMap, takeUntil } from 'rxjs/operators';
 import { environment } from '../../../../environments/environment';
 import { Chart, GraphBlock } from '../../models/models';
+import { DashboardService } from '../../services/dashboard.service';
 import { GraphService } from '../../services/graph.service';
 
 
@@ -18,21 +19,24 @@ export class GraphComponent implements OnInit, OnDestroy {
   data: GraphBlock[];
   chart: Chart;
   interval$: Subscription;
+  combine$: Subscription;
   @Input() apiUrl: string;
   @Input() title: string;
   @Input() titleSub: string;
   private sub: Subject<void> = new Subject();
 
-  constructor(private service: GraphService, private route: ActivatedRoute, private router: Router) {
-
+  constructor(private service: GraphService,
+              private route: ActivatedRoute,
+              private router: Router,
+              private dashboard: DashboardService) {
   }
 
   ngOnInit() {
-    this.route.params
+    this.combine$ = combineLatest(this.route.params, this.dashboard.time)
       .pipe(takeUntil(this.sub))
-      .subscribe((params: Params) => {
-        if (params.id) {
-          this.getGraph(params.id);
+      .subscribe(([params, time]) => {
+        if (params && time) {
+          this.getGraph(params.id, time);
         }
       });
 
@@ -48,7 +52,7 @@ export class GraphComponent implements OnInit, OnDestroy {
       });
   }
 
-  getGraph(id: number) {
+  getGraph(id: number, time: number) {
     if (this.interval$) {
       this.interval$.unsubscribe();
     }
@@ -58,7 +62,7 @@ export class GraphComponent implements OnInit, OnDestroy {
       .pipe(
         takeUntil(this.sub),
         startWith(0),
-        switchMap(() => this.service.getChart(`${this.apiUrl}/${id}`))
+        switchMap(() => this.service.getChart(`${this.apiUrl}/${id}/?time=${time}`))
       )
       .subscribe(data => this.chart = data, error => this.chart = null);
   }

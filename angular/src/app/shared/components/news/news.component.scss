@@ -1,4 +1,4 @@
-@import "../../../../theme";
+@import "../../../../scss/theme";
 
 :host {
   display: flex;
@@ -71,7 +71,7 @@
       box-sizing: border-box;
       margin-bottom: $scale-size;
 
-      border-left: $scale-size / 2 solid #0874a4;
+      border-left: $scale-size / 2 solid $color-blue0;
       opacity: .5;
       cursor: pointer;
 

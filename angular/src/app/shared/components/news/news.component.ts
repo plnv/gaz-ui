@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { interval, Observable, Subject, Subscription } from 'rxjs';
+import { interval, Subject, Subscription } from 'rxjs';
 import { startWith, switchMap, takeUntil, tap } from 'rxjs/operators';
 import { environment } from '../../../../environments/environment';
-import { News, NewsSubject } from '../../models/models';
+import { News} from '../../models/models';
 import { NewsService } from '../../services/news.service';
 
 @Component({
@@ -60,10 +60,6 @@ export class NewsComponent implements OnInit {
     if (value === 'important') {
       return 'yellow';
     }
-  }
-
-  parse(value:string):string {
-    return Number(value).toFixed(2);
   }
 
   ngOnDestroy() {

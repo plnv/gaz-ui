@@ -1,3 +1,5 @@
 {
-  "/api/*": "/$1"
+  "/api/*": "/$1",
+  "/chart/certification/*": "/chart/$1",
+  "/chart/energy/*": "/chart/$1"
 }
