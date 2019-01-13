@@ -16,11 +16,11 @@ export class NewsService {
   constructor(private http: HttpClient) {
   }
 
-  get(): Observable<News[]> {
-    return this.http.get<News[]>(`${this.API_URL}api/news/`);
+  get(time: number): Observable<News[]> {
+    return this.http.get<News[]>(`${this.API_URL}api/news?time=${time}`);
   }
 
-  set(data:NewsSubject) {
+  set(data: NewsSubject) {
     this.selected.next(data);
   }
 }
