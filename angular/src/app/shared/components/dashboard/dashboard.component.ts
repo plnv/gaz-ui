@@ -33,10 +33,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         })
     );
 
-    this.sub.add(
-      this.dashboard.get()
-        .subscribe(data => this.data = data, error => this.data = null)
-    );
+
 
     this.sub.add(
       this.time.valueChanges
@@ -61,6 +58,11 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   init() {
+    this.sub.add(
+      this.dashboard.get(this.now)
+        .subscribe(data => this.data = data, error => this.data = null)
+    );
+
     const n = new Date(this.now);
 
     const t: NgbTimeStruct = { hour: n.getHours(), minute: n.getMinutes(), second: 0 };

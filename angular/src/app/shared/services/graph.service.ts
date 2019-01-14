@@ -15,7 +15,7 @@ export class GraphService {
   }
 
   get(value: string): Observable<GraphBlock[]> {
-    return this.http.get<GraphBlock[]>(`${this.API_URL}api/${value}/`);
+    return this.http.get<GraphBlock[]>(`${this.API_URL}api/${value}`);
   }
 
   getChart(value: string): Observable<Chart> {

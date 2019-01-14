@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { EventEmitter, Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, of, ReplaySubject, Subject } from 'rxjs';
+import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { environment } from '../../../environments/environment';
 import { Dashboard } from '../models/models';
 
@@ -16,17 +16,13 @@ export class DashboardService {
   constructor(private http: HttpClient) {
   }
 
-  get(): Observable<Dashboard> {
-    return this.http.get<Dashboard>(`${this.API_URL}api/dashboard/`);
+  get(value: number): Observable<Dashboard> {
+    return this.http.get<Dashboard>(`${this.API_URL}api/dashboard?time=${value}`);
   }
 
   getTime(): Observable<number> {
     return this.time.asObservable();
   }
-
-  // getTime() {
-  //   this.http.get<number>(`${this.API_URL}api/now/`).subscribe((data: any) => this.setTime(data.time));
-  // }
 
   setTime(value: number) {
     this.time.next(value);
