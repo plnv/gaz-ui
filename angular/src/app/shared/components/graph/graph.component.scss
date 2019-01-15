@@ -12,7 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  //position: absolute;
   right: $scale-size * 2;
   top: $scale-size * 1.5;
 
@@ -60,7 +59,7 @@
 .content {
   display: flex;
   flex: 1;
-  min-height: $scale-size * 20;
+
 
   .left-col {
     padding: $scale-size * 2;
@@ -68,6 +67,7 @@
     z-index: 10;
     position: relative;
     width: $scale-size * 35;
+
 
     .legend {
       font-size: $font-size-small;
@@ -78,6 +78,9 @@
 
   ul {
     list-style: none;
+    overflow: auto;
+    display: block;
+    height: 30vh;
 
     li {
       background: #303545;

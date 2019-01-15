@@ -2,7 +2,6 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { NgbDateStruct, NgbTimeStruct } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
-import { take } from 'rxjs/operators';
 import { Dashboard } from '../../models/models';
 import { DashboardService } from '../../services/dashboard.service';
 
@@ -19,21 +18,35 @@ export class DashboardComponent implements OnInit, OnDestroy {
   data: Dashboard;
   sub: Subscription = new Subscription();
 
-
   constructor(private dashboard: DashboardService) {
   }
 
   ngOnInit() {
+    this.dashboard.getTime()
+      .subscribe(data => {
+        this.now = data;
+        this.init();
+      })
+  }
+
+  init() {
+    if (this.sub) {
+      this.sub.unsubscribe();
+      this.sub = new Subscription();
+    }
+
     this.sub.add(
-      this.dashboard.getTime()
-        .pipe(take(1))
-        .subscribe(data => {
-          this.now = data;
-          this.init();
-        })
+      this.dashboard.get(this.now)
+        .subscribe(data => this.data = data, error => this.data = null)
     );
 
+    const n = new Date(this.now);
 
+    const t: NgbTimeStruct = { hour: n.getHours(), minute: n.getMinutes(), second: 0 };
+    this.time.setValue(t);
+
+    const d: NgbDateStruct = { day: n.getDay(), month: n.getMonth() + 1, year: n.getFullYear() };
+    this.date.setValue(d);
 
     this.sub.add(
       this.time.valueChanges
@@ -57,23 +70,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
     );
   }
 
-  init() {
-    this.sub.add(
-      this.dashboard.get(this.now)
-        .subscribe(data => this.data = data, error => this.data = null)
-    );
-
-    const n = new Date(this.now);
-
-    const t: NgbTimeStruct = { hour: n.getHours(), minute: n.getMinutes(), second: 0 };
-    this.time.setValue(t);
-
-    const d: NgbDateStruct = { day: n.getDay(), month: n.getMonth() + 1, year: n.getFullYear() };
-    this.date.setValue(d);
-  }
-
   setNow(value: number) {
-    this.now = value;
     this.dashboard.setTime(value);
   }
 
