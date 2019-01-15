@@ -44,7 +44,7 @@
       <div class="indicator">
         <span class="big-value">{{data?.certification?.values.big | toNumber}} тыс. т</span>
         <span class="small-value"
-              [ngClass]="{'red':data?.certification?.values.type === 1, 'blue': data?.certification?.values.type === 2}">{{data?.certification?.values.small | toNumber}}</span>
+              [ngClass]="{'green':data?.certification?.values.type === 1, 'blue': data?.certification?.values.type === 2}">{{data?.certification?.values.small | toNumber}}</span>
         <!--<i class="data-arrow" [ngClass]="mainScreeW1?.v1?.PassprotizationDeviationTrend > 0 ? 'green top' : 'blue bottom'"></i>-->
       </div>
     </li>

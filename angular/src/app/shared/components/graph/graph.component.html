@@ -41,7 +41,7 @@
           <div class="values">
             <div class="left">{{item.value1 | toNumber}} / <span class="light">{{item.value2 | toNumber}}</span></div>
             <div class="right"
-                 [ngClass]="{'red': item.deviationType === 1, 'blue' : item.deviationType === 2, 'yellow': item.deviationType === 3}">
+                 [ngClass]="{'green': item.deviationType === 1, 'blue' : item.deviationType === 2, 'yellow': item.deviationType === 3, 'red': item.deviationType ===4}">
               {{item.deviation | toNumber}}
             </div>
           </div>
