@@ -34,25 +34,32 @@ export class GraphComponent implements OnInit, OnDestroy {
       combineLatest(this.route.params, this.dashboard.getTime())
         .subscribe(([params, time]) => {
           if (params && time) {
-            this.getGraph(params.id, time);
+            const { id } = params;
+            if (id) {
+              this.getGraph(id, time);
+            }
+            this.getData(id, time);
           }
         })
     );
   }
 
-  getGraph(id: number, time: number) {
-    if (this.data === undefined) {
+
+  getData(id: number, time: number) {
+    if (!this.data) {
       this.sub.add(
         this.service.get(`${this.apiUrl}?time=${time}`)
           .subscribe((data: GraphBlock[]) => {
             this.data = data;
-            if (!this.route.snapshot.params.id) {
+            if (!id) {
               this.router.navigate([this.apiUrl, data[0].chartId]);
             }
           })
       );
     }
+  }
 
+  getGraph(id: number, time: number) {
     if (this.timer) {
       this.timer.unsubscribe();
       this.timer = new Subscription();
@@ -67,9 +74,9 @@ export class GraphComponent implements OnInit, OnDestroy {
     this.timer.add(
       timer(environment.polling)
         .subscribe(() => {
-          this.getGraph(id, time)
+          this.getGraph(id, time);
         })
-    )
+    );
   }
 
   ngOnDestroy() {
