@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { interval, Subject, Subscription } from 'rxjs';
-import { startWith, switchMap, takeUntil, tap } from 'rxjs/operators';
+import { Subscription, timer } from 'rxjs';
 import { environment } from '../../../../environments/environment';
 import { News } from '../../models/models';
 import { DashboardService } from '../../services/dashboard.service';
@@ -16,55 +15,65 @@ export class NewsComponent implements OnInit {
   now: number;
   data: News[];
   selected: number;
-  interval$: Subscription;
   critical: number;
   important: number;
 
-  private sub: Subject<void> = new Subject();
+  sub: Subscription = new Subscription();
+  initSub: Subscription = new Subscription();
 
-  constructor(private service: NewsService, private dashboard: DashboardService) {
+  constructor(private news: NewsService, private dashboard: DashboardService) {
   }
 
   ngOnInit() {
-    this.dashboard.time
-      .pipe(takeUntil(this.sub))
-      .subscribe(data => {
-        this.now = data;
-        this.init();
-      });
+    this.initSub.add(
+      this.dashboard.getTime()
+        .subscribe(data => {
+          this.now = data;
+          this.init();
+        })
+    );
 
-    this.service.selected
-      .pipe(
-        takeUntil(this.sub),
-      ).subscribe(data => this.selected = data.id)
+    this.initSub.add(
+      this.news.getSelected().subscribe(
+        data => {
+          this.selected = data.id;
+        }
+      )
+    )
   }
 
   init() {
-    if (this.interval$) {
-      this.interval$.unsubscribe();
+    if (this.sub) {
+      this.sub.unsubscribe();
+      this.sub = new Subscription();
     }
 
-    this.interval$ = interval(environment.polling)
-      .pipe(
-        takeUntil(this.sub),
-        startWith(0),
-        switchMap(() => this.service.get(this.now)),
-        tap(data => {
+    this.sub.add(
+      this.news.get(this.now)
+        .subscribe(data => {
 
-          this.critical = data.filter(i => i.level === 'critical').length;
-          this.important = data.filter(i => i.level === 'important').length;
+            this.data = data;
+            this.critical = data.filter(i => i.level === 'critical').length;
+            this.important = data.filter(i => i.level === 'important').length;
 
-          if (this.selected === undefined) {
-            const { id, facility } = data[0];
-            this.onSelect(id, facility);
+            if (this.selected === undefined) {
+              const { id, facility } = data[0];
+              this.onSelect(id, facility);
+            }
           }
+        )
+    );
+
+    this.sub.add(
+      timer(environment.polling)
+        .subscribe(() => {
+          this.init();
         })
-      )
-      .subscribe(data => this.data = data, error => this.data = null);
+    )
   }
 
   onSelect(id: number, facility: string) {
-    this.service.set({ id, facility });
+    this.news.set({ id, facility })
   }
 
 
@@ -78,8 +87,8 @@ export class NewsComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    this.sub.next(null);
-    this.sub.complete();
+    this.sub.unsubscribe();
+    this.initSub.unsubscribe();
   }
 
 }

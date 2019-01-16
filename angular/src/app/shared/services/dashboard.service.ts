@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { environment } from '../../../environments/environment';
+import { Time } from '../class/time.class';
 import { Dashboard } from '../models/models';
 
 @Injectable({
@@ -17,7 +18,7 @@ export class DashboardService {
   }
 
   get(value: number): Observable<Dashboard> {
-    return this.http.get<Dashboard>(`${this.API_URL}api/dashboard?time=${value}`);
+    return this.http.get<Dashboard>(`${this.API_URL}api/dashboard${Time.toParam(value)}`);
   }
 
   getTime(): Observable<number> {
