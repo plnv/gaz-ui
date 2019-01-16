@@ -74,7 +74,7 @@ export class HighchartComponent {
     };
 
     setTimeout(function () {
-      window.dispatchEvent(new Event('resize'));
+      window.dispatchEvent(new CustomEvent('resize'));
     }, 0);
   }
 

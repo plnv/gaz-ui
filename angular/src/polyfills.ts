@@ -83,3 +83,5 @@ import 'core-js/es7/array';
 
 /** Evergreen browsers require these. **/
 import 'core-js/es7/reflect';
+
+import 'custom-event-polyfill';
