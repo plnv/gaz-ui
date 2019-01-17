@@ -1,7 +1,8 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { combineLatest, Subscription, timer } from 'rxjs';
+import { Subscription, timer } from 'rxjs';
 import { environment } from '../../../../environments/environment';
+import { Time } from '../../class/time.class';
 import { Chart, GraphBlock } from '../../models/models';
 import { DashboardService } from '../../services/dashboard.service';
 import { GraphService } from '../../services/graph.service';
@@ -14,10 +15,15 @@ import { GraphService } from '../../services/graph.service';
 })
 export class GraphComponent implements OnInit, OnDestroy {
 
+  id: number;
+  now: number;
   data: GraphBlock[];
   chart: Chart;
-  timer: Subscription = new Subscription();
+
   sub: Subscription = new Subscription();
+  initSub: Subscription = new Subscription();
+  graphSub: Subscription = new Subscription();
+
   @Input() apiUrl: string;
   @Input() title: string;
   @Input() titleSub: string;
@@ -30,59 +36,73 @@ export class GraphComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    combineLatest(this.route.params, this.dashboard.getTime())
-      .subscribe(([params, time]) => {
-        if (params && time) {
-          const { id } = params;
-          if (id) {
-            this.getGraph(id, time);
+    this.initSub.add(
+      this.dashboard.getTime()
+        .subscribe(data => {
+            this.now = data;
+            this.init();
+            this.initData();
           }
-          this.getData(id, time);
-        }
-      })
+        )
+    );
+
+    this.initSub.add(
+      this.route.params
+        .subscribe(data => {
+          if (data.id) {
+            this.id = data.id;
+            this.init();
+          }
+        })
+    )
   }
 
 
-  getData(id: number, time: number) {
+  initData() {
     if (this.sub) {
       this.sub.unsubscribe();
       this.sub = new Subscription();
     }
 
     this.sub.add(
-      this.service.get(`${this.apiUrl}?time=${time}`)
+      this.service.get(`${this.apiUrl}${Time.toParam(this.now)}`)
         .subscribe((data: GraphBlock[]) => {
           this.data = data;
-          if (!id) {
+          if (!this.id) {
             this.router.navigate([this.apiUrl, data[0].chartId]);
           }
         })
     );
   }
 
-  getGraph(id: number, time: number) {
-    if (this.timer) {
-      this.timer.unsubscribe();
-      this.timer = new Subscription();
+
+  init() {
+    if (!this.id) {
+      return;
+    }
+    if (this.graphSub) {
+      this.graphSub.unsubscribe();
+      this.graphSub = new Subscription();
     }
 
     this.chart = null;
-    this.timer.add(
-      this.service.getChart(`${this.apiUrl}/${id}?time=${time}`)
+    this.graphSub.add(
+      this.service.getChart(`${this.apiUrl}/${this.id}${Time.toParam(this.now)}`)
         .subscribe(data => this.chart = data, error => this.chart = null)
     );
 
-    this.timer.add(
+    this.graphSub.add(
       timer(environment.polling)
         .subscribe(() => {
-          this.getGraph(id, time);
+          this.init();
         })
     );
   }
 
   ngOnDestroy() {
-    this.timer.unsubscribe();
+    this.graphSub.unsubscribe();
     this.sub.unsubscribe();
+    this.initSub.unsubscribe();
   }
 
 }

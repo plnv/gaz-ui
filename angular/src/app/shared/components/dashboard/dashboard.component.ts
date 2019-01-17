@@ -13,20 +13,24 @@ import { DashboardService } from '../../services/dashboard.service';
 export class DashboardComponent implements OnInit, OnDestroy {
 
   now: number;
+  data: Dashboard;
+
   time: FormControl = new FormControl();
   date: FormControl = new FormControl();
-  data: Dashboard;
   sub: Subscription = new Subscription();
+  initSub: Subscription = new Subscription();
 
   constructor(private dashboard: DashboardService) {
   }
 
   ngOnInit() {
-    this.dashboard.getTime()
-      .subscribe(data => {
-        this.now = data;
-        this.init();
-      })
+    this.initSub.add(
+      this.dashboard.getTime()
+        .subscribe(data => {
+          this.now = data;
+          this.init();
+        })
+    )
   }
 
   init() {
@@ -35,18 +39,18 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.sub = new Subscription();
     }
 
+    const n = new Date(this.now);
+
+    const time: NgbTimeStruct = { hour: n.getHours(), minute: n.getMinutes(), second: 0 };
+    this.time.setValue(time);
+
+    const date: NgbDateStruct = { day: n.getDate(), month: n.getMonth() + 1, year: n.getFullYear() };
+    this.date.setValue(date);
+
     this.sub.add(
       this.dashboard.get(this.now)
         .subscribe(data => this.data = data, error => this.data = null)
     );
-
-    const n = new Date(this.now);
-
-    const t: NgbTimeStruct = { hour: n.getHours(), minute: n.getMinutes(), second: 0 };
-    this.time.setValue(t);
-
-    const d: NgbDateStruct = { day: n.getDay(), month: n.getMonth() + 1, year: n.getFullYear() };
-    this.date.setValue(d);
 
     this.sub.add(
       this.time.valueChanges
@@ -75,6 +79,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.initSub.unsubscribe();
     this.sub.unsubscribe();
   }
 
