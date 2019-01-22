@@ -167,7 +167,7 @@
         <span>Электроэнергия</span>
       </div>
       <div class="values">
-        <span class="big-value">{{data?.energy?.battery.values.big  | toNumber}}</span>
+        <span class="big-value">{{data?.energy?.battery.values.big | toNumber}}</span>
         <span class="small-value"
               [ngClass]="{'green':data?.energy?.battery.values.type === 1, 'blue': data?.energy?.battery.values.type === 2}">{{data?.energy?.battery.values.small | toNumber}}</span>
       </div>

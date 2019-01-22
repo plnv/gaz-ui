@@ -6,7 +6,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ToNumberPipe implements PipeTransform {
 
   transform(value: any, arg: any = 1000): string {
-    return Number(value / arg).toFixed(2);
+    if (value == null)
+      return "Н/Д";
+    else
+      return Number(value / arg).toFixed(2);
   }
 
 }
